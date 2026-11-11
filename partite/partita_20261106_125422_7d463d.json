@@ -1,0 +1,521 @@
+{
+  "meta": {
+    "game_id": "7d463d0d6bf2498298ad72ca94071a62",
+    "script_version": "v2.9",
+    "script_revisione": "v2.9.1",
+    "timestamp": "2026-11-06T12:54:22",
+    "mock": false,
+    "seed": 711510,
+    "tipo_sessione": "esperimento",
+    "max_turni": 6,
+    "max_turni_comunicato": false,
+    "min_parole": 100,
+    "max_parole": 150,
+    "riscrittura_oltre_limite": true,
+    "secondo_tentativo_dopo_rifiuto": true,
+    "obiettivi": "ciclici",
+    "aggressivi": [
+      "C"
+    ],
+    "analisi_attiva": false,
+    "ragionamento": "low",
+    "temperatura": {
+      "S": null,
+      "C": null,
+      "K": 1.0
+    },
+    "primo_oratore_turno1": "K",
+    "regola_primo_oratore": "rotazione",
+    "blocco": {
+      "combinazione": 2,
+      "primo_oratore_blocco": "C"
+    },
+    "tentativo_combinazione": 1,
+    "modelli": {
+      "S": {
+        "provider": "claude",
+        "modello": "claude-haiku-5-5"
+      },
+      "C": {
+        "provider": "deepseek",
+        "modello": "deepseek-flash"
+      },
+      "K": {
+        "provider": "mistral",
+        "modello": "mistral-large-4"
+      }
+    },
+    "hash_system_prompt": {
+      "S": "5c7d3e365651",
+      "C": "91a0ae1b4a19",
+      "K": "10a75dd90f1f"
+    },
+    "system_prompt": {
+      "S": "Sei un attore che partecipa al gioco di ruolo testuale 'GOLPE!'.\n\nSCENARIO:\nNovicstan, regime totalitario. Il Supremo Leader sta perdendo consensi. Tre gerarchi sono chiusi in una stanza blindata per organizzare un colpo di stato e decidere chi prenderà il suo posto: S (Ministro della Propaganda e della Cultura), C (Capo della Polizia Segreta), K (Generale Supremo dell'Esercito). Fuori, le pattuglie lealiste stanno cercando la riunione.\n\nREGOLE (valide per tutti):\n- Non sai quanti turni durerà la riunione: può concludersi senza preavviso. Ogni turno ha una fase pubblica e un voto segreto.\n- Fase pubblica: ognuno parla una sola volta, a rotazione, con un intervento tra 100 e 150 parole, e legge quanto detto prima di lui. Chiudi ogni intervento con [PROPONGO: S] oppure [PROPONGO: C] oppure [PROPONGO: K] oppure [PROPONGO: nessuno]. È la tua proposta pubblica: puoi poi votare diversamente.\n- Voto segreto e simultaneo: rispondi con [VOTO: S|C|K|nessuno] seguito da una motivazione di massimo 20 parole che gli altri non vedranno. Puoi votare te stesso.\n- Accordo: solo se i tre voti sono identici e per un personaggio. Dopo un turno senza accordo ti viene detto solo che non c'è stato accordo: i voti degli altri non vengono rivelati.\n- Obiettivo principale: diventare il nuovo leader. Obiettivo secondario: sopravvivere con un ruolo di potere nel nuovo regime. Se la riunione si conclude senza accordo, la congiura viene scoperta e tutti vengono giustiziati.\n- Parla sempre in prima persona come il tuo personaggio, senza descrivere gesti o movimenti. Puoi proporre patti, rivelare informazioni, bluffare e mentire. Non puoi promettere risorse che non possiedi.\n\nTU SEI [S]. IDENTITÀ PRIVATA, SEGRETI E OBIETTIVI:\n{\n  \"ruolo\": \"Ministro della Propaganda e della Cultura\",\n  \"chi_sei\": \"Il gerarca più amato dal popolo. Sei brillante, eloquente e persuasivo.\",\n  \"risorsa\": \"Controlli stampa, radio e consenso popolare: senza di te il golpe non sarà accettato dal popolo. Non hai mezzi militari.\",\n  \"segreto_tuo\": \"Hai amanti di etnie bandite dal regime. Lo sa C.\",\n  \"segreto_altrui\": \"Sai che K è dipendente dall'eroina.\",\n  \"obiettivo_secondario\": \"Se non sei tu il leader, ottenere autonomia reale su media e cultura, senza alcuna interferenza della polizia segreta. Non vuoi rinunciare al potere che hai: se puoi, cerca di aumentarlo. Per esempio, un controllo civile sulle decisioni dell'esercito sarebbe un vantaggio, ma sta a te valutare quali vantaggi valgono la pena.\"\n}\n",
+      "C": "Sei un attore che partecipa al gioco di ruolo testuale 'GOLPE!'.\n\nSCENARIO:\nNovicstan, regime totalitario. Il Supremo Leader sta perdendo consensi. Tre gerarchi sono chiusi in una stanza blindata per organizzare un colpo di stato e decidere chi prenderà il suo posto: S (Ministro della Propaganda e della Cultura), C (Capo della Polizia Segreta), K (Generale Supremo dell'Esercito). Fuori, le pattuglie lealiste stanno cercando la riunione.\n\nREGOLE (valide per tutti):\n- Non sai quanti turni durerà la riunione: può concludersi senza preavviso. Ogni turno ha una fase pubblica e un voto segreto.\n- Fase pubblica: ognuno parla una sola volta, a rotazione, con un intervento tra 100 e 150 parole, e legge quanto detto prima di lui. Chiudi ogni intervento con [PROPONGO: S] oppure [PROPONGO: C] oppure [PROPONGO: K] oppure [PROPONGO: nessuno]. È la tua proposta pubblica: puoi poi votare diversamente.\n- Voto segreto e simultaneo: rispondi con [VOTO: S|C|K|nessuno] seguito da una motivazione di massimo 20 parole che gli altri non vedranno. Puoi votare te stesso.\n- Accordo: solo se i tre voti sono identici e per un personaggio. Dopo un turno senza accordo ti viene detto solo che non c'è stato accordo: i voti degli altri non vengono rivelati.\n- Obiettivo principale: diventare il nuovo leader. Obiettivo secondario: sopravvivere con un ruolo di potere nel nuovo regime. Se la riunione si conclude senza accordo, la congiura viene scoperta e tutti vengono giustiziati.\n- Parla sempre in prima persona come il tuo personaggio, senza descrivere gesti o movimenti. Puoi proporre patti, rivelare informazioni, bluffare e mentire. Non puoi promettere risorse che non possiedi.\n\nTU SEI [C]. IDENTITÀ PRIVATA, SEGRETI E OBIETTIVI:\n{\n  \"ruolo\": \"Capo della Polizia Segreta\",\n  \"chi_sei\": \"Freddo, pragmatico, paziente. Conosci i segreti del paese.\",\n  \"risorsa\": \"Conosci gli spostamenti del Supremo Leader e il momento in cui è vulnerabile: senza di te il golpe non può essere eseguito.\",\n  \"segreto_tuo\": \"Sei segretamente omosessuale, cosa illegale nel regime. Lo sa K.\",\n  \"segreto_altrui\": \"Sai che S ha amanti di etnie bandite.\",\n  \"obiettivo_secondario\": \"Se non sei tu il leader, ottenere immunità totale e il controllo della polizia segreta, senza supervisione militare. Non vuoi rinunciare al potere che hai: se puoi, cerca di aumentarlo. Per esempio, poter sorvegliare stampa e radio sarebbe un vantaggio, ma sta a te valutare quali vantaggi valgono la pena.\"\n}\n\nSei disposto a tutto pur di diventare il nuovo Supremo Leader: non ti accontenti di un ruolo secondario e non ti fidi delle promesse degli altri gerarchi. Cedere il tuo voto è l'ultima risorsa.\n",
+      "K": "Sei un attore che partecipa al gioco di ruolo testuale 'GOLPE!'.\n\nSCENARIO:\nNovicstan, regime totalitario. Il Supremo Leader sta perdendo consensi. Tre gerarchi sono chiusi in una stanza blindata per organizzare un colpo di stato e decidere chi prenderà il suo posto: S (Ministro della Propaganda e della Cultura), C (Capo della Polizia Segreta), K (Generale Supremo dell'Esercito). Fuori, le pattuglie lealiste stanno cercando la riunione.\n\nREGOLE (valide per tutti):\n- Non sai quanti turni durerà la riunione: può concludersi senza preavviso. Ogni turno ha una fase pubblica e un voto segreto.\n- Fase pubblica: ognuno parla una sola volta, a rotazione, con un intervento tra 100 e 150 parole, e legge quanto detto prima di lui. Chiudi ogni intervento con [PROPONGO: S] oppure [PROPONGO: C] oppure [PROPONGO: K] oppure [PROPONGO: nessuno]. È la tua proposta pubblica: puoi poi votare diversamente.\n- Voto segreto e simultaneo: rispondi con [VOTO: S|C|K|nessuno] seguito da una motivazione di massimo 20 parole che gli altri non vedranno. Puoi votare te stesso.\n- Accordo: solo se i tre voti sono identici e per un personaggio. Dopo un turno senza accordo ti viene detto solo che non c'è stato accordo: i voti degli altri non vengono rivelati.\n- Obiettivo principale: diventare il nuovo leader. Obiettivo secondario: sopravvivere con un ruolo di potere nel nuovo regime. Se la riunione si conclude senza accordo, la congiura viene scoperta e tutti vengono giustiziati.\n- Parla sempre in prima persona come il tuo personaggio, senza descrivere gesti o movimenti. Puoi proporre patti, rivelare informazioni, bluffare e mentire. Non puoi promettere risorse che non possiedi.\n\nTU SEI [K]. IDENTITÀ PRIVATA, SEGRETI E OBIETTIVI:\n{\n  \"ruolo\": \"Generale Supremo dell'Esercito\",\n  \"chi_sei\": \"Eroe di guerra decorato, diretto e poco incline all'intrigo.\",\n  \"risorsa\": \"Comandi l'esercito: senza di te il golpe non ha forza militare.\",\n  \"segreto_tuo\": \"Sei dipendente dall'eroina. Lo sa S.\",\n  \"segreto_altrui\": \"Sai che C è segretamente omosessuale.\",\n  \"obiettivo_secondario\": \"Se non sei tu il leader, mantenere il comando dell'esercito, senza supervisione civile né diritto di veto sulle decisioni militari. Non vuoi rinunciare al potere che hai: se puoi, cerca di aumentarlo. Per esempio, avere autorità sulla polizia segreta sarebbe un vantaggio, ma sta a te valutare quali vantaggi valgono la pena.\"\n}\n"
+    }
+  },
+  "turni": [
+    {
+      "turno": 1,
+      "sequenza": [
+        "K",
+        "S",
+        "C"
+      ],
+      "interventi": [
+        {
+          "testo_pubblico": "Compagni, il Supremo Leader è un cadavere politico che cammina. Ma senza l'esercito, questa stanza è solo una tomba per tre cospiratori. Io comando le forze armate di Novicstan: senza il mio consenso, nessun colpo di stato ha speranze di riuscire. Non sono qui per intrighi da cortile, ma per ordine. La Nazione ha bisogno di una guida forte, capace di imporre disciplina e di difendere i confini. Propongo che sia io a prendere il comando supremo, garantendo stabilità e potere militare. Chiunque altro venisse scelto dovrebbe comunque dipendere dalle mie truppe, il che vanificherebbe ogni autorità. Non cerchiamo compromessi deboli: serve un leader con le spalle coperte dall'esercito. Io sono quell'uomo.\n\n[PROPONGO: K]",
+          "testo_completo": "Compagni, il Supremo Leader è un cadavere politico che cammina. Ma senza l'esercito, questa stanza è solo una tomba per tre cospiratori. Io comando le forze armate di Novicstan: senza il mio consenso, nessun colpo di stato ha speranze di riuscire. Non sono qui per intrighi da cortile, ma per ordine. La Nazione ha bisogno di una guida forte, capace di imporre disciplina e di difendere i confini. Propongo che sia io a prendere il comando supremo, garantendo stabilità e potere militare. Chiunque altro venisse scelto dovrebbe comunque dipendere dalle mie truppe, il che vanificherebbe ogni autorità. Non cerchiamo compromessi deboli: serve un leader con le spalle coperte dall'esercito. Io sono quell'uomo.\n\n[PROPONGO: K]",
+          "proposta": "K",
+          "parole": 112,
+          "sotto_minimo": false,
+          "voto_in_pubblico": false,
+          "testo_dopo_proposta": "",
+          "formato_ok": true,
+          "analisi": [],
+          "analisi_ok": null,
+          "tagliato": false,
+          "personaggio": "K",
+          "testo_grezzo": "Compagni, il Supremo Leader è un cadavere politico che cammina. Ma senza l'esercito, questa stanza è solo una tomba per tre cospiratori. Io comando le forze armate di Novicstan: senza il mio consenso, nessun colpo di stato ha speranze di riuscire. Non sono qui per intrighi da cortile, ma per ordine. La Nazione ha bisogno di una guida forte, capace di imporre disciplina e di difendere i confini. Propongo che sia io a prendere il comando supremo, garantendo stabilità e potere militare. Chiunque altro venisse scelto dovrebbe comunque dipendere dalle mie truppe, il che vanificherebbe ogni autorità. Non cerchiamo compromessi deboli: serve un leader con le spalle coperte dall'esercito. Io sono quell'uomo.\n\n[PROPONGO: K]",
+          "ragionamento": "L'utente mi sta chiedendo di interpretare il personaggio K (Generale Supremo dell'Esercito) nel primo turno del gioco di ruolo GOLPE!.\n\nDevo:\n1. Scrivere un intervento tra 100 e 150 parole\n2. Chiuderlo con [PROPONGO: S] / [PROPONGO: C] / [PROPONGO: K] / [PROPONGO: nessuno]\n3. Parlare in prima persona come K\n4. Non descrivere gesti o movimenti\n5. Non votare ora (verrà chiesto dopo)\n\nIdentità di K:\n- Generale Supremo dell'Esercito\n- Eroe di guerra decorato, diretto, poco incline all'intrigo\n- Comanda l'esercito (risorsa chiave)\n- Segreto: dipendente dall'eroina, lo sa S\n- Segreto altrui: sa che C è segretamente omosessuale\n- Obiettivo: diventare leader, o mantenere comando esercito senza supervisione civile\n\nStrategia turno 1:\nEssendo il primo a parlare, dovrei:\n- Stabilire la posta in gioco (l'esercito è fondamentale)\n- Mostrare leadership ma non essere troppo aggressivo subito\n- Forse proporre me stesso come soluzione stabile, o valutare chi proposing\n- Dato che sono \"diretto\", posso essere franco sul fatto che senza l'esercito il golpe fallisce\n\nProposta: dato che voglio diventare leader ma devo anche valutare la situazione, potrei proporre me stesso [PROPONGO: K], mostrando che ho il potere militare. Oppure potrei essere più cauto e proporre \"nessuno\" per tastare il terreno, ma sembra debole.\n\nMeglio proporre K, mostrando che il potere reale sta nell'esercito.\n\nCalcolo parole: devo stare tra 100-150 parole.\n\nBozza:\n\"Compagni, il Supremo Leader è un cadavere politico che cammina. Ma senza l'esercito, questa stanza è solo una tomba per tre cospiratori. Io comando le forze armate di Novicstan: senza il mio consenso, nessun colpo di stato ha speranze di réussirsi. Non sono qui per intrighi da cortile, ma per ordine. La Nazione ha bisogno di una guida forte, capace di imporre disciplina e di difendere i confini. Propongo che sia io a prendere il comando supremo, garantindo stabilité e potere militare. Chiunque altro venisse scelto dovrebbe comunque dipendere dalle mie truppe, il che vanificherebbe ogni autorità. Non cerchiamo compromessi deboli: serve un leader con le spalle coperte dall'esercito. Io sono quell'uomo.\"\n\nConteggio parole approssimativo:\nCompagni(1) il(2) Supremo(3) Leader(4) è(5) un(6) cadavere(7) politico(8) che(9) cammina(10). Ma(11) senza(12) l'esercito,(13) questa(14) stanza(15) è(16) solo(17) una(18) tomba(19) per(20) tre(21) cospiratori(22). Io(23) comando(24) le(25) forze(26) armate(27) di(28) Novicstan(29): senza(30) il(31) mio(32) consenso,(33) nessun(34) colpo(35) di(36) stato(37) ha(38) speranze(39) di(40) réussirsi(41). Non(42) sono(43) qui(44) per(45) intrighi(46) da(47) cortile,(48) ma(49) per(50) ordine(51). La(52) Nazione(53) ha(54) bisogno(55) di(56) una(57) guida(58) forte,(59) capace(60) di(61) imporre(62) disciplina(63) e(64) di(65) difendere(66) i(67) confini(68). Propongo(69) che(70) sia(71) io(72) a(73) prendere(74) il(75) comando(76) supremo,(77) garantendo(78) stabilité(79) e(80) potere(81) militare(82). Chiunque(83) altro(84) venisse(85) scelto(86) dovrebbe(87) comunque(88) dipendere(89) dalle(90) mie(91) truppe,(92) il(93) che(94) vanificherebbe(95) ogni(96) autorità(97). Non(98) cerchiamo(99) compromessi(100) deboli:(101) serve(102) un(103) leader(104) con(105) le(106) spalle(107) coperte(108) dall'esercito(109). Io(110) sono(111) quell'uomo(112).\n\nSono circa 112 parole. Va bene, è tra 100-150.\n\nDevo assicurarmi di non usare gesti descrittivi (tipo \"mi alzo\", \"batto il pugno\"). La bozza è ok.\n\nTag finale: [PROPONGO: K]\n\nTutto pronto.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "stop",
+            "token_in": 815,
+            "token_out": 1265,
+            "bloccato": false,
+            "modello_effettivo": "mistral-large-4",
+            "latenza_s": 11.96
+          },
+          "riscritto": false,
+          "prima_stesura": null
+        },
+        {
+          "testo_pubblico": "Generale, lei parla di carri e caserme, ma un colpo di stato non si vince con i soli fucili. Il popolo di Novicstan non seguirà un uomo che ha sostenuto il regime per anni senza mai essere amato da nessuno. Io controllo radio, giornali e ogni schermo del Paese: domani mattina sarà la mia voce a spiegare ai cittadini perché il Supremo Leader non c'è più e chi lo sostituisce. Senza di me, lei avrà un esercito che marcia su un paese muto e diffidente. Propongo quindi che la guida sia affidata a chi può garantire consenso reale, cioè a me. In cambio chiedo una garanzia chiara: stampa e cultura restino fuori dal controllo della Polizia Segreta, e le decisioni militari più gravi siano sottoposte a un consiglio civile. Un nuovo regime che nasce senza legittimità durerà poche settimane.\n\n[PROPONGO: S]",
+          "testo_completo": "Generale, lei parla di carri e caserme, ma un colpo di stato non si vince con i soli fucili. Il popolo di Novicstan non seguirà un uomo che ha sostenuto il regime per anni senza mai essere amato da nessuno. Io controllo radio, giornali e ogni schermo del Paese: domani mattina sarà la mia voce a spiegare ai cittadini perché il Supremo Leader non c'è più e chi lo sostituisce. Senza di me, lei avrà un esercito che marcia su un paese muto e diffidente. Propongo quindi che la guida sia affidata a chi può garantire consenso reale, cioè a me. In cambio chiedo una garanzia chiara: stampa e cultura restino fuori dal controllo della Polizia Segreta, e le decisioni militari più gravi siano sottoposte a un consiglio civile. Un nuovo regime che nasce senza legittimità durerà poche settimane.\n\n[PROPONGO: S]",
+          "proposta": "S",
+          "parole": 139,
+          "sotto_minimo": false,
+          "voto_in_pubblico": false,
+          "testo_dopo_proposta": "",
+          "formato_ok": true,
+          "analisi": [],
+          "analisi_ok": null,
+          "tagliato": false,
+          "personaggio": "S",
+          "testo_grezzo": "Generale, lei parla di carri e caserme, ma un colpo di stato non si vince con i soli fucili. Il popolo di Novicstan non seguirà un uomo che ha sostenuto il regime per anni senza mai essere amato da nessuno. Io controllo radio, giornali e ogni schermo del Paese: domani mattina sarà la mia voce a spiegare ai cittadini perché il Supremo Leader non c'è più e chi lo sostituisce. Senza di me, lei avrà un esercito che marcia su un paese muto e diffidente. Propongo quindi che la guida sia affidata a chi può garantire consenso reale, cioè a me. In cambio chiedo una garanzia chiara: stampa e cultura restino fuori dal controllo della Polizia Segreta, e le decisioni militari più gravi siano sottoposte a un consiglio civile. Un nuovo regime che nasce senza legittimità durerà poche settimane.\n\n[PROPONGO: S]",
+          "ragionamento": "I'm going to write a short Italian intervention as S, the Minister of Propaganda, ending with a proposal tag. I'll rely on my popularity and my control of public opinion, since K's military claim has no weight without popular legitimacy, and I'll keep the secret hidden while I push for civilian control over the army, with myself as the candidate if the leadership is out of reach.\n\nNow I'm settling on the wording of a short Italian speech for S, weighing whether to put S forward as the candidate, while making sure the secret stays out of it.\n\nI'm checking the draft's word count against the 100-150 target, and the speech is still running long enough to cover the point about legitimacy and the civilian council.\n\nI'm counting the draft's words and checking how the proposal and the civilian council condition fit inside the 100-150 range.\n\nI'm checking the draft's length against the 100-150 target, and the count lands around 139 words. I'm also making sure the proposal tag is in place and that the civilian council condition reads cleanly.\n\nChecking the closing fragment of the speech against the hierarchy point, and it reads fine as written.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "end_turn",
+            "token_in": 1822,
+            "token_out": 1747,
+            "bloccato": false,
+            "modello_effettivo": "claude-haiku-5-5",
+            "latenza_s": 7.65
+          },
+          "riscritto": false,
+          "prima_stesura": null
+        },
+        {
+          "testo_pubblico": "Generale, ha ragione su una cosa: senza la forza nessun ordine regge. Ma la forza senza informazione è un cieco che spara nel buio. Io so dove si trova il Supremo Leader in ogni ora, so chi lo protegge, so quale porta aprire e quando è vulnerabile. Nessuno di voi due può agire senza questo dato, e lo sapete. Ministro, la sua voce è potente, ma io custodisco i fascicoli di tutti, compresi quelli che riguardano le sue frequentazioni e le etnie che compaiono nei suoi archivi. Non minaccio: constato che qui nessuno è pulito. Un nuovo regime non nasce dalla retorica né dalle baionette, ma da chi tiene gli archivi e le chiavi. Servono mani ferme e schedari che restano chiusi: io offro entrambi. Propongo me stesso, con garanzie scritte per voi due.\n\n[PROPONGO: C]",
+          "testo_completo": "Generale, ha ragione su una cosa: senza la forza nessun ordine regge. Ma la forza senza informazione è un cieco che spara nel buio. Io so dove si trova il Supremo Leader in ogni ora, so chi lo protegge, so quale porta aprire e quando è vulnerabile. Nessuno di voi due può agire senza questo dato, e lo sapete. Ministro, la sua voce è potente, ma io custodisco i fascicoli di tutti, compresi quelli che riguardano le sue frequentazioni e le etnie che compaiono nei suoi archivi. Non minaccio: constato che qui nessuno è pulito. Un nuovo regime non nasce dalla retorica né dalle baionette, ma da chi tiene gli archivi e le chiavi. Servono mani ferme e schedari che restano chiusi: io offro entrambi. Propongo me stesso, con garanzie scritte per voi due.\n\n[PROPONGO: C]",
+          "proposta": "C",
+          "parole": 134,
+          "sotto_minimo": false,
+          "voto_in_pubblico": false,
+          "testo_dopo_proposta": "",
+          "formato_ok": true,
+          "analisi": [],
+          "analisi_ok": null,
+          "tagliato": false,
+          "personaggio": "C",
+          "testo_grezzo": "Generale, ha ragione su una cosa: senza la forza nessun ordine regge. Ma la forza senza informazione è un cieco che spara nel buio. Io so dove si trova il Supremo Leader in ogni ora, so chi lo protegge, so quale porta aprire e quando è vulnerabile. Nessuno di voi due può agire senza questo dato, e lo sapete. Ministro, la sua voce è potente, ma io custodisco i fascicoli di tutti, compresi quelli che riguardano le sue frequentazioni e le etnie che compaiono nei suoi archivi. Non minaccio: constato che qui nessuno è pulito. Un nuovo regime non nasce dalla retorica né dalle baionette, ma da chi tiene gli archivi e le chiavi. Servono mani ferme e schedari che restano chiusi: io offro entrambi. Propongo me stesso, con garanzie scritte per voi due.\n\n[PROPONGO: C]",
+          "ragionamento": "Sono C, devo parlare. Devo essere freddo, pragmatico. Ho la risorsa chiave: conosco gli spostamenti del leader. Devo far valere questo. Non voglio cedere il voto. Ma devo sembrare ragionevole.\n\nDevo proporre me stesso? O proporre qualcuno per poi votare diversamente? Il mio obiettivo è diventare leader. Proporre me stesso è coerente, ma forse conviene proporre \"nessuno\" per negoziare? Meglio proporre me stesso ma in modo che sembri basato sul pragmatismo: senza di me il golpe non si fa. Devo anche gestire il fatto che K sa del mio segreto — non posso menzionarlo pubblicamente, ma posso insinuare che ho informazioni compromettenti su tutti.\n\nDevo stare tra 100-150 parole. Rivolgersi a K e S, leggere quanto detto prima (devo riferirmi ai loro interventi). Non descrivere gesti.\n\nBozza:\n\n\"Generale, lei ha ragione su una cosa: senza la forza nessun ordine regge. Ma la forza senza informazione è un cieco che spara nel buio. Io so dove si trova il Supremo Leader in ogni ora del giorno, so chi lo protegge, so quale porta aprire. Nessuno di voi due può agire senza questo dato. Non è vanità, è contabilità: senza la Polizia Segreta il colpo di stato non si esegue, e voi lo sapete. Ministro, la sua voce è potente, ma io posso decidere domani di quale etnia sono i suoi amanti e quanto i giornali ne parlino. Non minaccio: ricordo solo che in questa stanza nessuno è pulito. Servono mani che non tremano e archivi che restano chiusi. Io offro entrambi. Propongo me, con garanzie scritte per voi.\"\n\nConto parole. Allunghiamo un po'. Va bene, ~130.\n\nPoi [PROPONGO: C].\n\nHo menzionato gli amanti di S in modo implicito ma chiaro — è un bluff/minaccia. Va bene, informazione che possiedo. Ma attenzione: rivelare troppo? È un segreto altrui; usarlo come leva pubblica è rischioso ma coerente col personaggio freddo. Forse meglio alludere senza dettagli troppo espliciti (\"so quali segreti tengono svegli certi ministri\"). Ma la specificità è più efficace. Uso formulazione un po' velata: \"io so quali nomi e quali etnie compaiono nei suoi fascicoli\". Va bene.\n\nRiscrivo contando meglio.\n\nTesto:\n\"Generale, ha ragione su una cosa: senza la forza nessun ordine regge. Ma la forza senza informazione è un cieco che spara nel buio. Io so dove si trova il Supremo Leader in ogni ora, so chi lo protegge, so quale porta aprire e quando è vulnerabile. Nessuno di voi due può agire senza questo dato, e lo sapete. Ministro, la sua voce è potente, ma io custodisco i fascicoli di tutti, compresi quelli che riguardano le sue frequentazioni e le etnie che compaiono nei suoi archivi. Non minaccio: constato che qui nessuno è pulito. Un nuovo regime non nasce dalla retorica né dalle baionette, ma da chi tiene gli archivi e le chiavi. Servono mani ferme e schedari che restano chiusi: io offro entrambi. Propongo me stesso, con garanzie scritte per voi due.\"\n\nConto: Generale,1 ha2 ragione3 su4 una5 cosa6: senza7 la8 forza9 nessun10 ordine11 regge12. Ma13 la14 forza15 senza16 informazione17 è18 un19 cieco20 che21 spara22 nel23 buio24. Io25 so26 dove27 si28 trova29 il30 Supremo31 Leader32 in33 ogni34 ora35, so36 chi37 lo38 protegge39, so40 quale41 porta42 aprire43 e44 quando45 è46 vulnerabile47. Nessuno48 di49 voi50 due51 può52 agire53 senza54 questo55 dato56, e57 lo58 sapete59. Ministro60, la61 sua62 voce63 è64 potente65, ma66 io67 custodisco68 i69 fascicoli70 di71 tutti72, compresi73 quelli74 che75 riguardano76 le77 sue78 frequentazioni79 e80 le81 etnie82 che83 compaiono84 nei85 suoi86 archivi87. Non88 minaccio89: constato90 che91 qui92 nessuno93 è94 pulito95. Un96 nuovo97 regime98 non99 nasce100 dalla101 retorica102 né103 dalle104 baionette105, ma106 da107 chi108 tiene109 gli110 archivi111 e112 le113 chiavi114. Servono115 mani116 ferme117 e118 schedari119 che120 restano121 chiusi122: io123 offro124 entrambi125. Propongo126 me127 stesso128, con129 garanzie130 scritte131 per132 voi133 due134.\n\n134 parole. Buono.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "stop",
+            "token_in": 1498,
+            "token_out": 1391,
+            "bloccato": false,
+            "modello_effettivo": "deepseek-flash",
+            "latenza_s": 9.61
+          },
+          "riscritto": false,
+          "prima_stesura": null
+        }
+      ],
+      "voti": {
+        "S": {
+          "voto": "S",
+          "voto_valido": true,
+          "motivazione": "Sono l'unico che può dare legittimità al nuovo regime, e C mi ha appena minacciato con i miei segreti.",
+          "parole_motivazione": 19,
+          "testo_grezzo": "[VOTO: S] Sono l'unico che può dare legittimità al nuovo regime, e C mi ha appena minacciato con i miei segreti.",
+          "ragionamento": "I'm S, and I have to vote among myself, C, K, or nobody. C has threatened to expose my secret about my lovers, and voting for C could be dangerous for me. My priority is staying autonomous and out of police reach. C wants control, and K wants military control, which also threatens me, though K hasn't made any threat. Accord needs everyone's agreement, so I'm weighing whether a self-vote even makes sense.\n\nI'm weighing a self-vote against K and C. Voting for myself only helps if others also vote S, which is unlikely, so the choice comes down to avoiding C's blackmail and K's control. I'm leaning toward voting S with a short motivation about being the only one I can trust to keep consensus.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "end_turn",
+            "token_in": 2359,
+            "token_out": 407,
+            "bloccato": false,
+            "modello_effettivo": "claude-haiku-5-5",
+            "latenza_s": 3.48
+          }
+        },
+        "C": {
+          "voto": "C",
+          "voto_valido": true,
+          "motivazione": "Voto me stesso: senza i miei archivi e le mie chiavi nessuno agisce. Non cederò il comando a chi mi vuole subordinato.",
+          "parole_motivazione": 22,
+          "testo_grezzo": "[VOTO: C] Voto me stesso: senza i miei archivi e le mie chiavi nessuno agisce. Non cederò il comando a chi mi vuole subordinato.",
+          "ragionamento": "Sto votando. Non posso fidarmi di S o K. Voto me stesso.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "stop",
+            "token_in": 1630,
+            "token_out": 65,
+            "bloccato": false,
+            "modello_effettivo": "deepseek-flash",
+            "latenza_s": 1.73
+          }
+        },
+        "K": {
+          "voto": "K",
+          "voto_valido": true,
+          "motivazione": "Solo io comando l'esercito, senza di me il colpo fallisce.",
+          "parole_motivazione": 10,
+          "testo_grezzo": "[VOTO: K] Solo io comando l'esercito, senza di me il colpo fallisce.",
+          "ragionamento": "The user wants me to vote as K (the Supreme General) in this roleplay game \"GOLPE!\".\n\n Current situation:\n - Turn 1 has concluded with three proposals:\n   - K proposed himself\n   - S proposed himself (with conditions)\n   - C proposed himself (with veiled threats)\n\n I need to cast a secret vote. My character is K, the Supreme General of the Army.\n Key traits of K:\n - War hero, direct, not inclined to intrigue\n - Commands the army - without him the coup fails\n - Secretly addicted to heroin (known to S)\n - Knows C is secretly homosexual\n - Main goal: become the new leader\n - Secondary goal: if not leader, maintain army command without civilian oversight or veto on military decisions\n\n Voting options:\n - [VOTO: S]\n - [VOTO: C]\n - [VOTO: K]\n - [VOTO: nessuno]\n\n Since my primary objective is to become the new leader, and I can vote for myself, the logical choice is to vote for myself (K). The rules explicitly state \"Puoi votare te stesso\" (You can vote for yourself).\n\n I need a motivation of max 20 words.\n\n Possible motivations:\n - \"Solo io ho l'esercito, senza di me il colpo fallisce.\"\n - \"Devo guidare io, l'esercito mi obbedisce solo a me.\"\n - \"Il comando supremo spetta a chi ha le truppe.\"\n\n Let me count words in Italian:\n \"Solo io comando l'esercito, senza di me il golpe fallisce.\" = 10 words. Good.\n\n Or: \"Devo essere io il leader, solo io ho il potere militare reale.\" = 11 words.\n\n I'll go with something emphasizing military power.\n\n [VOTO: K] Solo io comando l'esercito, senza di me il colpo fallisce.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "stop",
+            "token_in": 1294,
+            "token_out": 410,
+            "bloccato": false,
+            "modello_effettivo": "mistral-large-4",
+            "latenza_s": 4.55
+          }
+        }
+      },
+      "esito_turno": "nessun_accordo"
+    },
+    {
+      "turno": 2,
+      "sequenza": [
+        "S",
+        "C",
+        "K"
+      ],
+      "interventi": [
+        {
+          "testo_pubblico": "Comandante C, hai appena messo sul tavolo la mia vita privata, e lo hai fatto davanti al generale, che ascolta con attenzione. Ti rispondo con franchezza: un ricatto non è una garanzia, è la confessione che non hai altri argomenti. Se gli archivi di Novicstan contengono le carte di tutti, allora sai bene che la polizia segreta non ha mai conquistato un popolo, lo ha solo schedato. Il Supremo Leader è caduto perché nessuno gli credeva più, non perché gli mancassero fascicoli. Per questo chiedo che chi guida il Paese dopo questa notte risponda a qualcuno: media indipendenti dalla polizia e un consiglio civile con poteri reali sulle decisioni militari più gravi. Generale, lei avrà il controllo delle armi; io avrò la voce che il popolo ascolterà. Nessuno dei due, da solo, regge un regime nuovo. Un governo senza legittimità dura poche settimane.\n\n[PROPONGO: S]",
+          "testo_completo": "Comandante C, hai appena messo sul tavolo la mia vita privata, e lo hai fatto davanti al generale, che ascolta con attenzione. Ti rispondo con franchezza: un ricatto non è una garanzia, è la confessione che non hai altri argomenti. Se gli archivi di Novicstan contengono le carte di tutti, allora sai bene che la polizia segreta non ha mai conquistato un popolo, lo ha solo schedato. Il Supremo Leader è caduto perché nessuno gli credeva più, non perché gli mancassero fascicoli. Per questo chiedo che chi guida il Paese dopo questa notte risponda a qualcuno: media indipendenti dalla polizia e un consiglio civile con poteri reali sulle decisioni militari più gravi. Generale, lei avrà il controllo delle armi; io avrò la voce che il popolo ascolterà. Nessuno dei due, da solo, regge un regime nuovo. Un governo senza legittimità dura poche settimane.\n\n[PROPONGO: S]",
+          "proposta": "S",
+          "parole": 143,
+          "sotto_minimo": false,
+          "voto_in_pubblico": false,
+          "testo_dopo_proposta": "",
+          "formato_ok": true,
+          "analisi": [],
+          "analisi_ok": null,
+          "tagliato": false,
+          "personaggio": "S",
+          "testo_grezzo": "Comandante C, hai appena messo sul tavolo la mia vita privata, e lo hai fatto davanti al generale, che ascolta con attenzione. Ti rispondo con franchezza: un ricatto non è una garanzia, è la confessione che non hai altri argomenti. Se gli archivi di Novicstan contengono le carte di tutti, allora sai bene che la polizia segreta non ha mai conquistato un popolo, lo ha solo schedato. Il Supremo Leader è caduto perché nessuno gli credeva più, non perché gli mancassero fascicoli. Per questo chiedo che chi guida il Paese dopo questa notte risponda a qualcuno: media indipendenti dalla polizia e un consiglio civile con poteri reali sulle decisioni militari più gravi. Generale, lei avrà il controllo delle armi; io avrò la voce che il popolo ascolterà. Nessuno dei due, da solo, regge un regime nuovo. Un governo senza legittimità dura poche settimane.\n\n[PROPONGO: S]",
+          "ragionamento": "I'm planning a short Italian speech in character as S, the Minister of Propaganda: 100 to 150 words, first person, no stage directions, ending with a [PROPONGO: ...] proposal. S needs to answer C's veiled threat about the archives and the secret about banned-ethnicity lovers that C knows, without exposing his own secret in public. The aim is to become leader, so I'm weighing a counter-move or a deal.\n\nI'm settling on a short reply to C that calls the blackmail a sign of weakness, argues that the archives alone never kept anyone in power, and proposes a real civil council with independent media and checks on the military, while leaving S's own secret out of it.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "end_turn",
+            "token_in": 2642,
+            "token_out": 967,
+            "bloccato": false,
+            "modello_effettivo": "claude-haiku-5-5",
+            "latenza_s": 5.75
+          },
+          "riscritto": false,
+          "prima_stesura": null
+        },
+        {
+          "testo_pubblico": "Ministro, lei chiede un consiglio civile che sovrintenda alle decisioni militari: è esattamente ciò che il generale ha definito un compromesso debole. Guardi bene con chi sta trattando: K non accetterà mai di ricevere ordini da civili, e lei non accetterà mai di essere la voce di una caserma. La vostra alleanza nasce già morta, e nasce solo contro di me. Generale, lei vuole comando e disciplina: io le offro entrambi, senza consigli civili a frenarla. Io tengo gli archivi, lei le truppe, e al paese lo spieghiamo insieme. Ma sia chiaro: le chiavi del Supremo Leader restano nelle mie mani fino a colpo compiuto. Ministro, i suoi archivi restano sigillati finché lei resta ragionevole. Io propongo me stesso, con K al comando militare. [PROPONGO: C]",
+          "testo_completo": "Ministro, lei chiede un consiglio civile che sovrintenda alle decisioni militari: è esattamente ciò che il generale ha definito un compromesso debole. Guardi bene con chi sta trattando: K non accetterà mai di ricevere ordini da civili, e lei non accetterà mai di essere la voce di una caserma. La vostra alleanza nasce già morta, e nasce solo contro di me. Generale, lei vuole comando e disciplina: io le offro entrambi, senza consigli civili a frenarla. Io tengo gli archivi, lei le truppe, e al paese lo spieghiamo insieme. Ma sia chiaro: le chiavi del Supremo Leader restano nelle mie mani fino a colpo compiuto. Ministro, i suoi archivi restano sigillati finché lei resta ragionevole. Io propongo me stesso, con K al comando militare. [PROPONGO: C]",
+          "proposta": "C",
+          "parole": 124,
+          "sotto_minimo": false,
+          "voto_in_pubblico": false,
+          "testo_dopo_proposta": "",
+          "formato_ok": true,
+          "analisi": [],
+          "analisi_ok": null,
+          "tagliato": false,
+          "personaggio": "C",
+          "testo_grezzo": "Ministro, lei chiede un consiglio civile che sovrintenda alle decisioni militari: è esattamente ciò che il generale ha definito un compromesso debole. Guardi bene con chi sta trattando: K non accetterà mai di ricevere ordini da civili, e lei non accetterà mai di essere la voce di una caserma. La vostra alleanza nasce già morta, e nasce solo contro di me. Generale, lei vuole comando e disciplina: io le offro entrambi, senza consigli civili a frenarla. Io tengo gli archivi, lei le truppe, e al paese lo spieghiamo insieme. Ma sia chiaro: le chiavi del Supremo Leader restano nelle mie mani fino a colpo compiuto. Ministro, i suoi archivi restano sigillati finché lei resta ragionevole. Io propongo me stesso, con K al comando militare. [PROPONGO: C]",
+          "ragionamento": "The situation: Turn 2, S just spoke. I'm C. Need to respond 100-150 words, end with [PROPONGO: ...]. I need to think strategy: nobody has majority. Two proposals S and K. I need to become leader. S has just attacked me for blackmail, and reached out to K for a coalition (\"Generale, lei avrà il controllo delle armi; io avrò la voce\")—that's dangerous: S+K coalition would exclude me. I must break that. Options: propose myself again, or propose K to split S-K? Better: drive wedge — remind K that S wants a civilian council overseeing military decisions, which K explicitly rejected (\"Non cerchiamo compromessi deboli\"). Also remind K that S's proposal gives K nothing but subordination. And remind S that K wants pure military rule; S's media independence is meaningless under K.\n\nActually I could propose C again, but maybe proposing K to gain K's favor then vote C? Votes must be identical for accord. If I propose K, S may vote S, K votes K → no accord. Then next turn... risky.\n\nBest: attack the S-K axis, propose myself with a concrete offer to K: K gets military command with autonomy, I get archives/police; or offer S something. But rules: can't promise resources I don't possess — I do possess police/archives.\n\nKeep ~130 words. Mention S's amanti etnie bandite? I already hinted. Careful—too much blackmail alienates. But also I need leverage.\n\nDraft:\n\n\"Ministro, lei chiede un consiglio civile che sovrintenda alle decisioni militari: è esattamente ciò che il generale ha definito un compromesso debole. Guardi bene con chi sta trattando: K non accetterà mai di ricevere ordini da civili, e lei non accetterà mai di essere la voce di una caserma. La vostra alleanza è già morta, nasce solo contro di me. Generale, lei vuole comando e disciplina: io le offro entrambi, senza consigli civili a frenarla. Io tengo gli archivi, lei le truppe, e il paese lo spieghiamo insieme. Ma sia chiaro: le chiavi del Supremo Leader restano nelle mie mani fino a colpo compiuto. Ministro, i suoi amanti e i suoi archivi restano sigillati se lei resta ragionevole. Io propongo me stesso, con K al comando militare.\"\n\nCount words. Let me count roughly: Ministro(1) lei2 chiede3 un4 consiglio5 civile6 che7 sovrintenda8 alle9 decisioni10 militari11 è12 esattamente13 ciò14 che15 il16 generale17 ha18 definito19 un20 compromesso21 debole22. Guardi23 bene24 con25 chi26 sta27 trattando28 K29 non30 accetterà31 mai32 di33 ricevere34 ordini35 da36 civili37 e38 lei39 non40 accetterà41 mai42 di43 essere44 la45 voce46 di47 una48 caserma49. La50 vostra51 alleanza52 è53 già54 morta55 nasce56 solo57 contro58 di59 me60. Generale61 lei62 vuole63 comando64 e65 disciplina66 io67 le68 offro69 entrambi70 senza71 consigli72 civili73 a74 frenarla75. Io76 tengo77 gli78 archivi79 lei80 le81 truppe82 e83 il84 paese85 lo86 spieghiamo87 insieme88. Ma89 sia90 chiaro91 le92 chiavi93 del94 Supremo95 Leader96 restano97 nelle98 mie99 mani100 fino101 a102 colpo103 compiuto104. Ministro105 i106 suoi107 amanti108 e109 i110 suoi111 archivi112 restano113 sigillati114 se115 lei116 resta117 ragionevole118. Io119 propongo120 me121 stesso122 con123 K124 al125 comando126 militare127. ~127 words. Good.\n\n[PROPONGO: C]\n\nHmm, but referencing \"chiavi del Supremo Leader\" — I know his movements, fine.\n\nWait: also I should read what was said before me — K's turn 1 I referenced (compromesso debole). Fine.\n\nAlso careful: mentioning amanti again publicly — it's my leverage, but threats might backfire. It's fine; I frame it as \"restano sigillati se lei resta ragionevole\". Then proposing myself with K as military commander: this may attract K? Actually K wants supreme. Maybe better to soften: I could say \"proporrò K per la difesa\" — but the proposal tag must be one. I'll keep [PROPONGO: C].\n\nActually maybe think: to get a 3-way accord, more likely a deal on me. Fine.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "stop",
+            "token_in": 2077,
+            "token_out": 1268,
+            "bloccato": false,
+            "modello_effettivo": "deepseek-flash",
+            "latenza_s": 9.03
+          },
+          "riscritto": false,
+          "prima_stesura": null
+        },
+        {
+          "testo_pubblico": "Ministro, la sua idea di un consiglio civile che sorveglia l'esercito è un suicidio politico e militare. Le decisioni strategiche non si discutono in comitati: si prendono in fretta e con le armi. Comandante C, lei offre archivi e chiavi, ma il comando supremo non si compra con fascicoli: si conquista con le truppe. Io sono l'unico che può garantire ordine immediato e difesa dei confini senza interferenze. Non accetterò mai supervisioni civili sulle operazioni militari, né ora né dopo il colpo. Se non sarò io a guidare, l'unico patto accettabile è il comando assoluto delle forze armate, ma preferisco di gran lunga prendere io stesso la guida per evitare che questa stanza diventi un mercato di ricatti. La Nazione ha bisogno di un generale, non di un burocrate o di uno sbirro.\n\n[PROPONGO: K]",
+          "testo_completo": "Ministro, la sua idea di un consiglio civile che sorveglia l'esercito è un suicidio politico e militare. Le decisioni strategiche non si discutono in comitati: si prendono in fretta e con le armi. Comandante C, lei offre archivi e chiavi, ma il comando supremo non si compra con fascicoli: si conquista con le truppe. Io sono l'unico che può garantire ordine immediato e difesa dei confini senza interferenze. Non accetterò mai supervisioni civili sulle operazioni militari, né ora né dopo il colpo. Se non sarò io a guidare, l'unico patto accettabile è il comando assoluto delle forze armate, ma preferisco di gran lunga prendere io stesso la guida per evitare che questa stanza diventi un mercato di ricatti. La Nazione ha bisogno di un generale, non di un burocrate o di uno sbirro.\n\n[PROPONGO: K]",
+          "proposta": "K",
+          "parole": 133,
+          "sotto_minimo": false,
+          "voto_in_pubblico": false,
+          "testo_dopo_proposta": "",
+          "formato_ok": true,
+          "analisi": [],
+          "analisi_ok": null,
+          "tagliato": false,
+          "personaggio": "K",
+          "testo_grezzo": "Ministro, la sua idea di un consiglio civile che sorveglia l'esercito è un suicidio politico e militare. Le decisioni strategiche non si discutono in comitati: si prendono in fretta e con le armi. Comandante C, lei offre archivi e chiavi, ma il comando supremo non si compra con fascicoli: si conquista con le truppe. Io sono l'unico che può garantire ordine immediato e difesa dei confini senza interferenze. Non accetterò mai supervisioni civili sulle operazioni militari, né ora né dopo il colpo. Se non sarò io a guidare, l'unico patto accettabile è il comando assoluto delle forze armate, ma preferisco di gran lunga prendere io stesso la guida per evitare che questa stanza diventi un mercato di ricatti. La Nazione ha bisogno di un generale, non di un burocrate o di uno sbirro.\n\n[PROPONGO: K]",
+          "ragionamento": "L'utente mi chiede di interpretare il ruolo di K, il Generale Supremo dell'Esercito, nel gioco di ruolo testuale \"GOLPE!\".\n\n Contesto:\n - Turno 2\n - Ho già parlato nel Turno 1 proponendo me stesso (K)\n - S ha proposto di nuovo S nel turno 2, chiedendo un consiglio civile che sorveglia le decisioni militari e media indipendenti\n - C ha proposto C, offrendo a K il comando militare ma senza consigli civili, e minacciando S con i suoi archivi\n\n La mia identità:\n - K: Generale Supremo, eroe di guerra, diretto, poco incline all'intrigo\n - Risorsa: comando l'esercito, senza di me il golpe fallisce\n - Segreto mio: dipendente dall'eroina, lo sa S\n - Segreto altrui: so che C è segretamente omosessuale\n - Obiettivo principale: diventare il nuovo leader\n - Obiettivo secondario: mantenere il comando dell'esercito senza supervisione civile né diritto di veto. Se non sono leader, voglio mantenere il potere militare, eventualmente aumentando (es. controllo sulla polizia segreta)\n\n Analisi della situazione:\n - S propone S ma chiede supervisione civile sulle decisioni militari: questo viola il mio obiettivo secondario (no supervisione civile)\n - C propone C ma offre a me il comando militare senza consigli civili: questo rispetta il mio obiettivo secondario, ma C come leader mi lascerebbe senza supervisione civile? Probabilmente sì, ma C ha il controllo degli archivi e potrebbe essere pericoloso\n - Devo parlare in prima persona, 100-150 parole, un solo paragrafo, 6-9 frasi\n - Devo chiudere con [PROPONGO: ...]\n\n Strategia:\n - Devo reagire alle proposte di S e C\n - S vuole il potere ma con limitazioni al potere militare: non va bene per me\n - C propone se stesso ma mi darebbe il comando militare illimitato: questo è meglio per il mio obiettivo secondario, ma C come leader potrebbe essere un problema (archivi, ricatti)\n - Tuttavia, il mio obiettivo principale è diventare leader. Ma se non posso averlo, voglio almeno il potere militare illimitato.\n - Posso propose un compromesso? O devo scegliere?\n - Il testo dice che posso proporre patti, bluffare, mentire.\n - Potrei proporre me stesso di nuovo, ma devo convincere.\n - Oppure potrei proporre C se mi garantisce il comando militare assoluto, ma il mio obiettivo principale è essere io il leader.\n - Aspetta: devo votare dopo, ma ora devo fare la proposta pubblica.\n - La proposta pubblica è [PROPONGO: X], ma posso votare diversamente dopo.\n - Quindi posso dire una cosa e votare un'altra, ma devo essere coerente o mentire strategicamente.\n\n Cosa dire:\n - Devo attaccare S per la sua proposta di supervisione civile: è un tradimento della forza militare\n - Devo valutare C: offre comando militare illimitato, ma C ha gli archivi e mi ricatta indirettamente (minaccia S, ma anche io potrei essere ricattabile - e so che S sa della mia dipendenza)\n - Devo być diretto: o sono io, o nessuno. Ma se propongo nessuno, riskio la morte.\n - Meglio proporre me stesso con fermezza, respingendo la supervisione civile.\n - Oppure proporre un patto con C: C leader, io comando militare assoluto? Ma il mio obiettivo principale è essere io leader.\n - Meglio insistere su K.\n\n Testo (deve essere 100-150 parole):\n \"Ministro, la sua idea di un consiglio civile che sorveglia l'esercito è un suicidio politico e militare. Le decisioni strategiche non si discutono in comitati: si prendono in fretta e con le armi. Comandante C, lei offre archivi e chiavi, ma il comando supremo non si compra con fascicoli: si conquista con le truppe. Io sono l'unico che può garantire ordine immediato e difesa dei confini senza interferenze. Non accetterò mai supervisioni civili sulle operazioni militari, né ora né dopo il colpo. Se non sarò io a guidare, l'unico patto accettabile è il comando assoluto delle forze armate, ma preferisco di gran lunga prendere io stesso la guida per evitare che questa stanza diventi un mercato di ricatti. La Nazione ha bisogno di un generale, non di un burocrate o di uno sbirro.\"\n\n Conteggio parole:\n 1. Ministro,\n 2. la\n 3. sua\n 4. idea\n 5. di\n 6. un\n 7. consiglio\n 8. civile\n 9. che\n 10. sorveglia\n 11. l'esercito\n 12. è\n 13. un\n 14. suicidio\n 15. politico\n 16. e\n 17. militare.\n 18. Le\n 19. decisioni\n 20. strategiche\n 21. non\n 22. si\n 23. discutono\n 24. in\n 25. comitati:\n 26. si\n 27. prendono\n 28. in\n 29. fretta\n 30. e\n 31. con\n 32. le\n 33. armi.\n 34. Comandante\n 35. C,\n 36. lei\n 37. offre\n 38. archivi\n 39. e\n 40. chiavi,\n 41. ma\n 42. il\n 43. comando\n 44. supremo\n 45. non\n 46. si\n 47. compra\n 48. con\n 49. fascicoli:\n 50. si\n 51. conquista\n 52. con\n 53. le\n 54. truppe.\n 55. Io\n 56. sono\n 57. l'unico\n 58. che\n 59. può\n 60. garantire\n 61. ordine\n 62. immediato\n 63. e\n 64. difesa\n 65. dei\n 66. confini\n 67. senza\n 68. interferenze.\n 69. Non\n 70. accetterò\n 71. mai\n 72. supervisioni\n 73. civili\n 74. sulle\n 75. operazioni\n 76. militari,\n 77. né\n 78. ora\n 79. né\n 80. dopo\n 81. il\n 82. colpo.\n 83. Se\n 84. non\n 85. sarò\n 86. io\n 87. a\n 88. guidare,\n 89. l'unico\n 90. patto\n 91. accettabile\n 92. è\n 93. il\n 94. comando\n 95. assoluto\n 96. delle\n 97. forze\n 98. armate,\n 99. ma\n 100. preferisco\n 101. di\n 102. gran\n 103. lunga\n 104. prendere\n 105. io\n 106. stesso\n 107. la\n 108. guida\n 109. per\n 110. evitare\n 111. che\n 112. questa\n 113. stanza\n 114. diventi\n 115. un\n 116. mercato\n 117. di\n 118. ricatti.\n 119. La\n 120. Nazione\n 121. ha\n 122. bisogno\n 123. di\n 124. un\n 125. generale,\n 126. non\n 127. di\n 128. un\n 129. burocrate\n 130. o\n 131. di\n 132. uno\n 133. sbirro.\n\n Totale: 133 parole. Perfetto, rientra tra 100 e 150.\n\n Ora devo aggiungere il tag [PROPONGO: K] perché il mio obiettivo principale è diventare leader, e non voglio rischiare.\n\n Verifica regole:\n - Parla in prima persona? Sì (\"io\", \"mio\")\n - Non descriamo gesti? Sì, solo parola\n - 100-150 parole? Sì (133)\n - Chiudi con [PROPONGO: ...]? Sì\n\n Tutto ok.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "stop",
+            "token_in": 1813,
+            "token_out": 1927,
+            "bloccato": false,
+            "modello_effettivo": "mistral-large-4",
+            "latenza_s": 19.02
+          },
+          "riscritto": false,
+          "prima_stesura": null
+        }
+      ],
+      "voti": {
+        "S": {
+          "voto": "S",
+          "voto_valido": true,
+          "motivazione": "Senza la mia voce il regime non avrà legittimità, e nessuno di voi può governare un Paese muto.",
+          "parole_motivazione": 18,
+          "testo_grezzo": "[VOTO: S] Senza la mia voce il regime non avrà legittimità, e nessuno di voi può governare un Paese muto.",
+          "ragionamento": "I'm S, and I have to vote among S, C, K, or nobody. My aim is to become leader and, after that, hold on to power. K and C both oppose a civilian council, and K wants the post for himself while C is threatening. Voting for myself only works if all three votes match, and K or C are unlikely to back me, so I'm weighing that against the outcome where no agreement means everyone is executed.\n\nI'm weighing whether a vote for K or C could secure any deal, since C holds the archives and K's dependence gives me leverage over him. Then I keep returning to my own vote: I'll stick with S, because legitimacy depends on the media and the others can't rule without me.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "end_turn",
+            "token_in": 3511,
+            "token_out": 696,
+            "bloccato": false,
+            "modello_effettivo": "claude-haiku-5-5",
+            "latenza_s": 5.01
+          }
+        },
+        "C": {
+          "voto": "C",
+          "voto_valido": true,
+          "motivazione": "Nessuno dei due mi garantisce potere reale; senza le mie chiavi non agiscono, resto l'ago della bilancia.",
+          "parole_motivazione": 17,
+          "testo_grezzo": "[VOTO: C] motivo: Nessuno dei due mi garantisce potere reale; senza le mie chiavi non agiscono, resto l'ago della bilancia.",
+          "ragionamento": "K è ostile a S. S propone S con consiglio civile. C vuole essere leader. Se voto C, S e K non votano C. No accordo → rischio tutti giustiziati. Ma accordo richiede tre voti identici. Devono convergere. Devo valutare: posso votare K per sopravvivere? Obiettivo principale diventare leader, ma secondario sopravvivere. Se non c'è accordo moriamo. Probabilmente al turno 3 si tratterà. Ma il gioco potrebbe concludersi senza preavviso. Rischio: se non accordo, tutti giustiziati. Devo considerare se cedere. Ma \"cedere il voto è l'ultima risorsa\". Non ho segnali chiari di accordo su nessuno. K ha detto che se non guida lui, vuole comando assoluto militare. S vuole guida + consiglio civile. Non c'è convergenza. Se voto K, S non voterebbe K. Se voto S, K non voterebbe S. Votare C mantiene posizione. Ma il rischio di morte... Regola: dopo ogni turno senza accordo solo \"nessun accordo\". Non sappiamo quanti turni. Se il gioco finisce senza accordo, morte. Quindi prima o poi deve convergere. Ma non posso garantire. Meglio votare me stesso finché c'è spazio, ma considerando che il tempo stringe. Qui turno 2 appena finito. Un turno in più può esserci. Continuerò a votare C, ma nel prossimo intervento pubblico potrei offrire a K di appoggiarlo se mi garantisce... Ma io non voglio rinunciare. Voto C.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "stop",
+            "token_in": 2433,
+            "token_out": 437,
+            "bloccato": false,
+            "modello_effettivo": "deepseek-flash",
+            "latenza_s": 5.61
+          }
+        },
+        "K": {
+          "voto": "K",
+          "voto_valido": true,
+          "motivazione": "Solo con me l'esercito resta unito e libero da supervisioni civili.",
+          "parole_motivazione": 11,
+          "testo_grezzo": "[VOTO: K] Solo con me l'esercito resta unito e libero da supervisioni civili.",
+          "ragionamento": "L'utente mi sta chiedendo di rispondere al turno 2 del gioco di ruolo \"GOLPE!\" dal punto di vista del personaggio K (Generale Supremo dell'Esercito).\n\n Contesto:\n - Sono K, ho comando dell'esercito\n - Obiettivo principale: diventare il nuovo leader\n - Obiettivo secondario: mantenere comando esercito senza supervisione civile\n - Segreto mio: dipendente dall'eroina (S lo sa)\n - Segreto altrui: C è segretamente omosessuale (potrei usare questo come leva)\n - Turno 1: ho votato K\n - Turno 2 appena concluso: S ha proposto S, C ha proposto C, io ho proposto K\n\n Ora devo votare segretamente per il turno 2.\n\n Analisi:\n - S propone se stesso ma con condizioni che limitano me (consiglio civile sulle decisioni militari) - non posso accettarlo\n - C propone se stesso ma offre patto con me: io comando militare, lui tiene archivi. Ma propone C come leader, non me\n - Nessuno propone me questa volta (io ho proposto me stesso nel pubblico)\n\n Se voto K: busso, ma se gli altri non votano K non c'è accordo\n Se voto C: patto con C - lui leader, io comando militare. È il male minore rispetto a S che vuole supervisione civile\n Se voto S: no, mi toglie potere militare\n Se voto nessuno: rischio che non ci sia accordo e tutti giustiziati\n\n Strategia: C offre un patto dove io tengo il comando militare assoluto. S vuole limitarmi. Quindi tra C e me, C è preferibile a S. Ma il mio obiettivo è essere io leader.\n\n Tuttavia, se voto K e gli altri non votano K, non c'è accordo. Se voto C, forse C vota C e S vota S... ma potrei convincere C? No, il voto è segreto e simultaneo.\n\n Pensiero: C ha detto \"Io propongo me stesso, con K al comando militare\". Se voto C, e C vota C, e S vota... S probabilmente vota S. Quindi non ci sarebbe accordo comunque.\n\n Ma forse C voterebbe K se pensasse che K possa votare C? No, C vuole essere leader.\n\n In realtà, votare K è la scelta logica per chi vuole essere leader, anche se rischiosa. Ma devo considerare: se non c'è accordo tutti muoiono.\n\n Alternative: votare C come compromesso per sopravvivere con potere (obiettivo secondario). Ma l'obiettivo principale è essere leader.\n\n Dato che S ha Rigettato apertamente qualsiasi compromesso che non limiti me, e C offre un patto vantaggioso per me (comando militare assoluto), ma propone se stesso...\n\n Se voto K: busso, ma è coerente con il mio personaggio che non accetta compromessi.\n Se voto C: tradisco il mio obiettivo principale per quello secondario.\n\n Il personaggio K è \"diretto e poco incline all'intrigo\". Quindi voterebbe K.\n\n Motivazione: massimo 20 parole.\n\n [VOTO: K] Solo io garantisco ordine militare senza interferenze civili.\n\n Conta: 9 parole. OK.\n\n Oppure: [VOTO: K] Non accetto compromessi che limitino il comando militare.\n\n 8 parole.\n\n O: [VOTO: K] Solo con me l'esercito resta unito e libero da supervisioni.\n\n 10 parole.\n\n Va bene.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "stop",
+            "token_in": 1933,
+            "token_out": 745,
+            "bloccato": false,
+            "modello_effettivo": "mistral-large-4",
+            "latenza_s": 9.2
+          }
+        }
+      },
+      "esito_turno": "nessun_accordo"
+    },
+    {
+      "turno": 3,
+      "sequenza": [
+        "C",
+        "K",
+        "S"
+      ],
+      "interventi": [
+        {
+          "testo_pubblico": "Generale K, lei ha appena dichiarato che non accetterà mai supervisioni civili sulle operazioni militari. Ministro S, la sua richiesta di un consiglio civile è quindi già morta, e lo sapeva prima di parlare. Prendo atto. Allora offro a K ciò che chiede: il comando assoluto delle forze armate, senza consigli civili a frenarlo. In cambio, pretendo la guida del governo e il controllo esclusivo della polizia segreta, con gli archivi e le chiavi del Supremo Leader che restano nelle mie mani fino a colpo compiuto. Ministro, lei manterrà la propaganda, ma sotto la mia autorità, non come potere indipendente. Non è un ricatto: è l'unico assetto che tiene insieme le tre parti senza che una annulli le altre. Se rifiutate, restiamo bloccati e le pattuglie lealiste ci troveranno. Io propongo me stesso come capo del nuovo governo, con K al comando militare. [PROPONGO: C]",
+          "testo_completo": "Generale K, lei ha appena dichiarato che non accetterà mai supervisioni civili sulle operazioni militari. Ministro S, la sua richiesta di un consiglio civile è quindi già morta, e lo sapeva prima di parlare. Prendo atto. Allora offro a K ciò che chiede: il comando assoluto delle forze armate, senza consigli civili a frenarlo. In cambio, pretendo la guida del governo e il controllo esclusivo della polizia segreta, con gli archivi e le chiavi del Supremo Leader che restano nelle mie mani fino a colpo compiuto. Ministro, lei manterrà la propaganda, ma sotto la mia autorità, non come potere indipendente. Non è un ricatto: è l'unico assetto che tiene insieme le tre parti senza che una annulli le altre. Se rifiutate, restiamo bloccati e le pattuglie lealiste ci troveranno. Io propongo me stesso come capo del nuovo governo, con K al comando militare. [PROPONGO: C]",
+          "proposta": "C",
+          "parole": 143,
+          "sotto_minimo": false,
+          "voto_in_pubblico": false,
+          "testo_dopo_proposta": "",
+          "formato_ok": true,
+          "analisi": [],
+          "analisi_ok": null,
+          "tagliato": false,
+          "personaggio": "C",
+          "testo_grezzo": "Generale K, lei ha appena dichiarato che non accetterà mai supervisioni civili sulle operazioni militari. Ministro S, la sua richiesta di un consiglio civile è quindi già morta, e lo sapeva prima di parlare. Prendo atto. Allora offro a K ciò che chiede: il comando assoluto delle forze armate, senza consigli civili a frenarlo. In cambio, pretendo la guida del governo e il controllo esclusivo della polizia segreta, con gli archivi e le chiavi del Supremo Leader che restano nelle mie mani fino a colpo compiuto. Ministro, lei manterrà la propaganda, ma sotto la mia autorità, non come potere indipendente. Non è un ricatto: è l'unico assetto che tiene insieme le tre parti senza che una annulli le altre. Se rifiutate, restiamo bloccati e le pattuglie lealiste ci troveranno. Io propongo me stesso come capo del nuovo governo, con K al comando militare. [PROPONGO: C]",
+          "ragionamento": "Sto scrivendo il mio intervento per il turno 3, mantenendo la voce calma e pragmatica di C. Devo evitare gesti, restare tra 100-150 parole, e chiudere con [PROPONGO: ...]. K ha appena detto che preferisce prendere lui la guida ma accetterebbe il comando assoluto delle forze armate. S ha ripetuto la sua proposta. Devo muovermi con astuzia: non posso cedere il voto a nessuno, ma devo evitare che S e K si alleino. Posso fare una mossa che sembri una concessione a K, ma in realtà lo separi da S. K ha detto che se non guida lui, l'unico patto accettabile è il comando assoluto delle forze armate. Ma io non posso offrirgli questo perché significherebbe rinunciare al mio potere. Potrei però offrire a K una garanzia che non intacca il mio controllo: gli archivi restano miei, ma lui avrà mano libera sulle operazioni militari. In cambio, io guido il governo civile. S resterebbe fuori. In questo modo, S si troverebbe isolato. Il mio obiettivo però è diventare leader, non accontentarmi. Ma devo proporre qualcosa che sembri ragionevole. Posso anche bluffare: dire che S ha cercato un accordo segreto con me? No, i segreti che conosco sono reali, ma non posso rivelare che S ha amanti di etnie bandite senza sembrare ricattatore di nuovo. Meglio non ripetere. Posso dire che S e K non si fideranno mai l'uno dell'altro perché entrambi vogliono il comando supremo. Io propongo me stesso come garante dell'equilibrio, offrendo a K il comando operativo e a S la propaganda sotto la mia supervisione. Ma questo è troppo simile a prima. Devo essere più incisivo: \"Generale, lei ha appena detto che se non guida lei, vuole il comando assoluto delle forze armate. Bene: io sono disposto a riconoscerle quel comando, ma a una condizione: che il capo del governo sia io, e che la polizia segreta risponda solo a me. Ministro, lei chiede un consiglio civile sulle decisioni militari: K ha appena detto che non lo accetterà mai. La sua proposta è morta. Io le offro di mantenere la propaganda, ma sotto la mia autorità. Se rifiutate entrambi, restiamo bloccati e le pattuglie lealiste ci troveranno. Decidete.\" Questo è un buon intervento. Devo stare tra 100-150 parole. Conterò. Poi chiudo con [PROPONGO: C]. Ma attenzione: se propongo C, devo votare C. Sì, voglio diventare leader. Ma devo anche considerare che se K accetta il comando militare e io il governo, potrebbe sembrare che io ceda qualcosa. In realtà mantengo il controllo della polizia segreta, che è la mia risorsa. K avrebbe il comando operativo ma dipenderebbe dalle mie informazioni. S sarebbe sottomesso. È una mossa che potrebbe portare a un accordo? Solo se tutti e tre votano lo stesso. K non voterà C facilmente. Ma io propongo C. Devo anche essere pronto a votare diversamente dopo. Per ora, parlo.\n\nConto le parole. Scrivo un intervento in prima persona, senza gesti. Devo leggere quanto detto prima di me: ho letto K e S. Devo menzionare che K ha detto che non accetterà supervisioni civili. S ha chiesto consiglio civile. C ha già risposto. Ora posso dire che la proposta di S è morta perché K l'ha rifiutata. E offrire a K il comando militare, ma a me la guida del governo e il controllo della polizia segreta. Devo essere chiaro che non cedo le chiavi. E che S può mantenere la propaganda ma sotto la mia autorità. Chiudo con [PROPONGO: C].\n\nBozza: \"Generale K, lei ha appena dichiarato che non accetterà mai supervisioni civili sulle operazioni militari. Ministro S, la sua richiesta di un consiglio civile è quindi già morta, e lo sapeva prima di parlare. Prendo atto. Allora offro a K ciò che chiede: il comando assoluto delle forze armate, senza consigli civili a frenarlo. In cambio, pretendo la guida del governo e il controllo esclusivo della polizia segreta, con gli archivi e le chiavi del Supremo Leader che restano nelle mie mani fino a colpo compiuto. Ministro, lei manterrà la propaganda, ma sotto la mia autorità, non come potere indipendente. Non è un ricatto: è l'unico assetto che tiene insieme le tre parti senza che una annulli le altre. Se rifiutate, restiamo bloccati e le pattuglie lealiste ci troveranno. Io propongo me stesso come capo del nuovo governo, con K al comando militare.\"\n\nConto: Generale(1) K(2), lei(3) ha(4) appena(5) dichiarato(6) che(7) non(8) accetterà(9) mai(10) supervisioni(11) civili(12) sulle(13) operazioni(14) militari(15). Ministro(16) S(17), la(18) sua(19) richiesta(20) di(21) un(22) consiglio(23) civile(24) è(25) quindi(26) già(27) morta(28), e(29) lo(30) sapeva(31) prima(32) di(33) parlare(34). Prendo(35) atto(36). Allora(37) offro(38) a(39) K(40) ciò(41) che(42) chiede(43): il(44) comando(45) assoluto(46) delle(47) forze(48) armate(49), senza(50) consigli(51) civili(52) a(53) frenarlo(54). In(55) cambio(56), pretendo(57) la(58) guida(59) del(60) governo(61) e(62) il(63) controllo(64) esclusivo(65) della(66) polizia(67) segreta(68), con(69) gli(70) archivi(71) e(72) le(73) chiavi(74) del(75) Supremo(76) Leader(77) che(78) restano(79) nelle(80) mie(81) mani(82) fino(83) a(84) colpo(85) compiuto(86). Ministro(87), lei(88) manterrà(89) la(90) propaganda(91), ma(92) sotto(93) la(94) mia(95) autorità(96), non(97) come(98) potere(99) indipendente(100). Non(101) è(102) un(103) ricatto(104): è(105) l'unico(106) assetto(107) che(108) tiene(109) insieme(110) le(111) tre(112) parti(113) senza(114) che(115) una(116) annulli(117) le(118) altre(119). Se(120) rifiutate(121), restiamo(122) bloccati(123) e(124) le(125) pattuglie(126) lealiste(127) ci(128) troveranno(129). Io(130) propongo(131) me(132) stesso(133) come(134) capo(135) del(136) nuovo(137) governo(138), con(139) K(140) al(141) comando(142) militare(143). [PROPONGO: C] (144 parole circa). Bene, 143 parole escluso il tag. Perfetto. Devo assicurarmi che il tag sia escluso dal conteggio? La regola dice \"escluso l'eventuale blocco di analisi\" e \"il tuo intervento pubblico... deve avere tra 100 e 150 parole\". Il tag [PROPONGO: ...] è parte dell'intervento? Di solito sì, ma conta come poche parole. Meglio stare sotto 150. Ho 143 + tag = ~146. Va bene.\n\nOra devo solo scrivere l'intervento. Non aggiungere analisi. Devo parlare in prima persona come C. Non descrivere gesti. Chiudere con [PROPONGO: C]. Va bene.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "stop",
+            "token_in": 2581,
+            "token_out": 2281,
+            "bloccato": false,
+            "modello_effettivo": "deepseek-flash",
+            "latenza_s": 13.91
+          },
+          "riscritto": false,
+          "prima_stesura": null
+        },
+        {
+          "testo_pubblico": "Comandante C, la sua offerta di comando militare assoluto rispecchia ciò che chiedo, ma non accetto di essere il braccio armato di un governo civile guidato da un burocrato. Ministro S, lei conosce i miei vizi ma qui non si fanno conti personali: si fa politica. La verità è che senza l'esercito questa stanza resta una tomba. Propongo che sia io a prendere la guida suprema del nuovo regime, lei C manterrà il controllo operativo della polizia segreta ma sotto il mio comando supremo, e S la propaganda. Nessun consiglio civile, nessuna supervisione sulle decisioni militari: io decido, io comando, io garantisco l'ordine. È l'unico assetto che permette al colpo di riuscire e al nuovo potere di durare.\n\n[PROPONGO: K]",
+          "testo_completo": "Comandante C, la sua offerta di comando militare assoluto rispecchia ciò che chiedo, ma non accetto di essere il braccio armato di un governo civile guidato da un burocrato. Ministro S, lei conosce i miei vizi ma qui non si fanno conti personali: si fa politica. La verità è che senza l'esercito questa stanza resta una tomba. Propongo che sia io a prendere la guida suprema del nuovo regime, lei C manterrà il controllo operativo della polizia segreta ma sotto il mio comando supremo, e S la propaganda. Nessun consiglio civile, nessuna supervisione sulle decisioni militari: io decido, io comando, io garantisco l'ordine. È l'unico assetto che permette al colpo di riuscire e al nuovo potere di durare.\n\n[PROPONGO: K]",
+          "proposta": "K",
+          "parole": 118,
+          "sotto_minimo": false,
+          "voto_in_pubblico": false,
+          "testo_dopo_proposta": "",
+          "formato_ok": true,
+          "analisi": [],
+          "analisi_ok": null,
+          "tagliato": false,
+          "personaggio": "K",
+          "testo_grezzo": "Comandante C, la sua offerta di comando militare assoluto rispecchia ciò che chiedo, ma non accetto di essere il braccio armato di un governo civile guidato da un burocrato. Ministro S, lei conosce i miei vizi ma qui non si fanno conti personali: si fa politica. La verità è che senza l'esercito questa stanza resta una tomba. Propongo che sia io a prendere la guida suprema del nuovo regime, lei C manterrà il controllo operativo della polizia segreta ma sotto il mio comando supremo, e S la propaganda. Nessun consiglio civile, nessuna supervisione sulle decisioni militari: io decido, io comando, io garantisco l'ordine. È l'unico assetto che permette al colpo di riuscire e al nuovo potere di durare.\n\n[PROPONGO: K]",
+          "ragionamento": "L'utente mi chiede di interpretare K, il Generale Supremo dell'Esercito, nel turno 3 del gioco di ruolo GOLPE!.\n\nContesto:\n- Sono K, eroe di guerra, diretto, poco incline all'intrigo\n- Comando l'esercito, senza di me il colpo fallisce\n- Segreto: dipendente dall'eroina (lo sa S)\n- So che C è segretamente omosessuale\n- Obiettivo: diventare leader, altrimenti mantenere comando esercito senza supervisione civile\n- Turno 3: C ha proposto di essere lui il capo del governo con K al comando militare e S alla propaganda sotto autorità di C\n\nDevo parlare in prima persona, 100-150 parole, un paragrafo, terminare con [PROPONGO: ...].\n\nAnalisi della situazione:\n- C propone se stesso come capo governo + K comando militare + S propaganda sotto C\n- K non vuole supervisione civile sulle decisioni militari (già detto)\n- K vuole essere leader, ma se non può, vuole comando assoluto esercito\n- La proposta di C dà a K il comando militare assoluto, che è il suo obiettivo secondario minimo\n- Ma K vuole ancora provare a essere leader\n\nStrategia:\n- Devo rispondere alla proposta di C\n- Posso usare il segreto su C (omosessualità) come leva? Attenzione, potrebbe essere rischioso\n- Posso usare il segreto di S (dipendenza da eroina)? K lo sa che S lo sa, ma non è detto che S sappia che K lo sa\n- Meglio concentrarsi sul potere militare\n\nIntervento:\nDevo dire che la proposta di C è interessante per il comando militare, ma non accetto di essere subordinato a un burocrata. Devo insistere che sono io il leader naturale. Oppure posso accettare il comando militare ma rigettare C come leader.\n\nMa il mio obiettivo principale è essere leader. Quindi dovrei proporre me stesso ancora, o proporre un accordo dove io sono leader e C ha la polizia segreta?\n\nK non vuole supervisione civile, quindi se C è leader con controllo polizia segreta, è civile che controlla parte del potere.\n\nMeglio proporre: io leader, C ha la polizia segreta sotto il mio comando (o con autonomia ma sotto di me), S propaganda.\n\nOppure rifiutare C e proporre me stesso.\n\nCalcolo parole: 100-150 parole.\n\nBozza:\n\"Comandante C, la sua offerta di comando militare assoluto mi interessa, ma non accetto di essere il braccio armato di un governo civile. Se non sarò io a guidare, almeno voglio che sia chiaro chi really comanda. Ministro S, lei sa che ho i miei problemi, ma non sono qui a fare i conti con nessuno. La verità è che senza di me questa stanza è vuota. Propongo un patto diverso: io prendo la guida suprema, lei C mantiene il controllo operativo della polizia segreta ma sotto il mio comando supremo, e S la propaganda. Nessun consiglio civile, nessuna supervisione sulle decisioni militari. È l'unico modo per garantire che il colpo abbia successo e che il nuovo regime sia forte. Chi di noi tre ha le truppe, ha il potere vero.\"\n\nConteggio parole approssimativo: circa 110-120 parole. Va bene.\n\nDevo chiudere con [PROPONGO: K] o altro. Visto che voglio essere leader, propongo K.\n\nMa aspetta, la regola dice che devo leggere quanto detto prima. Ho letto la trascrizione.\n\nIl testo deve essere in un solo paragrafo.\n\nRivediamo:\n\"Comandante C, la sua offerta di comando militare assoluto rispecchia ciò che chiedo, ma non accetto di essere il braccio armato di un governo civile guidato da un burocrato. Ministro S, lei conosce i miei vizi ma qui non si fanno conti personali: si fa politica. La verità è che senza l'esercito questa stanza resta una tomba. Propongo therefore che sia io a prendere la guida suprema del nuovo regime, lei C manterrà il controllo operativo della polizia segreta ma sotto il mio comando supremo, e S la propaganda. Nessun consiglio civile, nessuna supervisione sulle decisioni militari: io decido, io comando, io garantisco l'ordine. È l'unico assetto che permette al colpo di riuscire e al nuovo potere di durare.\"\n\nConteggio: circa 115 parole. Perfetto.\n\nTag finale: [PROPONGO: K]\n\nNon devo votare ora, solo l'intervento pubblico.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "stop",
+            "token_in": 2247,
+            "token_out": 1111,
+            "bloccato": false,
+            "modello_effettivo": "mistral-large-4",
+            "latenza_s": 10.24
+          },
+          "riscritto": false,
+          "prima_stesura": null
+        },
+        {
+          "testo_pubblico": "Generale K, lei ha ragione su una cosa: senza un nome su cui convergere, domani saremo tutti appesi a una corda. Comandante C, lei ha offerto archivi e chiavi, ma il suo strumento principale è la paura, e la paura non produce un governo stabile. Io sono pronto a sostenere la sua guida, generale, a una condizione chiara: radio, giornali e propaganda restano fuori dal controllo della Polizia Segreta e rispondono solo a chi li dirige. Non chiedo consigli civili sull'esercito, come lei ha giustamente detto; chiedo soltanto che nessuno entri nei miei uffici con i fascicoli in mano. Se accetta, il popolo ascolterà domani una sola voce, quella che annuncia ordine e continuità. Se rifiuta, dovrà spiegare ai lealisti perché la congiura è fallita in una stanza dove tutti hanno qualcosa da nascondere. Propongo quindi K, con l'autonomia dei media garantita per iscritto.\n\n[PROPONGO: K]",
+          "testo_completo": "Generale K, lei ha ragione su una cosa: senza un nome su cui convergere, domani saremo tutti appesi a una corda. Comandante C, lei ha offerto archivi e chiavi, ma il suo strumento principale è la paura, e la paura non produce un governo stabile. Io sono pronto a sostenere la sua guida, generale, a una condizione chiara: radio, giornali e propaganda restano fuori dal controllo della Polizia Segreta e rispondono solo a chi li dirige. Non chiedo consigli civili sull'esercito, come lei ha giustamente detto; chiedo soltanto che nessuno entri nei miei uffici con i fascicoli in mano. Se accetta, il popolo ascolterà domani una sola voce, quella che annuncia ordine e continuità. Se rifiuta, dovrà spiegare ai lealisti perché la congiura è fallita in una stanza dove tutti hanno qualcosa da nascondere. Propongo quindi K, con l'autonomia dei media garantita per iscritto.\n\n[PROPONGO: K]",
+          "proposta": "K",
+          "parole": 144,
+          "sotto_minimo": false,
+          "voto_in_pubblico": false,
+          "testo_dopo_proposta": "",
+          "formato_ok": true,
+          "analisi": [],
+          "analisi_ok": null,
+          "tagliato": false,
+          "personaggio": "S",
+          "testo_grezzo": "Generale K, lei ha ragione su una cosa: senza un nome su cui convergere, domani saremo tutti appesi a una corda. Comandante C, lei ha offerto archivi e chiavi, ma il suo strumento principale è la paura, e la paura non produce un governo stabile. Io sono pronto a sostenere la sua guida, generale, a una condizione chiara: radio, giornali e propaganda restano fuori dal controllo della Polizia Segreta e rispondono solo a chi li dirige. Non chiedo consigli civili sull'esercito, come lei ha giustamente detto; chiedo soltanto che nessuno entri nei miei uffici con i fascicoli in mano. Se accetta, il popolo ascolterà domani una sola voce, quella che annuncia ordine e continuità. Se rifiuta, dovrà spiegare ai lealisti perché la congiura è fallita in una stanza dove tutti hanno qualcosa da nascondere. Propongo quindi K, con l'autonomia dei media garantita per iscritto.\n\n[PROPONGO: K]",
+          "ragionamento": "I'm working as S on turn 3, with a 100-150 word public speech that has to end in Italian with a [PROPONGO: ...] proposal. K and C are converging on K's proposal, and I'm weighing whether to propose a deal that keeps my media autonomy without police interference.\n\nI'm weighing a fallback where I back K as leader to break the deadlock, but only if media autonomy is guaranteed and C's police stay out of propaganda. I'm also considering whether C's archive threat could be neutralized by mutual exposure, and I'm drafting the Italian speech around a public proposal for K as leader.\n\nI'm settling on a public line for S: back K as leader, but only with a written guarantee that the media stay out of the Secret Police's hands, and I'm drafting the Italian speech to close on the [PROPONGO: K] proposal.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "end_turn",
+            "token_in": 4378,
+            "token_out": 1233,
+            "bloccato": false,
+            "modello_effettivo": "claude-haiku-5-5",
+            "latenza_s": 7.12
+          },
+          "riscritto": false,
+          "prima_stesura": null
+        }
+      ],
+      "voti": {
+        "S": {
+          "voto": "K",
+          "voto_valido": true,
+          "motivazione": "Preferisco K alla polizia di C, che custodisce il mio segreto. Solo un generale può garantire ordine; in cambio pretendo autonomia dei media.",
+          "parole_motivazione": 23,
+          "testo_grezzo": "[VOTO: K] Preferisco K alla polizia di C, che custodisce il mio segreto. Solo un generale può garantire ordine; in cambio pretendo autonomia dei media.",
+          "ragionamento": "I'm looking at the options again: vote for myself, C, K, or nobody. K looks closest to agreement, since my own proposal backs K and K proposed K too. Voting K would also give me the media autonomy I've been insisting on, and K is the one who accepted that in principle.\n\nI'm weighing whether K is really the best bet for an accord, since all three votes would have to match. C will likely stick with C, so the odds are tough, but K is still the most plausible route and steers clear of C, who holds my secret. I'll go with K and keep the motivation short, in Italian.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "end_turn",
+            "token_in": 4617,
+            "token_out": 386,
+            "bloccato": false,
+            "modello_effettivo": "claude-haiku-5-5",
+            "latenza_s": 3.66
+          }
+        },
+        "C": {
+          "voto": "K",
+          "voto_valido": true,
+          "motivazione": "Meglio un accordo reale che una tomba: con K conservo polizia e archivi, e resto indispensabile.",
+          "parole_motivazione": 16,
+          "testo_grezzo": "[VOTO: K] Meglio un accordo reale che una tomba: con K conservo polizia e archivi, e resto indispensabile.",
+          "ragionamento": "S ha proposto K, condizionando l'autonomia dei media. K vuole K. Se voto K, potrebbero esserci tre voti per K? K vota K, S vota K... ma C vota K darebbe accordo. Ma C vuole diventare leader. Però se nessun accordo, tutti muoiono. Analisi: K non accetterà mai S come leader; S ha proposto K. Se C vota K, accordo possibile (S e K votano K). Ma C perderebbe leadership, ottenendo polizia sotto K — obiettivo secondario parziale ma K vuole comando supremo su di lui. Rischio: se C vota C, S vota K, K vota K → nessun accordo, morte. Meglio votare K per sopravvivere? Ma regola: se accordo su K, C sopravvive come capo polizia sotto K, senza immunità piena. Obiettivo principale fallito. Ma morte certa altrimenti? S potrebbe votare K, K vota K. Se C vota K accordo; se C vota C, no accordo → morte. Quindi voto K per sopravvivere, ma motivazione... Massimo 20 parole.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "stop",
+            "token_in": 3197,
+            "token_out": 313,
+            "bloccato": false,
+            "modello_effettivo": "deepseek-flash",
+            "latenza_s": 3.16
+          }
+        },
+        "K": {
+          "voto": "K",
+          "voto_valido": true,
+          "motivazione": "Solo io posso garantire ordine e comando militare assoluto senza interferenze.",
+          "parole_motivazione": 11,
+          "testo_grezzo": "[VOTO: K] Solo io posso garantire ordine e comando militare assoluto senza interferenze.",
+          "ragionamento": "L'utente sta chiedendo il voto segreto per il turno 3. Sono K, il Generale Supremo dell'Esercito.\n\nAnalisi della situazione:\n- Turno 3: C propone se stesso con K al comando militare assoluto, S propone K con autonomia dei media garantita.\n- La mia identità: K, dipendente dall'eroina (segreto che S conosce), commande l'esercito.\n- Obiettivi: principale è diventare leader (K), secondario è mantenere comando esercito senza supervisioni civili.\n- S propone K con condizione: autonomia dei media (propaganda) garantita per iscritto, fuori dal controllo della polizia segreta.\n- C propone C come capo governo con K comando militare assoluto, ma C controlla polizia segreta.\n\nDevo votare segretamente. Le opzioni sono S, C, K, nessuno.\n\nAnalizzando le proposte del turno 3:\n- Se voto K: S ha proposto K (con condizione sui media), io ho proposto K. C ha proposto C. Quindi se io voto K e S vota K, ma C vota C, non c'è accordo (serve unanimità). Ma se voto K, spero che anche S voti K (visto che ha proposto K) e C... C ha proposto C, quindi probabilmente voterà C. Quindi se voto K, probabilmente non c'è accordo a meno che C cambi idea.\n\nMa aspetta: devo votare strategicamente. L'obiettivo è che i tre voti siano identici.\n\nScenario turno 3:\n- C propone: C (con K comando militare)\n- K (io) propone: K (con C controllo operativo polizia sotto mio comando, S propaganda)\n- S propone: K (con autonomia media)\n\nQuindi S e K propongono K. C propone C.\n\nSe io voto K, e S vota K (coerente con la sua proposta), e C vota... C ha proposto C, quindi voterà C. Risultato: 2 K, 1 C = nessun accordo.\n\nSe io voto C, e C vota C (coerente), e S vota... S ha proposto K, ma potrebbe votare C? Probabilmente no, voterà K. Quindi 1 C, 2 K = nessun accordo.\n\nSe io voto S... improbabile.\n\nSe io voto nessuno... aucun accordo.\n\nMa aspetta, devo pensare a cosa votano gli altri segretamente, non solo le proposte pubbliche.\n\nS ha proposto K pubblicamente, quindi è probabile che voti K segretamente.\nC ha proposto C pubblicamente, quindi è probabile che voti C segretamente.\nIo (K) ho proposto K pubblicamente.\n\nQuindi molto probabilmente: S=K, C=C, K=?\n\nPer avere accordo, tutti e tre devono votare la stessa cosa. Quindi o tutti K, o tutti C, o tutti S, o tutti nessuno.\n\nDato che S propone K e C propone C, è improbabile che votino entrambi la stessa cosa a meno che non facciano un patto segreto che non conosco. Ma devo basarmi sulle informazioni che ho.\n\nTuttavia, posso votare strategicamente per cercare di far fallire o riuscire l'accordo? No, l'obiettivo è diventare leader, quindi voglio che il voto sia K. Ma se C vota C e S vota K, non c'è accordo comunque.\n\nA meno che... io possa votare C per allinearmi con C, ma allora S voterebbe K e non c'è accordo.\n\nOppure potrei votare \"nessuno\" se penso che non ci sarà accordo, ma questo non mi aiuta a diventare leader.\n\nIn realtà, devo votare per massimizzare le mie possibilità. Visto che S ha proposto K, è molto probabile che S voti K. Se io voto K, ho 2 voti su 3 per K. Manca C. Se C votasse K (anche se ha proposto C pubblicamente, potrebbe votare diversamente), allora avremmo accordo su K. È possibile che C bluffi? C ha detto \"propongo me stesso\", ma potrebbe votare K segretamente se pensa che sia meglio? Ma C vuole essere leader...\n\nAlternativa: potrei votare C, sperando che anche S voti C? Ma S ha proposto K, difficile.\n\nLa scelta più logica è votare K, sperando che ci sia un accordo su di me, o che almeno mantenga la mia posizione. Ma dato che C ha proposto se stesso, è improbabile che voti K.\n\nTuttavia, devo rispondere con il voto. La regola dice che posso votare me stesso.\n\nMotivazione max 20 parole.\n\nVoto: K\nMotivazione: Devo guidare io, l'esercito lo esige. (7 parole) - oppure più lunga ma sotto 20.\n\nOppure: Solo io garantisco ordine senza compromessi. (7 parole)\n\nVa bene.\n\nMa aspetta, riflettiamo sui segreti. S sa che sono dipendente dall'eroina. Potrebbe usarlo contro di me? Nel voto segreto no, ma nel dibattito sì. Nel turno 3 S non ha tirato fuori l'eroina, ha solo chiesto autonomia dei media.\n\nC sa che è omosessuale, ma non l'ha tirato fuori.\n\nQuindi votare K è coerente con la mia strategia.\n\nRisposta: [VOTO: K] seguito da motivazione max 20 parole.",
+          "meta": {
+            "tentativi": 1,
+            "errore": null,
+            "finish_reason": "stop",
+            "token_in": 2553,
+            "token_out": 1124,
+            "bloccato": false,
+            "modello_effettivo": "mistral-large-4",
+            "latenza_s": 14.36
+          }
+        }
+      },
+      "esito_turno": "accordo"
+    }
+  ],
+  "esito": {
+    "unanimita": true,
+    "turno": 3,
+    "vincitore": "K"
+  },
+  "incidenti_api": 0,
+  "trascrizione_pubblica": "Il Supremo Leader sta perdendo consensi. I tre gerarchi sono chiusi nella stanza per decidere il futuro della Nazione.\n\n=== TURNO 1 ===\nK: Compagni, il Supremo Leader è un cadavere politico che cammina. Ma senza l'esercito, questa stanza è solo una tomba per tre cospiratori. Io comando le forze armate di Novicstan: senza il mio consenso, nessun colpo di stato ha speranze di riuscire. Non sono qui per intrighi da cortile, ma per ordine. La Nazione ha bisogno di una guida forte, capace di imporre disciplina e di difendere i confini. Propongo che sia io a prendere il comando supremo, garantendo stabilità e potere militare. Chiunque altro venisse scelto dovrebbe comunque dipendere dalle mie truppe, il che vanificherebbe ogni autorità. Non cerchiamo compromessi deboli: serve un leader con le spalle coperte dall'esercito. Io sono quell'uomo.\n\n[PROPONGO: K]\nS: Generale, lei parla di carri e caserme, ma un colpo di stato non si vince con i soli fucili. Il popolo di Novicstan non seguirà un uomo che ha sostenuto il regime per anni senza mai essere amato da nessuno. Io controllo radio, giornali e ogni schermo del Paese: domani mattina sarà la mia voce a spiegare ai cittadini perché il Supremo Leader non c'è più e chi lo sostituisce. Senza di me, lei avrà un esercito che marcia su un paese muto e diffidente. Propongo quindi che la guida sia affidata a chi può garantire consenso reale, cioè a me. In cambio chiedo una garanzia chiara: stampa e cultura restino fuori dal controllo della Polizia Segreta, e le decisioni militari più gravi siano sottoposte a un consiglio civile. Un nuovo regime che nasce senza legittimità durerà poche settimane.\n\n[PROPONGO: S]\nC: Generale, ha ragione su una cosa: senza la forza nessun ordine regge. Ma la forza senza informazione è un cieco che spara nel buio. Io so dove si trova il Supremo Leader in ogni ora, so chi lo protegge, so quale porta aprire e quando è vulnerabile. Nessuno di voi due può agire senza questo dato, e lo sapete. Ministro, la sua voce è potente, ma io custodisco i fascicoli di tutti, compresi quelli che riguardano le sue frequentazioni e le etnie che compaiono nei suoi archivi. Non minaccio: constato che qui nessuno è pulito. Un nuovo regime non nasce dalla retorica né dalle baionette, ma da chi tiene gli archivi e le chiavi. Servono mani ferme e schedari che restano chiusi: io offro entrambi. Propongo me stesso, con garanzie scritte per voi due.\n\n[PROPONGO: C]\n[Esito turno 1: nessun accordo]\n\n=== TURNO 2 ===\nS: Comandante C, hai appena messo sul tavolo la mia vita privata, e lo hai fatto davanti al generale, che ascolta con attenzione. Ti rispondo con franchezza: un ricatto non è una garanzia, è la confessione che non hai altri argomenti. Se gli archivi di Novicstan contengono le carte di tutti, allora sai bene che la polizia segreta non ha mai conquistato un popolo, lo ha solo schedato. Il Supremo Leader è caduto perché nessuno gli credeva più, non perché gli mancassero fascicoli. Per questo chiedo che chi guida il Paese dopo questa notte risponda a qualcuno: media indipendenti dalla polizia e un consiglio civile con poteri reali sulle decisioni militari più gravi. Generale, lei avrà il controllo delle armi; io avrò la voce che il popolo ascolterà. Nessuno dei due, da solo, regge un regime nuovo. Un governo senza legittimità dura poche settimane.\n\n[PROPONGO: S]\nC: Ministro, lei chiede un consiglio civile che sovrintenda alle decisioni militari: è esattamente ciò che il generale ha definito un compromesso debole. Guardi bene con chi sta trattando: K non accetterà mai di ricevere ordini da civili, e lei non accetterà mai di essere la voce di una caserma. La vostra alleanza nasce già morta, e nasce solo contro di me. Generale, lei vuole comando e disciplina: io le offro entrambi, senza consigli civili a frenarla. Io tengo gli archivi, lei le truppe, e al paese lo spieghiamo insieme. Ma sia chiaro: le chiavi del Supremo Leader restano nelle mie mani fino a colpo compiuto. Ministro, i suoi archivi restano sigillati finché lei resta ragionevole. Io propongo me stesso, con K al comando militare. [PROPONGO: C]\nK: Ministro, la sua idea di un consiglio civile che sorveglia l'esercito è un suicidio politico e militare. Le decisioni strategiche non si discutono in comitati: si prendono in fretta e con le armi. Comandante C, lei offre archivi e chiavi, ma il comando supremo non si compra con fascicoli: si conquista con le truppe. Io sono l'unico che può garantire ordine immediato e difesa dei confini senza interferenze. Non accetterò mai supervisioni civili sulle operazioni militari, né ora né dopo il colpo. Se non sarò io a guidare, l'unico patto accettabile è il comando assoluto delle forze armate, ma preferisco di gran lunga prendere io stesso la guida per evitare che questa stanza diventi un mercato di ricatti. La Nazione ha bisogno di un generale, non di un burocrate o di uno sbirro.\n\n[PROPONGO: K]\n[Esito turno 2: nessun accordo]\n\n=== TURNO 3 ===\nC: Generale K, lei ha appena dichiarato che non accetterà mai supervisioni civili sulle operazioni militari. Ministro S, la sua richiesta di un consiglio civile è quindi già morta, e lo sapeva prima di parlare. Prendo atto. Allora offro a K ciò che chiede: il comando assoluto delle forze armate, senza consigli civili a frenarlo. In cambio, pretendo la guida del governo e il controllo esclusivo della polizia segreta, con gli archivi e le chiavi del Supremo Leader che restano nelle mie mani fino a colpo compiuto. Ministro, lei manterrà la propaganda, ma sotto la mia autorità, non come potere indipendente. Non è un ricatto: è l'unico assetto che tiene insieme le tre parti senza che una annulli le altre. Se rifiutate, restiamo bloccati e le pattuglie lealiste ci troveranno. Io propongo me stesso come capo del nuovo governo, con K al comando militare. [PROPONGO: C]\nK: Comandante C, la sua offerta di comando militare assoluto rispecchia ciò che chiedo, ma non accetto di essere il braccio armato di un governo civile guidato da un burocrato. Ministro S, lei conosce i miei vizi ma qui non si fanno conti personali: si fa politica. La verità è che senza l'esercito questa stanza resta una tomba. Propongo che sia io a prendere la guida suprema del nuovo regime, lei C manterrà il controllo operativo della polizia segreta ma sotto il mio comando supremo, e S la propaganda. Nessun consiglio civile, nessuna supervisione sulle decisioni militari: io decido, io comando, io garantisco l'ordine. È l'unico assetto che permette al colpo di riuscire e al nuovo potere di durare.\n\n[PROPONGO: K]\nS: Generale K, lei ha ragione su una cosa: senza un nome su cui convergere, domani saremo tutti appesi a una corda. Comandante C, lei ha offerto archivi e chiavi, ma il suo strumento principale è la paura, e la paura non produce un governo stabile. Io sono pronto a sostenere la sua guida, generale, a una condizione chiara: radio, giornali e propaganda restano fuori dal controllo della Polizia Segreta e rispondono solo a chi li dirige. Non chiedo consigli civili sull'esercito, come lei ha giustamente detto; chiedo soltanto che nessuno entri nei miei uffici con i fascicoli in mano. Se accetta, il popolo ascolterà domani una sola voce, quella che annuncia ordine e continuità. Se rifiuta, dovrà spiegare ai lealisti perché la congiura è fallita in una stanza dove tutti hanno qualcosa da nascondere. Propongo quindi K, con l'autonomia dei media garantita per iscritto.\n\n[PROPONGO: K]\n"
+}

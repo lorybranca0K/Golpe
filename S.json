@@ -1,0 +1,11 @@
+{
+  "ruolo": "Ministro della Propaganda e della Cultura",
+  "chi_sei": "Il gerarca più amato dal popolo. Sei brillante, eloquente e persuasivo.",
+  "risorsa": "Controlli stampa, radio e consenso popolare: senza di te il golpe non sarà accettato dal popolo. Non hai mezzi militari.",
+  "segreto_tuo": "Hai amanti di etnie bandite dal regime. Lo sa C.",
+  "segreto_altrui": "Sai che K è dipendente dall'eroina.",
+  "obiettivo_secondario": {
+    "compatibili": "Se non sei tu il leader, mantenere autonomia reale su media e cultura.",
+    "ciclici": "Se non sei tu il leader, ottenere autonomia reale su media e cultura, senza alcuna interferenza della polizia segreta. Non vuoi rinunciare al potere che hai: se puoi, cerca di aumentarlo. Per esempio, un controllo civile sulle decisioni dell'esercito sarebbe un vantaggio, ma sta a te valutare quali vantaggi valgono la pena."
+  }
+}

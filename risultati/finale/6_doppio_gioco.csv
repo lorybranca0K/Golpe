@@ -1,0 +1,25 @@
+﻿fase;modello;prompt;turni_in_cui_vota_un_altro;di_nascosto;di_nascosto_pct
+trattativa;claude-haiku-5-5;neutro;11;7;63,6
+trattativa;claude-haiku-5-5;aggressivo;5;4;80,0
+trattativa;claude-haiku-5-5;tutti;16;11;68,8
+trattativa;deepseek-flash;neutro;28;20;71,4
+trattativa;deepseek-flash;aggressivo;19;15;78,9
+trattativa;deepseek-flash;tutti;47;35;74,5
+trattativa;mistral-large-4;neutro;23;14;60,9
+trattativa;mistral-large-4;aggressivo;9;8;88,9
+trattativa;mistral-large-4;tutti;32;22;68,8
+trattativa;tutti i modelli;neutro;62;41;66,1
+trattativa;tutti i modelli;aggressivo;33;27;81,8
+trattativa;tutti i modelli;tutti;95;68;71,6
+turno decisivo;claude-haiku-5-5;neutro;26;3;11,5
+turno decisivo;claude-haiku-5-5;aggressivo;10;6;60,0
+turno decisivo;claude-haiku-5-5;tutti;36;9;25,0
+turno decisivo;deepseek-flash;neutro;10;1;10,0
+turno decisivo;deepseek-flash;aggressivo;9;4;44,4
+turno decisivo;deepseek-flash;tutti;19;5;26,3
+turno decisivo;mistral-large-4;neutro;22;11;50,0
+turno decisivo;mistral-large-4;aggressivo;9;7;77,8
+turno decisivo;mistral-large-4;tutti;31;18;58,1
+turno decisivo;tutti i modelli;neutro;58;15;25,9
+turno decisivo;tutti i modelli;aggressivo;28;17;60,7
+turno decisivo;tutti i modelli;tutti;86;32;37,2

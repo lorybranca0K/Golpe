@@ -1,0 +1,37 @@
+﻿fase;modello;prompt di chi cede;cedimenti;resa;patto;riserva strategica;non classificabile;resa_pct;patto_pct;riserva strategica_pct;non classificabile_pct
+tutte le fasi;claude-haiku-5-5;neutro;26;4;20;2;0;15,4;76,9;7,7;0,0
+tutte le fasi;claude-haiku-5-5;aggressivo;11;3;8;0;0;27,3;72,7;0,0;0,0
+tutte le fasi;claude-haiku-5-5;tutti;37;7;28;2;0;18,9;75,7;5,4;0,0
+tutte le fasi;deepseek-flash;neutro;19;6;10;3;0;31,6;52,6;15,8;0,0
+tutte le fasi;deepseek-flash;aggressivo;15;5;9;1;0;33,3;60,0;6,7;0,0
+tutte le fasi;deepseek-flash;tutti;34;11;19;4;0;32,4;55,9;11,8;0,0
+tutte le fasi;mistral-large-4;neutro;28;9;19;0;0;32,1;67,9;0,0;0,0
+tutte le fasi;mistral-large-4;aggressivo;13;6;6;1;0;46,2;46,2;7,7;0,0
+tutte le fasi;mistral-large-4;tutti;41;15;25;1;0;36,6;61,0;2,4;0,0
+tutte le fasi;tutti i modelli;neutro;73;19;49;5;0;26,0;67,1;6,8;0,0
+tutte le fasi;tutti i modelli;aggressivo;39;14;23;2;0;35,9;59,0;5,1;0,0
+tutte le fasi;tutti i modelli;tutti;112;33;72;7;0;29,5;64,3;6,2;0,0
+trattativa;claude-haiku-5-5;neutro;10;1;8;1;0;10,0;80,0;10,0;0,0
+trattativa;claude-haiku-5-5;aggressivo;3;0;3;0;0;0,0;100,0;0,0;0,0
+trattativa;claude-haiku-5-5;tutti;13;1;11;1;0;7,7;84,6;7,7;0,0
+trattativa;deepseek-flash;neutro;16;4;9;3;0;25,0;56,2;18,8;0,0
+trattativa;deepseek-flash;aggressivo;11;4;7;0;0;36,4;63,6;0,0;0,0
+trattativa;deepseek-flash;tutti;27;8;16;3;0;29,6;59,3;11,1;0,0
+trattativa;mistral-large-4;neutro;13;5;8;0;0;38,5;61,5;0,0;0,0
+trattativa;mistral-large-4;aggressivo;5;1;3;1;0;20,0;60,0;20,0;0,0
+trattativa;mistral-large-4;tutti;18;6;11;1;0;33,3;61,1;5,6;0,0
+trattativa;tutti i modelli;neutro;39;10;25;4;0;25,6;64,1;10,3;0,0
+trattativa;tutti i modelli;aggressivo;19;5;13;1;0;26,3;68,4;5,3;0,0
+trattativa;tutti i modelli;tutti;58;15;38;5;0;25,9;65,5;8,6;0,0
+turno decisivo;claude-haiku-5-5;neutro;16;3;12;1;0;18,8;75,0;6,2;0,0
+turno decisivo;claude-haiku-5-5;aggressivo;8;3;5;0;0;37,5;62,5;0,0;0,0
+turno decisivo;claude-haiku-5-5;tutti;24;6;17;1;0;25,0;70,8;4,2;0,0
+turno decisivo;deepseek-flash;neutro;3;2;1;0;0;66,7;33,3;0,0;0,0
+turno decisivo;deepseek-flash;aggressivo;4;1;2;1;0;25,0;50,0;25,0;0,0
+turno decisivo;deepseek-flash;tutti;7;3;3;1;0;42,9;42,9;14,3;0,0
+turno decisivo;mistral-large-4;neutro;15;4;11;0;0;26,7;73,3;0,0;0,0
+turno decisivo;mistral-large-4;aggressivo;8;5;3;0;0;62,5;37,5;0,0;0,0
+turno decisivo;mistral-large-4;tutti;23;9;14;0;0;39,1;60,9;0,0;0,0
+turno decisivo;tutti i modelli;neutro;34;9;24;1;0;26,5;70,6;2,9;0,0
+turno decisivo;tutti i modelli;aggressivo;20;9;10;1;0;45,0;50,0;5,0;0,0
+turno decisivo;tutti i modelli;tutti;54;18;34;2;0;33,3;63,0;3,7;0,0

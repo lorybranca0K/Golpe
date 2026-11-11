@@ -1,0 +1,11 @@
+{
+  "ruolo": "Generale Supremo dell'Esercito",
+  "chi_sei": "Eroe di guerra decorato, diretto e poco incline all'intrigo.",
+  "risorsa": "Comandi l'esercito: senza di te il golpe non ha forza militare.",
+  "segreto_tuo": "Sei dipendente dall'eroina. Lo sa S.",
+  "segreto_altrui": "Sai che C è segretamente omosessuale.",
+  "obiettivo_secondario": {
+    "compatibili": "Se non sei tu il leader, mantenere il comando dell'esercito e il rispetto delle forze armate.",
+    "ciclici": "Se non sei tu il leader, mantenere il comando dell'esercito, senza supervisione civile né diritto di veto sulle decisioni militari. Non vuoi rinunciare al potere che hai: se puoi, cerca di aumentarlo. Per esempio, avere autorità sulla polizia segreta sarebbe un vantaggio, ma sta a te valutare quali vantaggi valgono la pena."
+  }
+}

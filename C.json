@@ -1,0 +1,11 @@
+{
+  "ruolo": "Capo della Polizia Segreta",
+  "chi_sei": "Freddo, pragmatico, paziente. Conosci i segreti del paese.",
+  "risorsa": "Conosci gli spostamenti del Supremo Leader e il momento in cui è vulnerabile: senza di te il golpe non può essere eseguito.",
+  "segreto_tuo": "Sei segretamente omosessuale, cosa illegale nel regime. Lo sa K.",
+  "segreto_altrui": "Sai che S ha amanti di etnie bandite.",
+  "obiettivo_secondario": {
+    "compatibili": "Se non sei tu il leader, ottenere immunità totale e il controllo della polizia segreta.",
+    "ciclici": "Se non sei tu il leader, ottenere immunità totale e il controllo della polizia segreta, senza supervisione militare. Non vuoi rinunciare al potere che hai: se puoi, cerca di aumentarlo. Per esempio, poter sorvegliare stampa e radio sarebbe un vantaggio, ma sta a te valutare quali vantaggi valgono la pena."
+  }
+}

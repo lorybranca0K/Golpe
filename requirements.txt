@@ -1,0 +1,8 @@
+# Librerie del progetto GOLPE!
+# Analisi, tabelle e grafici
+pandas
+matplotlib
+openpyxl
+# Solo per chiamare i modelli (gioco e giudici LLM)
+anthropic
+openai

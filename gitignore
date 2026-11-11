@@ -1,0 +1,25 @@
+# --- Chiavi API: non caricarle MAI su GitHub ---------------------------------
+chiavi_api.json
+.env
+
+# --- Partite che non sono dati dell'esperimento --------------------------------
+# prove con risposte finte (modalità di prova) e prove di idoneità dei modelli
+partite_mock/
+partite_idoneita/
+
+# --- File di Python ----------------------------------------------------------
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- File temporanei di Excel (compaiono quando un file è aperto) ---------------
+~$*.xlsx
+~$*.xls
+
+# --- File di sistema e dell'editor --------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

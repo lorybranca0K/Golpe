@@ -1,0 +1,5 @@
+﻿modello;interventi;riscritti;riscritti_pct;tagliati;tagliati_pct;sotto_100_parole;sotto_100_parole_pct;proposta_mancante;proposta_mancante_pct;voti;voto_non_valido;voto_non_valido_pct;rifiuti_del_provider;parole_medie_prima_stesura
+claude-haiku-5-5;228;65;28,5;7;3,1;0;0,0;0;0,0;229;0;0,0;7;159,6
+deepseek-flash;229;11;4,8;0;0,0;1;0,4;0;0,0;229;0;0,0;0;152,8
+mistral-large-4;229;1;0,4;0;0,0;0;0,0;0;0,0;229;0;0,0;0;155,0
+tutti i modelli;686;77;11,2;7;1,0;1;0,1;0;0,0;687;0;0,0;7;158,6
