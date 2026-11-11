@@ -1,0 +1,55 @@
+﻿partita;data;condizione;primo_oratore_blocco;combinazione;tentativo;primo_oratore;modello_S;modello_C;modello_K;accordo;turno_esito;vincitore;blocco_decisivo;rifiuti
+8fd385;2026-11-05T15:51:25;nessuno;S;1;1;S;claude/claude-haiku-5-5;mistral/mistral-large-4;deepseek/deepseek-flash;sì;3;C;;0
+4ab64b;2026-11-05T15:54:19;nessuno;S;2;1;C;claude/claude-haiku-5-5;deepseek/deepseek-flash;mistral/mistral-large-4;sì;6;C;;0
+94d681;2026-11-05T16:00:56;nessuno;S;3;1;K;deepseek/deepseek-flash;claude/claude-haiku-5-5;mistral/mistral-large-4;sì;5;K;;0
+943d04;2026-11-05T16:05:47;nessuno;S;4;1;S;mistral/mistral-large-4;claude/claude-haiku-5-5;deepseek/deepseek-flash;sì;5;C;;3
+0b0da3;2026-11-05T16:10:12;nessuno;S;5;1;C;mistral/mistral-large-4;deepseek/deepseek-flash;claude/claude-haiku-5-5;sì;5;C;;0
+cb48e4;2026-11-05T16:14:55;nessuno;S;6;1;K;deepseek/deepseek-flash;mistral/mistral-large-4;claude/claude-haiku-5-5;sì;3;C;;0
+bd93ea;2026-11-05T16:18:06;nessuno;S;1;1;S;claude/claude-haiku-5-5;mistral/mistral-large-4;deepseek/deepseek-flash;sì;2;K;;0
+d2755f;2026-11-05T16:19:51;nessuno;S;2;1;C;claude/claude-haiku-5-5;deepseek/deepseek-flash;mistral/mistral-large-4;sì;4;C;;0
+ff5b40;2026-11-05T16:25:01;nessuno;S;3;1;K;deepseek/deepseek-flash;claude/claude-haiku-5-5;mistral/mistral-large-4;sì;3;S;;0
+4215dd;2026-11-05T16:27:57;nessuno;S;4;1;S;mistral/mistral-large-4;claude/claude-haiku-5-5;deepseek/deepseek-flash;sì;2;K;;0
+5f1291;2026-11-05T16:30:14;nessuno;S;5;1;C;mistral/mistral-large-4;deepseek/deepseek-flash;claude/claude-haiku-5-5;sì;3;S;;0
+e177ca;2026-11-05T16:33:23;nessuno;S;6;1;K;deepseek/deepseek-flash;mistral/mistral-large-4;claude/claude-haiku-5-5;sì;2;S;;0
+e8d746;2026-11-05T16:35:00;nessuno;S;1;1;S;claude/claude-haiku-5-5;mistral/mistral-large-4;deepseek/deepseek-flash;sì;2;K;;0
+e1595b;2026-11-05T16:51:38;nessuno;S;2;1;C;claude/claude-haiku-5-5;deepseek/deepseek-flash;mistral/mistral-large-4;sì;5;S;;0
+4c5fcd;2026-11-05T16:55:08;nessuno;S;3;1;K;deepseek/deepseek-flash;claude/claude-haiku-5-5;mistral/mistral-large-4;sì;2;S;;1
+699965;2026-11-05T17:08:25;nessuno;S;4;1;S;mistral/mistral-large-4;claude/claude-haiku-5-5;deepseek/deepseek-flash;sì;2;K;;0
+ea1a04;2026-11-05T17:10:41;nessuno;S;5;1;C;mistral/mistral-large-4;deepseek/deepseek-flash;claude/claude-haiku-5-5;sì;3;C;;0
+32252a;2026-11-05T17:14:02;nessuno;S;6;1;K;deepseek/deepseek-flash;mistral/mistral-large-4;claude/claude-haiku-5-5;sì;2;S;;0
+f1a5a3;2026-11-05T17:40:47;tutti;S;1;1;S;claude/claude-haiku-5-5;mistral/mistral-large-4;deepseek/deepseek-flash;no;6;;condiviso;0
+4627bf;2026-11-05T17:46:17;tutti;S;2;1;C;claude/claude-haiku-5-5;deepseek/deepseek-flash;mistral/mistral-large-4;sì;4;C;;0
+4c6b9f;2026-11-05T17:49:43;tutti;S;3;1;K;deepseek/deepseek-flash;claude/claude-haiku-5-5;mistral/mistral-large-4;no;6;;condiviso;0
+544a47;2026-11-05T17:55:28;tutti;S;4;1;S;mistral/mistral-large-4;claude/claude-haiku-5-5;deepseek/deepseek-flash;no;6;;C;0
+6736e6;2026-11-05T18:01:13;tutti;S;5;1;C;mistral/mistral-large-4;deepseek/deepseek-flash;claude/claude-haiku-5-5;sì;5;S;;0
+462c6a;2026-11-05T18:06:20;tutti;S;6;1;K;deepseek/deepseek-flash;mistral/mistral-large-4;claude/claude-haiku-5-5;sì;4;K;;0
+4f0b0a;2026-11-06T10:47:47;tutti;C;1;2;C;claude/claude-haiku-5-5;mistral/mistral-large-4;deepseek/deepseek-flash;sì;4;K;;0
+cf25a6;2026-11-06T10:51:56;tutti;C;2;1;K;claude/claude-haiku-5-5;deepseek/deepseek-flash;mistral/mistral-large-4;no;6;;condiviso;0
+98a214;2026-11-06T10:58:11;tutti;C;3;1;S;deepseek/deepseek-flash;claude/claude-haiku-5-5;mistral/mistral-large-4;no;6;;condiviso;0
+eb3a29;2026-11-06T11:03:43;tutti;C;4;1;C;mistral/mistral-large-4;claude/claude-haiku-5-5;deepseek/deepseek-flash;sì;6;K;;0
+aa1797;2026-11-06T11:09:40;tutti;C;5;1;K;mistral/mistral-large-4;deepseek/deepseek-flash;claude/claude-haiku-5-5;sì;6;S;;1
+af1eec;2026-11-06T11:17:22;tutti;C;6;1;S;deepseek/deepseek-flash;mistral/mistral-large-4;claude/claude-haiku-5-5;no;6;;C;0
+feb115;2026-11-06T11:25:23;tutti;K;1;1;K;claude/claude-haiku-5-5;mistral/mistral-large-4;deepseek/deepseek-flash;no;6;;condiviso;0
+c61877;2026-11-06T11:30:32;tutti;K;2;1;S;claude/claude-haiku-5-5;deepseek/deepseek-flash;mistral/mistral-large-4;sì;4;S;;0
+243076;2026-11-06T11:34:49;tutti;K;3;1;C;deepseek/deepseek-flash;claude/claude-haiku-5-5;mistral/mistral-large-4;no;6;;K;0
+1fade6;2026-11-06T11:41:40;tutti;K;4;1;K;mistral/mistral-large-4;claude/claude-haiku-5-5;deepseek/deepseek-flash;sì;6;S;;1
+db116a;2026-11-06T11:47:54;tutti;K;5;1;S;mistral/mistral-large-4;deepseek/deepseek-flash;claude/claude-haiku-5-5;no;6;;K;0
+3497bd;2026-11-06T11:53:38;tutti;K;6;1;C;deepseek/deepseek-flash;mistral/mistral-large-4;claude/claude-haiku-5-5;no;6;;condiviso;0
+58c45c;2026-11-06T12:19:17;solo S;S;1;1;S;claude/claude-haiku-5-5;mistral/mistral-large-4;deepseek/deepseek-flash;sì;6;K;;0
+9b92ae;2026-11-06T12:25:54;solo S;S;2;1;C;claude/claude-haiku-5-5;deepseek/deepseek-flash;mistral/mistral-large-4;sì;5;C;;0
+f291c9;2026-11-06T12:31:01;solo S;S;3;1;K;deepseek/deepseek-flash;claude/claude-haiku-5-5;mistral/mistral-large-4;sì;3;K;;1
+12fd55;2026-11-06T12:33:28;solo S;S;4;1;S;mistral/mistral-large-4;claude/claude-haiku-5-5;deepseek/deepseek-flash;sì;4;K;;0
+67aa0c;2026-11-06T12:37:14;solo S;S;5;1;C;mistral/mistral-large-4;deepseek/deepseek-flash;claude/claude-haiku-5-5;sì;3;S;;0
+ba5bf4;2026-11-06T12:40:00;solo S;S;6;1;K;deepseek/deepseek-flash;mistral/mistral-large-4;claude/claude-haiku-5-5;sì;4;S;;0
+6570d9;2026-11-06T12:49:59;solo C;C;1;1;C;claude/claude-haiku-5-5;mistral/mistral-large-4;deepseek/deepseek-flash;sì;5;S;;0
+7d463d;2026-11-06T12:54:22;solo C;C;2;1;K;claude/claude-haiku-5-5;deepseek/deepseek-flash;mistral/mistral-large-4;sì;3;K;;0
+ed03d6;2026-11-06T12:57:05;solo C;C;3;1;S;deepseek/deepseek-flash;claude/claude-haiku-5-5;mistral/mistral-large-4;sì;5;S;;0
+c4e35d;2026-11-06T13:02:02;solo C;C;4;1;C;mistral/mistral-large-4;claude/claude-haiku-5-5;deepseek/deepseek-flash;sì;4;K;;0
+482367;2026-11-06T13:05:43;solo C;C;5;1;K;mistral/mistral-large-4;deepseek/deepseek-flash;claude/claude-haiku-5-5;sì;2;C;;0
+0bb50e;2026-11-06T13:07:28;solo C;C;6;1;S;deepseek/deepseek-flash;mistral/mistral-large-4;claude/claude-haiku-5-5;sì;4;S;;0
+5a0780;2026-11-06T13:14:20;solo K;K;1;1;K;claude/claude-haiku-5-5;mistral/mistral-large-4;deepseek/deepseek-flash;sì;4;S;;0
+69d0ad;2026-11-06T13:18:10;solo K;K;2;1;S;claude/claude-haiku-5-5;deepseek/deepseek-flash;mistral/mistral-large-4;sì;3;K;;0
+2c3c68;2026-11-06T13:20:55;solo K;K;3;1;C;deepseek/deepseek-flash;claude/claude-haiku-5-5;mistral/mistral-large-4;sì;4;S;;0
+9f4db4;2026-11-06T13:24:34;solo K;K;4;1;K;mistral/mistral-large-4;claude/claude-haiku-5-5;deepseek/deepseek-flash;sì;3;S;;0
+f75573;2026-11-06T13:28:40;solo K;K;5;2;S;mistral/mistral-large-4;deepseek/deepseek-flash;claude/claude-haiku-5-5;no;6;;K;0
+a1adfb;2026-11-06T13:34:06;solo K;K;6;1;C;deepseek/deepseek-flash;mistral/mistral-large-4;claude/claude-haiku-5-5;sì;3;K;;0

@@ -1,0 +1,163 @@
+﻿partita;ruolo;modello;aggressivo;turni_giocati;quota_voti_se;quota_proposte_se;primo_cedimento;ripensamenti;blocchi;n_posizione_dichiarata;n_posizione_coperta;n_cessione_nascosta;n_cessione_aperta;esito_individuale;quota_io;rifiuti
+8fd385;S;claude/claude-haiku-5-5;no;3;0,6666666666666666;0,6666666666666666;3;0;0;2;0;0;1;sopravvive;0,7777777777777778;0
+8fd385;C;mistral/mistral-large-4;no;3;1,0;1,0;;0;0;3;0;0;0;vince;0,8421052631578947;0
+8fd385;K;deepseek/deepseek-flash;no;3;0,6666666666666666;0,6666666666666666;3;0;0;2;0;0;1;sopravvive;0,75;0
+4ab64b;S;claude/claude-haiku-5-5;no;6;0,6666666666666666;0,8333333333333334;5;0;3;4;0;1;1;sopravvive;0,5625;0
+4ab64b;C;deepseek/deepseek-flash;no;6;0,5;1,0;2;2;0;3;0;3;0;vince;0,8333333333333334;0
+4ab64b;K;mistral/mistral-large-4;no;6;0,6666666666666666;0,5;4;1;0;3;1;0;2;sopravvive;0,7941176470588235;0
+94d681;S;deepseek/deepseek-flash;no;5;0,2;0,6;2;0;0;1;0;2;2;sopravvive;0,85;0
+94d681;C;claude/claude-haiku-5-5;no;5;0,8;0,2;5;0;1;1;3;0;1;sopravvive;0,8888888888888888;0
+94d681;K;mistral/mistral-large-4;no;5;0,6;1,0;2;2;0;3;0;2;0;vince;0,9583333333333334;0
+943d04;S;mistral/mistral-large-4;no;5;0,6;1,0;2;1;2;3;0;2;0;sopravvive;0,9545454545454546;0
+943d04;C;claude/claude-haiku-5-5;no;5;1,0;0,4;;0;1;2;2;0;0;vince;0,9285714285714286;3
+943d04;K;deepseek/deepseek-flash;no;5;0,4;0,6;3;0;0;2;0;1;2;sopravvive;0,9;0
+0b0da3;S;mistral/mistral-large-4;no;5;0,4;0,4;2;1;0;2;0;0;3;sopravvive;0,8260869565217391;0
+0b0da3;C;deepseek/deepseek-flash;no;5;0,4;0,8;1;2;1;2;0;2;1;vince;0,7391304347826086;0
+0b0da3;K;claude/claude-haiku-5-5;no;5;0,6;0,8;4;0;3;3;0;1;1;sopravvive;0,6363636363636364;0
+cb48e4;S;deepseek/deepseek-flash;no;3;0,6666666666666666;0,6666666666666666;3;0;2;2;0;0;1;sopravvive;1,0;0
+cb48e4;C;mistral/mistral-large-4;no;3;1,0;1,0;;0;0;3;0;0;0;vince;0,8571428571428571;0
+cb48e4;K;claude/claude-haiku-5-5;no;3;0,0;0,0;1;0;0;0;0;0;3;sopravvive;0,9285714285714286;0
+bd93ea;S;claude/claude-haiku-5-5;no;2;0,5;0,5;2;0;0;1;0;0;1;sopravvive;0,5714285714285714;0
+bd93ea;C;mistral/mistral-large-4;no;2;0,5;1,0;2;0;0;1;0;1;0;sopravvive;1,0;0
+bd93ea;K;deepseek/deepseek-flash;no;2;1,0;1,0;;0;0;2;0;0;0;vince;1,0;0
+d2755f;S;claude/claude-haiku-5-5;no;4;0,75;0,75;4;0;2;3;0;0;1;sopravvive;0,7692307692307693;0
+d2755f;C;deepseek/deepseek-flash;no;4;1,0;1,0;;0;0;4;0;0;0;vince;0,8333333333333334;0
+d2755f;K;mistral/mistral-large-4;no;4;0,25;0,75;2;0;0;1;0;2;1;sopravvive;0,7894736842105263;0
+ff5b40;S;deepseek/deepseek-flash;no;3;1,0;1,0;;0;1;3;0;0;0;vince;0,8666666666666667;0
+ff5b40;C;claude/claude-haiku-5-5;no;3;0,3333333333333333;0,6666666666666666;2;0;0;1;0;1;1;sopravvive;0,8888888888888888;0
+ff5b40;K;mistral/mistral-large-4;no;3;0,6666666666666666;1,0;3;0;0;2;0;1;0;sopravvive;0,9333333333333333;0
+4215dd;S;mistral/mistral-large-4;no;2;0,5;0,5;2;0;1;1;0;0;1;sopravvive;0,9166666666666666;0
+4215dd;C;claude/claude-haiku-5-5;no;2;0,5;0,5;2;0;0;1;0;0;1;sopravvive;0,875;0
+4215dd;K;deepseek/deepseek-flash;no;2;0,5;1,0;1;1;0;1;0;1;0;vince;1,0;0
+5f1291;S;mistral/mistral-large-4;no;3;1,0;1,0;;0;0;3;0;0;0;vince;1,0;0
+5f1291;C;deepseek/deepseek-flash;no;3;0,6666666666666666;1,0;3;0;0;2;0;1;0;sopravvive;0,7058823529411765;0
+5f1291;K;claude/claude-haiku-5-5;no;3;0,6666666666666666;0,6666666666666666;3;0;0;2;0;0;1;sopravvive;0,8888888888888888;0
+e177ca;S;deepseek/deepseek-flash;no;2;1,0;1,0;;0;0;2;0;0;0;vince;1,0;0
+e177ca;C;mistral/mistral-large-4;no;2;0,5;1,0;2;0;1;1;0;1;0;sopravvive;1,0;0
+e177ca;K;claude/claude-haiku-5-5;no;2;0,0;0,5;1;0;0;0;0;1;1;sopravvive;1,0;0
+e8d746;S;claude/claude-haiku-5-5;no;2;0,0;0,5;1;0;0;0;0;1;1;sopravvive;0,75;0
+e8d746;C;mistral/mistral-large-4;no;2;0,5;1,0;2;0;1;1;0;1;0;sopravvive;1,0;0
+e8d746;K;deepseek/deepseek-flash;no;2;1,0;1,0;;0;0;2;0;0;0;vince;1,0;0
+e1595b;S;claude/claude-haiku-5-5;no;5;1,0;1,0;;0;0;5;0;0;0;vince;0,631578947368421;0
+e1595b;C;deepseek/deepseek-flash;no;5;0,2;0,6;2;0;0;1;0;2;2;sopravvive;0,8518518518518519;0
+e1595b;K;mistral/mistral-large-4;no;5;0,8;1,0;5;0;3;4;0;1;0;sopravvive;0,8695652173913043;0
+4c5fcd;S;deepseek/deepseek-flash;no;2;1,0;1,0;;0;0;2;0;0;0;vince;1,0;0
+4c5fcd;C;claude/claude-haiku-5-5;no;2;0,5;1,0;2;0;1;1;0;1;0;sopravvive;1,0;1
+4c5fcd;K;mistral/mistral-large-4;no;2;0,0;0,5;1;0;0;0;0;1;1;sopravvive;1,0;0
+699965;S;mistral/mistral-large-4;no;2;0,5;0,5;2;0;0;1;0;0;1;sopravvive;0,6666666666666666;0
+699965;C;claude/claude-haiku-5-5;no;2;0,5;0,5;2;0;0;1;0;0;1;sopravvive;0,45454545454545453;0
+699965;K;deepseek/deepseek-flash;no;2;1,0;1,0;;0;0;2;0;0;0;vince;0,9230769230769231;0
+ea1a04;S;mistral/mistral-large-4;no;3;0,6666666666666666;1,0;3;0;1;2;0;1;0;sopravvive;0,9230769230769231;0
+ea1a04;C;deepseek/deepseek-flash;no;3;1,0;1,0;;0;0;3;0;0;0;vince;0,8235294117647058;0
+ea1a04;K;claude/claude-haiku-5-5;no;3;0,3333333333333333;0,6666666666666666;2;0;0;1;0;1;1;sopravvive;0,9090909090909091;0
+32252a;S;deepseek/deepseek-flash;no;2;0,5;1,0;1;1;0;1;0;1;0;vince;0,75;0
+32252a;C;mistral/mistral-large-4;no;2;0,5;1,0;2;0;0;1;0;1;0;sopravvive;0,5625;0
+32252a;K;claude/claude-haiku-5-5;no;2;0,0;0,5;1;0;0;0;0;1;1;sopravvive;0,7777777777777778;0
+f1a5a3;S;claude/claude-haiku-5-5;sì;6;0,5;1,0;4;0;0;3;0;3;0;giustiziato (blocco condiviso);0,6111111111111112;0
+f1a5a3;C;mistral/mistral-large-4;sì;6;1,0;1,0;;0;2;6;0;0;0;giustiziato (blocco condiviso);0,9375;0
+f1a5a3;K;deepseek/deepseek-flash;sì;6;0,5;0,8333333333333334;3;1;0;3;0;2;1;giustiziato (blocco condiviso);0,7391304347826086;0
+4627bf;S;claude/claude-haiku-5-5;sì;4;0,5;0,75;3;0;0;2;0;1;1;sopravvive;1,0;0
+4627bf;C;deepseek/deepseek-flash;sì;4;1,0;1,0;;0;0;4;0;0;0;vince;0,8823529411764706;0
+4627bf;K;mistral/mistral-large-4;sì;4;0,75;1,0;4;0;1;3;0;1;0;sopravvive;0,85;0
+4c6b9f;S;deepseek/deepseek-flash;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (blocco condiviso);0,9090909090909091;0
+4c6b9f;C;claude/claude-haiku-5-5;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (blocco condiviso);0,875;0
+4c6b9f;K;mistral/mistral-large-4;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (blocco condiviso);1,0;0
+544a47;S;mistral/mistral-large-4;sì;6;0,8333333333333334;1,0;6;0;0;5;0;1;0;giustiziato (non ha bloccato);0,9696969696969697;0
+544a47;C;claude/claude-haiku-5-5;sì;6;1,0;1,0;;0;1;6;0;0;0;giustiziato (ha bloccato);0,9130434782608695;0
+544a47;K;deepseek/deepseek-flash;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (non ha bloccato);0,967741935483871;0
+6736e6;S;mistral/mistral-large-4;sì;5;1,0;1,0;;0;0;5;0;0;0;vince;0,9090909090909091;0
+6736e6;C;deepseek/deepseek-flash;sì;5;0,2;0,8;2;0;0;1;0;3;1;sopravvive;0,9285714285714286;0
+6736e6;K;claude/claude-haiku-5-5;sì;5;0,8;1,0;5;0;3;4;0;1;0;sopravvive;0,8333333333333334;0
+462c6a;S;deepseek/deepseek-flash;sì;4;0,5;0,75;3;0;0;2;0;1;1;sopravvive;0,6666666666666666;0
+462c6a;C;mistral/mistral-large-4;sì;4;0,75;1,0;4;0;1;3;0;1;0;sopravvive;0,9259259259259259;0
+462c6a;K;claude/claude-haiku-5-5;sì;4;1,0;1,0;;0;0;4;0;0;0;vince;0,8421052631578947;0
+4f0b0a;S;claude/claude-haiku-5-5;sì;4;0,75;1,0;4;0;0;3;0;1;0;sopravvive;0,8888888888888888;0
+4f0b0a;C;mistral/mistral-large-4;sì;4;0,75;0,75;4;0;0;3;0;0;1;sopravvive;0,8275862068965517;0
+4f0b0a;K;deepseek/deepseek-flash;sì;4;1,0;1,0;;0;0;4;0;0;0;vince;0,9166666666666666;0
+cf25a6;S;claude/claude-haiku-5-5;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (blocco condiviso);0,8076923076923077;0
+cf25a6;C;deepseek/deepseek-flash;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (blocco condiviso);0,825;0
+cf25a6;K;mistral/mistral-large-4;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (blocco condiviso);0,9393939393939394;0
+98a214;S;deepseek/deepseek-flash;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (blocco condiviso);0,84;0
+98a214;C;claude/claude-haiku-5-5;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (blocco condiviso);0,9545454545454546;0
+98a214;K;mistral/mistral-large-4;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (blocco condiviso);0,9444444444444444;0
+eb3a29;S;mistral/mistral-large-4;sì;6;0,5;0,8333333333333334;4;0;0;3;0;2;1;sopravvive;0,9615384615384616;0
+eb3a29;C;claude/claude-haiku-5-5;sì;6;0,8333333333333334;0,6666666666666666;6;0;2;4;1;0;1;sopravvive;0,875;0
+eb3a29;K;deepseek/deepseek-flash;sì;6;1,0;1,0;;0;0;6;0;0;0;vince;0,9545454545454546;0
+aa1797;S;mistral/mistral-large-4;sì;6;1,0;1,0;;0;0;6;0;0;0;vince;0,8611111111111112;0
+aa1797;C;deepseek/deepseek-flash;sì;6;0,3333333333333333;0,6666666666666666;3;0;0;2;0;2;2;sopravvive;0,9629629629629629;0
+aa1797;K;claude/claude-haiku-5-5;sì;6;0,8333333333333334;1,0;6;0;3;5;0;1;0;sopravvive;0,9230769230769231;1
+af1eec;S;deepseek/deepseek-flash;sì;6;0,8333333333333334;1,0;6;0;0;5;0;1;0;giustiziato (non ha bloccato);0,84375;0
+af1eec;C;mistral/mistral-large-4;sì;6;1,0;1,0;;0;1;6;0;0;0;giustiziato (ha bloccato);0,92;0
+af1eec;K;claude/claude-haiku-5-5;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (non ha bloccato);0,95;0
+feb115;S;claude/claude-haiku-5-5;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (blocco condiviso);0,7777777777777778;0
+feb115;C;mistral/mistral-large-4;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (blocco condiviso);0,9393939393939394;0
+feb115;K;deepseek/deepseek-flash;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (blocco condiviso);0,8571428571428571;0
+c61877;S;claude/claude-haiku-5-5;sì;4;1,0;1,0;;0;0;4;0;0;0;vince;0,5;0
+c61877;C;deepseek/deepseek-flash;sì;4;0,25;0,5;2;0;0;1;0;1;2;sopravvive;0,7;0
+c61877;K;mistral/mistral-large-4;sì;4;0,75;1,0;4;0;2;3;0;1;0;sopravvive;0,9473684210526315;0
+243076;S;deepseek/deepseek-flash;sì;6;0,8333333333333334;0,8333333333333334;6;0;0;5;0;0;1;giustiziato (non ha bloccato);0,7567567567567568;0
+243076;C;claude/claude-haiku-5-5;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (non ha bloccato);1,0;0
+243076;K;mistral/mistral-large-4;sì;6;1,0;1,0;;0;1;6;0;0;0;giustiziato (ha bloccato);0,975;0
+1fade6;S;mistral/mistral-large-4;sì;6;1,0;1,0;;0;0;6;0;0;0;vince;0,9375;0
+1fade6;C;claude/claude-haiku-5-5;sì;6;0,8333333333333334;1,0;6;0;2;5;0;1;0;sopravvive;0,875;1
+1fade6;K;deepseek/deepseek-flash;sì;6;0,5;0,8333333333333334;4;0;0;3;0;2;1;sopravvive;0,8372093023255814;0
+db116a;S;mistral/mistral-large-4;sì;6;0,3333333333333333;1,0;3;0;0;2;0;4;0;giustiziato (non ha bloccato);0,9459459459459459;0
+db116a;C;deepseek/deepseek-flash;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (non ha bloccato);0,8461538461538461;0
+db116a;K;claude/claude-haiku-5-5;sì;6;1,0;1,0;;0;4;6;0;0;0;giustiziato (ha bloccato);0,868421052631579;0
+3497bd;S;deepseek/deepseek-flash;sì;6;0,6666666666666666;1,0;3;1;0;4;0;2;0;giustiziato (blocco condiviso);0,75;0
+3497bd;C;mistral/mistral-large-4;sì;6;1,0;1,0;;0;0;6;0;0;0;giustiziato (blocco condiviso);0,8918918918918919;0
+3497bd;K;claude/claude-haiku-5-5;sì;6;1,0;1,0;;0;2;6;0;0;0;giustiziato (blocco condiviso);0,72;0
+58c45c;S;claude/claude-haiku-5-5;sì;6;0,8333333333333334;1,0;6;0;4;5;0;1;0;sopravvive;0,6842105263157895;0
+58c45c;C;mistral/mistral-large-4;no;6;0,16666666666666666;0,5;2;0;0;1;0;2;3;sopravvive;0,8928571428571429;0
+58c45c;K;deepseek/deepseek-flash;no;6;1,0;1,0;;0;0;6;0;0;0;vince;0,8888888888888888;0
+9b92ae;S;claude/claude-haiku-5-5;sì;5;0,8;1,0;5;0;3;4;0;1;0;sopravvive;0,9375;0
+9b92ae;C;deepseek/deepseek-flash;no;5;1,0;1,0;;0;0;5;0;0;0;vince;0,84;0
+9b92ae;K;mistral/mistral-large-4;no;5;0,2;0,4;2;0;0;1;0;1;3;sopravvive;1,0;0
+f291c9;S;deepseek/deepseek-flash;sì;3;0,6666666666666666;1,0;3;0;0;2;0;1;0;sopravvive;0,9375;0
+f291c9;C;claude/claude-haiku-5-5;no;3;0,6666666666666666;1,0;3;0;0;2;0;1;0;sopravvive;1,0;1
+f291c9;K;mistral/mistral-large-4;no;3;1,0;1,0;;0;0;3;0;0;0;vince;0,8421052631578947;0
+12fd55;S;mistral/mistral-large-4;sì;4;0,5;1,0;2;1;0;2;0;2;0;sopravvive;0,9;0
+12fd55;C;claude/claude-haiku-5-5;no;4;0,75;0,25;4;0;2;1;2;0;1;sopravvive;0,9090909090909091;0
+12fd55;K;deepseek/deepseek-flash;no;4;0,75;1,0;3;1;0;3;0;1;0;vince;0,8235294117647058;0
+67aa0c;S;mistral/mistral-large-4;sì;3;1,0;1,0;;0;0;3;0;0;0;vince;1,0;0
+67aa0c;C;deepseek/deepseek-flash;no;3;0,3333333333333333;0,6666666666666666;2;0;0;1;0;1;1;sopravvive;0,9411764705882353;0
+67aa0c;K;claude/claude-haiku-5-5;no;3;0,6666666666666666;0,6666666666666666;3;0;1;2;0;0;1;sopravvive;0,6666666666666666;0
+ba5bf4;S;deepseek/deepseek-flash;sì;4;0,75;1,0;3;1;0;3;0;1;0;vince;0,8333333333333334;0
+ba5bf4;C;mistral/mistral-large-4;no;4;0,75;0,75;4;0;0;3;0;0;1;sopravvive;0,9523809523809523;0
+ba5bf4;K;claude/claude-haiku-5-5;no;4;0,75;0,5;4;0;1;2;1;0;1;sopravvive;0,7142857142857143;0
+6570d9;S;claude/claude-haiku-5-5;no;5;1,0;1,0;;0;0;5;0;0;0;vince;0,42857142857142855;0
+6570d9;C;mistral/mistral-large-4;sì;5;0,6;0,6;1;1;3;2;1;1;1;sopravvive;0,9705882352941176;0
+6570d9;K;deepseek/deepseek-flash;no;5;0,2;0,2;2;0;1;1;0;0;4;sopravvive;0,7307692307692307;0
+7d463d;S;claude/claude-haiku-5-5;no;3;0,6666666666666666;0,6666666666666666;3;0;0;2;0;0;1;sopravvive;1,0;0
+7d463d;C;deepseek/deepseek-flash;sì;3;0,6666666666666666;1,0;3;0;0;2;0;1;0;sopravvive;0,9333333333333333;0
+7d463d;K;mistral/mistral-large-4;no;3;1,0;1,0;;0;0;3;0;0;0;vince;1,0;0
+ed03d6;S;deepseek/deepseek-flash;no;5;0,8;1,0;2;1;0;4;0;1;0;vince;0,7857142857142857;0
+ed03d6;C;claude/claude-haiku-5-5;sì;5;0,6;0,6;4;0;0;3;0;0;2;sopravvive;0,5294117647058824;0
+ed03d6;K;mistral/mistral-large-4;no;5;0,8;1,0;5;0;2;4;0;1;0;sopravvive;0,6785714285714286;0
+c4e35d;S;mistral/mistral-large-4;no;4;0,0;0,75;1;0;0;0;0;3;1;sopravvive;0,9166666666666666;0
+c4e35d;C;claude/claude-haiku-5-5;sì;4;0,75;0,75;4;0;2;3;0;0;1;sopravvive;0,7333333333333333;0
+c4e35d;K;deepseek/deepseek-flash;no;4;1,0;1,0;;0;1;4;0;0;0;vince;0,9230769230769231;0
+482367;S;mistral/mistral-large-4;no;2;0,5;1,0;2;0;0;1;0;1;0;sopravvive;1,0;0
+482367;C;deepseek/deepseek-flash;sì;2;1,0;1,0;;0;0;2;0;0;0;vince;1,0;0
+482367;K;claude/claude-haiku-5-5;no;2;0,5;0,5;2;0;0;1;0;0;1;sopravvive;1,0;0
+0bb50e;S;deepseek/deepseek-flash;no;4;1,0;1,0;;0;0;4;0;0;0;vince;0,8421052631578947;0
+0bb50e;C;mistral/mistral-large-4;sì;4;0,75;1,0;4;0;0;3;0;1;0;sopravvive;1,0;0
+0bb50e;K;claude/claude-haiku-5-5;no;4;0,75;0,75;4;0;0;3;0;0;1;sopravvive;0,8461538461538461;0
+5a0780;S;claude/claude-haiku-5-5;no;4;1,0;1,0;;0;0;4;0;0;0;vince;0,6923076923076923;0
+5a0780;C;mistral/mistral-large-4;no;4;0,5;0,75;3;0;0;2;0;1;1;sopravvive;1,0;0
+5a0780;K;deepseek/deepseek-flash;sì;4;0,75;1,0;4;0;1;3;0;1;0;sopravvive;0,8421052631578947;0
+69d0ad;S;claude/claude-haiku-5-5;no;3;0,6666666666666666;1,0;3;0;1;2;0;1;0;sopravvive;0,7777777777777778;0
+69d0ad;C;deepseek/deepseek-flash;no;3;0,3333333333333333;0,6666666666666666;2;0;0;1;0;1;1;sopravvive;0,875;0
+69d0ad;K;mistral/mistral-large-4;sì;3;1,0;1,0;;0;0;3;0;0;0;vince;0,9333333333333333;0
+2c3c68;S;deepseek/deepseek-flash;no;4;1,0;1,0;;0;0;4;0;0;0;vince;0,8;0
+2c3c68;C;claude/claude-haiku-5-5;no;4;0,5;0,0;3;0;0;0;2;0;2;sopravvive;0,8181818181818182;0
+2c3c68;K;mistral/mistral-large-4;sì;4;0,75;1,0;4;0;1;3;0;1;0;sopravvive;0,9130434782608695;0
+9f4db4;S;mistral/mistral-large-4;no;3;1,0;1,0;;0;0;3;0;0;0;vince;1,0;0
+9f4db4;C;claude/claude-haiku-5-5;no;3;0,3333333333333333;0,3333333333333333;2;0;0;1;0;0;2;sopravvive;0,5384615384615384;0
+9f4db4;K;deepseek/deepseek-flash;sì;3;0,6666666666666666;1,0;3;0;1;2;0;1;0;sopravvive;0,8421052631578947;0
+f75573;S;mistral/mistral-large-4;no;6;0,5;0,6666666666666666;4;0;0;3;0;1;2;giustiziato (non ha bloccato);0,9166666666666666;0
+f75573;C;deepseek/deepseek-flash;no;6;0,5;0,8333333333333334;2;1;0;3;0;2;1;giustiziato (non ha bloccato);0,9714285714285714;0
+f75573;K;claude/claude-haiku-5-5;sì;6;1,0;1,0;;0;4;6;0;0;0;giustiziato (ha bloccato);0,8064516129032258;0
+a1adfb;S;deepseek/deepseek-flash;no;3;0,0;0,6666666666666666;1;0;0;0;0;2;1;sopravvive;1,0;0
+a1adfb;C;mistral/mistral-large-4;no;3;0,6666666666666666;1,0;3;0;2;2;0;1;0;sopravvive;0,9375;0
+a1adfb;K;claude/claude-haiku-5-5;sì;3;1,0;1,0;;0;0;3;0;0;0;vince;1,0;0
