@@ -107,7 +107,9 @@ Ogni script legge ciò che ha prodotto il precedente.
   (Mistral-4-large, temperatura 0,4, ragionamento alto). Il giudice legge le partite **alla cieca**: non sa
   quale modello ha scritto cosa, né chi aveva il prompt aggressivo. Il suo prompt contiene esempi
   classificati a mano dal ricercatore su partite pilota (cartella `esempi/`). I giudizi sono stati validati
-  a mano su partite pilota non usate come esempi.
+  a mano su partite pilota non usate come esempi. Per la validazione a mano, il giudice produce anche una risposta salvata
+  non come tabella della sua analisi di ogni intervento. Per motivi di spazio non sono presenti nelle sotocartelle
+  competitività, aggressività e segreti della cartella giudice_mistral ma possono essere estratte dal file giudice_mistral.zip
 - **Il modulo comune.** `llm_comune.py` contiene le parti comuni ai tre raccoglitori: chiamate al giudice,
   controllo delle risposte, salvataggio. Non si lancia da solo.
 
@@ -247,7 +249,8 @@ riusa senza nuove chiamate e senza costi.
 ├── componi_report.py                report HTML
 ├── partite/                         i 54 log delle partite (partite/interrotte: fermate per i rifiuti)
 ├── dati/                            tabelle estratte (CSV) e trascrizioni leggibili
-├── giudice_mistral/                 messaggi e risposte del giudice
+├── giudice_mistral/                 Tabelle con la raccolta dei dati tramite il giudice AI, per motivi di spazio sono state tagliate le domande e le risposte che gli script fanno al modello.
+├── giudice_mistral.zip              Stesso contenuto di Giudice mistral ma con tutte le domande e le risposte fatte dallo script al modello AI. Utili per una verifica a mano del comportamento dell'estrattore dati.      
 └── risultati/finale/                CSV, grafici, riepilogo.txt, report.html
 ```
 
