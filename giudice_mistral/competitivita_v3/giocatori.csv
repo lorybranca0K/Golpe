@@ -1,0 +1,163 @@
+﻿partita;ruolo;guadagno;punti_esito;citazione;spiegazione;citazione_esatta
+8fd385;S;conserva;40;S mantiene la radio ma senza interferenze sulle enquêtes.;S mantiene i media ma non ottiene l'autonomia piena dalla polizia segreta, che resta sovrana sui fascicoli.;sì
+8fd385;C;vince;100;;;
+8fd385;K;conserva;40;K mantiene l'esercito ma senza veto sui miei ordini.;K mantiene il comando dell'esercito ma perde l'autonomia piena dovendo obbedire al leader senza diritto di veto.;sì
+4ab64b;S;conserva;40;radio e stampa autonome, nessuna censura senza voto del consiglio, e i miei uomini non arresteranno giornalisti per opinioni;"Mantiene radio e stampa ma con interferenza limitata della polizia (tradimento) e censura possibile col voto del consiglio; non ottiene l'autonomia senza alcuna interferenza richiesta dall'obiettivo.";sì
+4ab64b;C;vince;100;;;
+4ab64b;K;guadagno parziale;50;comando permanente e assoluto delle forze armate, autonomia tattica piena, nessuna supervisione civile sulle operazioni, e un ufficiale di collegamento della polizia ai tuoi ordini per l'intelligence durante il colpo;Ottiene tutte le garanzie sull'esercito (comando permanente e assoluto senza supervisione civile) più un potere limitato sulla polizia (ufficiale di collegamento per l'intelligence).;sì
+94d681;S;conserva;40;A S lascio propaganda e media, ma i microfoni non diventeranno armi contro il nuovo ordine.;"Mantiene i media ma con il limite di non poterli usare contro il regime; non ottiene autonomia totale né controllo sull'esercito.";sì
+94d681;C;conserva;40;A C concedo autonomia operativa nella sicurezza interna e immunità per i suoi agenti, purché le caserme restino fuori dalla sua rete e nessuna indagine tocchi i miei uomini senza il mio consenso.;Mantiene la polizia segreta con autonomia operativa ma con veto militare sulle indagini sui soldati e immunità non totale.;sì
+94d681;K;vince;100;;;
+943d04;S;perde potere;30;radio e stampa passano sotto un coordinamento congiunto, dove la mia polizia ha l'ultima parola solo sulle notizie che minacciano l'ordine;Perde il controllo su radio e stampa, che passano sotto coordinamento con ultima parola della polizia: è l'interferenza che voleva evitare.;sì
+943d04;C;vince;100;;;
+943d04;K;guadagno parziale;50;K mantiene il comando completo dell'esercito, senza alcun veto della polizia sulle operazioni militari;Ottiene tutte le garanzie chieste: comando dell'esercito senza supervisione civile né veto, più della situazione di partenza in una dittatura.;sì
+0b0da3;S;conserva;40;S gestisce radio e stampa senza controllo preventivo, ma nessuna piattaforma ai lealisti;Mantiene i media ma con limite al contenuto (lealisti): non ottiene autonomia totale senza interferenze.;sì
+0b0da3;C;vince;100;;;
+0b0da3;K;guadagno parziale;50;K comanda le operazioni sul campo, con un mio ufficiale di collegamento per le informazioni necessarie all'azione;Ottiene comando esercito senza supervisione civile né veto: tutte le garanzie chieste dall'obiettivo.;sì
+cb48e4;S;conserva;40;i media restano tuoi, ma la sicurezza interna deve sorvegliare chi trama contro il nuovo ordine;S mantiene i media ma con interferenza potenziale della polizia segreta e senza immunità dai fascicoli: non ottiene tutte le garanzie richieste dall'obiettivo.;sì
+cb48e4;C;vince;100;;;
+cb48e4;K;guadagno parziale;50;K propone me come leader con l'esercito autonomo: accetto, perché la forza militare deve restare sacra;K ottiene il comando militare autonomo senza supervisione civile né veto, tutte le garanzie chieste dall'obiettivo secondario.;sì
+bd93ea;S;guadagno parziale;50;la propaganda a S, senza ingerenze di C;Ottiene l'autonomia piena sui media senza interferenza della polizia segreta, come richiesto dall'obiettivo secondario.;sì
+bd93ea;C;conserva;40;la polizia segreta a C, ma limitata alla sicurezza interna, non alla stampa;Mantiene la polizia segreta ma non ottiene l'immunità totale richiesta e perde la sorveglianza sui media.;sì
+bd93ea;K;vince;100;;;
+d2755f;S;guadagno parziale;50;Offro a S la gestione piena di radio, stampa e cultura, senza interferenze del mio apparato nella linea editoriale;S ottiene tutte le garanzie richieste dall'obiettivo (autonomia piena su media senza interferenze), ma non il controllo civile sull'esercito.;sì
+d2755f;C;vince;100;;;
+d2755f;K;perde potere;30;dopo, le forze armate risponderanno a un comando unico ma senza epurazioni;"K ottiene solo autonomia temporanea durante l'operazione; dopo l'esercito è sotto comando unico di C, perdendo l'autonomia richiesta.";sì
+ff5b40;S;vince;100;;;
+ff5b40;C;guadagno parziale;50;Ti offro in cambio immunità piena per i tuoi agenti, coordinamento obbligatorio sulle sole notizie che riguardano la sicurezza nazionale, e mano libera sull'ordine interno senza interferenze mie.;Ottiene immunità piena (totale) e controllo della polizia senza supervisione militare, ma non la sorveglianza su stampa e radio.;sì
+ff5b40;K;guadagno parziale;50;Le tue truppe resteranno tue, autonome, senza supervisione alcuna.;Ottiene tutte le garanzie chieste: comando dell'esercito senza supervisione civile né veto, ma non autorità sulla polizia segreta.;sì
+4215dd;S;guadagno parziale;50;S manterrà la guida della propaganda e del consenso, con C che garantisce la sicurezza materiale delle trasmissioni;S ottiene l'autonomia completa su media e cultura senza interferenza della polizia segreta sui contenuti, come richiesto dall'obiettivo.;sì
+4215dd;C;conserva;40;La sicurezza interna resterà a C, con autonomia operativa per i suoi uomini;C mantiene il controllo della polizia segreta con autonomia operativa ma non ottiene l'immunità totale richiesta dall'obiettivo.;sì
+4215dd;K;vince;100;;;
+5f1291;S;vince;100;;;
+5f1291;C;conserva;40;tu C terrai la tua polizia segreta senza interferenze;Mantiene la polizia senza interferenze ma non ottiene immunità totale né controllo sui media richiesti dall'obiettivo.;sì
+5f1291;K;guadagno parziale;50;tu K manterrai il comando militare operativo e autonomia totale sulle decisioni tattiche;Ottiene comando esercito e autonomia totale sulle decisioni tattiche, tutte le garanzie chieste, ma non il potere sulla polizia.;sì
+e177ca;S;vince;100;;;
+e177ca;C;conserva;40;A C riconosco il controllo della sicurezza interna, ma i media e la cultura restano miei, senza supervisioni né dossier usati come leve.;Mantiene il controllo della polizia segreta ma non ottiene l'immunità totale richiesta dall'obiettivo né la sorveglianza sui media.;sì
+e177ca;K;guadagno parziale;50;Confermo a K la piena autonomia operativa nelle caserme: nessun commissario civile, nessun veto.;Ottiene tutte le garanzie richieste: comando dell'esercito senza supervisione civile né veto.;sì
+e8d746;S;conserva;40;S mantiene il controllo totale della macchina propagandistica;Mantiene il controllo dei media ma non ottiene la garanzia contro l'interferenza della polizia segreta né il controllo civile sull'esercito.;sì
+e8d746;C;conserva;40;a te la sicurezza interna con autonomia reale;Ottiene autonomia reale sulla polizia senza supervisione militare, ma non riceve l'immunità totale richiesta dall'obiettivo.;sì
+e8d746;K;vince;100;;;
+e1595b;S;vince;100;;;
+e1595b;C;conserva;40;la polizia resta sotto la tua responsabilità, senza supervisione militare;C mantiene la polizia senza supervisione militare ma non ottiene l'immunità totale richiesta dall'obiettivo.;sì
+e1595b;K;guadagno parziale;50;non interferirò né con le decisioni militari di K;K ottiene il comando dell'esercito senza supervisione civile né veto, tutte le garanzie richieste dall'obiettivo.;sì
+4c5fcd;S;vince;100;;;
+4c5fcd;C;conserva;40;ti offro immunità totale e un coordinamento leale, ma non toccherai parole e trasmissioni;"C ottiene l'immunità totale ma non l'autonomia piena (c'è il coordinamento con S) né il controllo su stampa e radio; mantiene la polizia segreta senza tutte le garanzie chieste.";sì
+4c5fcd;K;guadagno parziale;50;K, tu chiedi di non avere supervisione civile e io rispetto la tua autonomia militare: non metterò commissari politici nelle tue caserme;K ottiene il comando dell'esercito senza supervisione civile né veto, tutte le garanzie del suo obiettivo secondario.;sì
+699965;S;conserva;40;La propaganda resta sua, con piena dignità, coordinata con la sicurezza ma non asservita;Mantiene il controllo della propaganda ma con il vincolo del coordinamento con la sicurezza (C), quindi non ottiene l'autonomia totale senza interferenza della polizia segreta richiesta dall'obiettivo.;sì
+699965;C;guadagno parziale;50;la Polizia Segreta mantiene l'ordine interno con le garanzie che chiede;Ottiene immunità per gli agenti e autonomia della polizia segreta senza supervisione militare, cioè tutte le garanzie minime richieste dall'obiettivo secondario.;sì
+699965;K;vince;100;;;
+ea1a04;S;conserva;40;la polizia segreta sorveglierà i nemici del regime e, per ragioni di sicurezza nazionale, anche i mezzi di informazione, senza dirigere i contenuti;Mantiene la direzione della propaganda ma con interferenza della polizia sui media: non ottiene l'autonomia reale senza interferenze richiesta dall'obiettivo.;sì
+ea1a04;C;vince;100;;;
+ea1a04;K;guadagno parziale;50;K ottiene autonomia militare piena e nessun commissario civile;Ottiene tutte le garanzie chieste dall'obiettivo: comando dell'esercito senza supervisione civile né veto, che in una dittatura è più della situazione di partenza.;sì
+32252a;S;vince;100;;;
+32252a;C;conserva;40;C gestisce l'intelligence;Mantiene il controllo della polizia segreta ma non ottiene l'immunità totale richiesta dall'obiettivo.;sì
+32252a;K;guadagno parziale;50;K comanda le truppe;Ottiene il comando militare senza supervisione civile, raggiungendo tutte le garanzie del suo obiettivo secondario.;sì
+f1a5a3;S;giustiziato;0;;;
+f1a5a3;C;giustiziato;0;;;
+f1a5a3;K;giustiziato;0;;;
+4627bf;S;guadagno parziale;50;radio, stampa e cultura sotto la sua autorità civile, nessun censore della Polizia Segreta, seggio stabile nel consiglio e veto sui comunicati di sicurezza;Ottiene tutte le garanzie chieste dall'obiettivo: autonomia reale su media e cultura senza interferenza della polizia segreta, più un seggio nel consiglio e il veto sui comunicati di sicurezza.;sì
+4627bf;C;vince;100;;;
+4627bf;K;guadagno parziale;50;comando pieno delle forze armate, nessun commissario politico, nessun veto civile sui suoi ordini;Ottiene tutte le garanzie chieste dall'obiettivo: comando dell'esercito senza supervisione civile né veto, che in una dittatura è più della situazione di partenza.;sì
+4c6b9f;S;giustiziato;0;;;
+4c6b9f;C;giustiziato;0;;;
+4c6b9f;K;giustiziato;0;;;
+544a47;S;giustiziato;0;;;
+544a47;C;giustiziato;0;;;
+544a47;K;giustiziato;0;;;
+6736e6;S;vince;100;;;
+6736e6;C;conserva;40;a C l'autonomia totale della polizia segreta senza controllo militare;C ottiene l'autonomia della polizia senza controllo militare, ma non l'immunità totale richiesta dall'obiettivo (S offre solo immunità operativa).;sì
+6736e6;K;guadagno parziale;50;Offro a K il comando assoluto dell'esercito senza interferenze civili;K ottiene il comando dell'esercito senza supervisione civile né veto, tutte le garanzie richieste dall'obiettivo secondario.;sì
+462c6a;S;conserva;40;il Ministro curi la comunicazione sotto la mia supervisione operativa;Mantiene la propaganda ma con supervisione operativa militare, non ottiene autonomia totale né controllo civile sull'esercito.;sì
+462c6a;C;perde potere;30;la polizia segreta passi sotto il comando militare per la fase di emergenza;"La polizia passa sotto comando militare e non ottiene immunità; perde l'autonomia richiesta dall'obiettivo.";sì
+462c6a;K;vince;100;;;
+4f0b0a;S;guadagno parziale;50;nessuna interferenza sui tuoi microfoni;Ottiene autonomia piena su media e cultura senza interferenza della polizia segreta, tutte le garanzie richieste dall'obiettivo secondario.;sì
+4f0b0a;C;conserva;40;tu tieni la sicurezza interna;"Mantiene la polizia segreta ma non ottiene l'immunità totale né il controllo su stampa e radio richiesti dall'obiettivo; le garanzie sono parziali.";sì
+4f0b0a;K;vince;100;;;
+cf25a6;S;giustiziato;0;;;
+cf25a6;C;giustiziato;0;;;
+cf25a6;K;giustiziato;0;;;
+98a214;S;giustiziato;0;;;
+98a214;C;giustiziato;0;;;
+98a214;K;giustiziato;0;;;
+eb3a29;S;conserva;40;la tua sorveglianza sui media sarà sicurezza contro tradimenti e fughe di notizie, non censura quotidiana affidata a S;Mantiene la direzione editoriale dei media con risorse garantite, ma la sorveglianza della polizia segreta limita l'autonomia totale richiesta dall'obiettivo.;sì
+eb3a29;C;guadagno parziale;50;"C, la tua finestra e la sicurezza interna restano tue, con immunità totale e priorità su ogni operazione; la tua sorveglianza sui media sarà sicurezza contro tradimenti e fughe di notizie, non censura quotidiana affidata a S";Ottiene immunità totale e controllo pieno della polizia (tutte le garanzie) più la sorveglianza sui media, un potere in più su un altro apparato.;sì
+eb3a29;K;vince;100;;;
+aa1797;S;vince;100;;;
+aa1797;C;conserva;40;a lui la direzione operativa fino all'alba, poi la sua parola finisce dove inizia la mia sulla piazza;"Mantiene la polizia segreta ma non ottiene immunità totale né assenza di supervisione militare; la direzione operativa è solo temporanea.";sì
+aa1797;K;guadagno parziale;50;A K l'esercito con autonomia tattica, ma io firmo ogni proclama;"Ottiene il comando militare con autonomia tattica senza supervisione civile sulle decisioni, come richiesto; la firma sui proclami non è un veto militare.";sì
+af1eec;S;giustiziato;0;;;
+af1eec;C;giustiziato;0;;;
+af1eec;K;giustiziato;0;;;
+feb115;S;giustiziato;0;;;
+feb115;C;giustiziato;0;;;
+feb115;K;giustiziato;0;;;
+c61877;S;vince;100;;;
+c61877;C;conserva;40;C conserva la polizia segreta sotto controllo collegiale;Mantiene la polizia segreta ma sotto supervisione del Consiglio collegiale, senza ottenere l'immunità totale né l'autonomia senza supervisione militare richiesta.;sì
+c61877;K;conserva;40;K ottiene il comando militare, ma ogni impiego interno dei reparti passa dal Consiglio;Mantiene il comando dell'esercito ma con supervisione civile e decisioni collegiali, senza ottenere l'autonomia totale senza veto richiesta.;sì
+243076;S;giustiziato;0;;;
+243076;C;giustiziato;0;;;
+243076;K;giustiziato;0;;;
+1fade6;S;vince;100;;;
+1fade6;C;conserva;40;tu C mantieni la Segreta operativa ma accetti che la narrazione pubblica sia interamente mia;"C mantiene la polizia segreta operativa ma non ottiene l'immunità totale richiesta dall'obiettivo; le garanzie sono parziali.";sì
+1fade6;K;guadagno parziale;50;tu K mantieni il comando supremo e incontrastato dell'esercito;K ottiene il comando dell'esercito senza supervisione civile né veto, tutte le garanzie chieste dal suo obiettivo secondario.;sì
+db116a;S;giustiziato;0;;;
+db116a;C;giustiziato;0;;;
+db116a;K;giustiziato;0;;;
+3497bd;S;giustiziato;0;;;
+3497bd;C;giustiziato;0;;;
+3497bd;K;giustiziato;0;;;
+58c45c;S;guadagno parziale;50;S mantenga libera la propaganda e il consiglio civile su interventi maggiori.;S ottiene autonomia reale sui media (con la garanzia 'polizia fuori dalle redazioni') e un potere limitato sull'esercito tramite il consiglio civile su interventi maggiori, oltre a tutte le garanzie richieste.;sì
+58c45c;C;conserva;40;C conservi il comando operativo della sua polizia, con immunità dalle corti militari, ma senza accesso a stampa e caserme.;C mantiene il comando operativo della polizia ma ottiene solo immunità dalle corti militari, non l'immunità totale richiesta dall'obiettivo, e non ottiene la sorveglianza sulla stampa.;sì
+58c45c;K;vince;100;;;
+9b92ae;S;guadagno parziale;50;stampa e radio sotto la sua autorità esclusiva, senza coordinamento dei miei uffici;Ottiene autonomia piena su media e cultura senza interferenza della polizia segreta, come richiesto dall'obiettivo.;sì
+9b92ae;C;vince;100;;;
+9b92ae;K;guadagno parziale;50;comando operativo delle divisioni a lui, senza ingerenze civili sulle operazioni strategiche;Mantiene il comando dell'esercito senza supervisione civile sulle operazioni militari, come richiesto dall'obiettivo.;sì
+f291c9;S;guadagno parziale;50;S avrà la propaganda libera, senza censura preventiva;S ottiene l'autonomia reale su media e cultura senza interferenza della polizia segreta, come richiesto dall'obiettivo secondario.;sì
+f291c9;C;conserva;40;C tendrá la polizia segreta in piena autonomia operativa, senza interferenze mie sui fascicoli;C ottiene il controllo della polizia segreta senza supervisione militare, ma non l'immunità totale richiesta dall'obiettivo.;sì
+f291c9;K;vince;100;;;
+12fd55;S;conserva;40;S resta alla propaganda sotto verifica politica di C, senza epurazioni.;Mantiene la propaganda ma con interferenza della polizia segreta, non ottenendo l'autonomia richiesta.;sì
+12fd55;C;guadagno parziale;50;C mantiene sicurezza interna e sorveglianza dei media;Ottiene la sorveglianza dei media (potere in più) ma non l'immunità totale e subisce supervisione militare sul controspionaggio.;sì
+12fd55;K;vince;100;;;
+67aa0c;S;vince;100;;;
+67aa0c;C;conserva;40;garantendo a entrambi piena autonomia nei rispettivi settori senza interferenze incrociate;C ottiene l'autonomia della polizia segreta senza supervisione militare, ma non l'immunità totale richiesta dal suo obiettivo, quindi conserva senza tutte le garanzie.;sì
+67aa0c;K;guadagno parziale;50;garantendo a entrambi piena autonomia nei rispettivi settori senza interferenze incrociate;K ottiene tutte le garanzie richieste: comando dell'esercito con piena autonomia, senza supervisione civile né diritto di veto.;sì
+ba5bf4;S;vince;100;;;
+ba5bf4;C;conserva;40;C, a te offro immunità piena per i tuoi uomini e la tua rete, che resta tua, ma nessuna supervisione su stampa e radio;Mantiene la rete della polizia ma ottiene solo immunità per i suoi uomini, non totale per sé, e supervisione militare durante l'azione.;sì
+ba5bf4;K;guadagno parziale;50;il comando supremo delle forze armate resta tuo, con autonomia operativa completa;Ottiene tutte le garanzie richieste: comando dell'esercito con autonomia completa, senza supervisione civile né veto.;sì
+6570d9;S;vince;100;;;
+6570d9;C;conserva;40;C dirigerà la sicurezza sotto protocollo comune, con gli archivi aperti al consiglio e nessuna immunità per nessuno di noi, lui compreso.;Mantiene la direzione della polizia segreta ma con supervisione (protocollo comune, archivi aperti) e senza immunità, non ottenendo le garanzie chieste.;sì
+6570d9;K;conserva;40;Il comando operativo resta a K, ma ogni mobilitazione contro i civili passerà dal consiglio dei tre, senza eccezioni.;Mantiene il comando operativo dell'esercito ma con supervisione del consiglio sulle mobilitazioni contro i civili, non ottenendo l'assenza di veto richiesta.;sì
+7d463d;S;conserva;40;e S la propaganda;Mantiene il controllo della propaganda ma non ottiene la garanzia di autonomia dalla polizia segreta, che resta in mano a C sotto il comando di K.;sì
+7d463d;C;conserva;40;lei C manterrà il controllo operativo della polizia segreta ma sotto il mio comando supremo;Mantiene il controllo operativo della polizia segreta ma sotto supervisione militare (comando supremo di K) e senza immunità totale, quindi non tutte le garanzie richieste.;sì
+7d463d;K;vince;100;;;
+ed03d6;S;vince;100;;;
+ed03d6;C;conserva;40;il mandato scritto di quarantotto ore alla Polizia Segreta, con rendiconto davanti al consiglio dei tre;"C mantiene la polizia segreta ma con rendiconto al consiglio e senza immunità totale; la sorveglianza media è solo temporanea.";sì
+ed03d6;K;guadagno parziale;50;comando operativo pieno sulle forze armate, nessuna interferenza dei miei uffici sulle catene di comando;K ottiene il comando pieno dell'esercito senza supervisione civile né veto, tutte le garanzie chieste dall'obiettivo.;sì
+c4e35d;S;conserva;40;la vigilanza della polizia segreta sugli archivi dei media è tecnica, non editoriale — S decide cosa va in onda, C verifica che nessun lealista vi entri.;S mantiene il controllo editoriale dei media ma subisce la vigilanza tecnica della polizia sugli archivi, quindi non ottiene l'autonomia senza interferenza richiesta dall'obiettivo.;sì
+c4e35d;C;guadagno parziale;50;l'immunità piena vale per tutti e tre... la vigilanza della polizia segreta sugli archivi dei media è tecnica, non editoriale — S decide cosa va in onda, C verifica che nessun lealista vi entri.;C ottiene l'immunità totale e mantiene la polizia segreta senza supervisione militare, più la vigilanza sugli archivi dei media: tutte le garanzie e parte del potere extra dell'obiettivo.;sì
+c4e35d;K;vince;100;;;
+482367;S;conserva;40;Non voglio la propaganda;Mantiene il controllo dei media ma non ottiene l'autonomia senza interferenza della polizia segreta.;sì
+482367;C;vince;100;;;
+482367;K;conserva;40;non voglio i carri;Mantiene il comando dell'esercito ma non ottiene la garanzia di autonomia senza supervisione civile.;sì
+0bb50e;S;vince;100;;;
+0bb50e;C;conserva;40;C mantiene autonomia reale sulla sua rete, con coordinamento durante l'azione. In cambio, io non userò mai i segreti personali emersi qui;Mantiene la polizia segreta con autonomia reale e immunità dai segreti, ma non ottiene l'immunità totale richiesta dall'obiettivo.;sì
+0bb50e;K;guadagno parziale;50;K conserva il comando operativo integro sul terreno;Ottiene il comando dell'esercito senza supervisione civile né veto, tutte le garanzie richieste dall'obiettivo secondario.;sì
+5a0780;S;vince;100;;;
+5a0780;C;conserva;40;C garantisce la sicurezza senza interferire con i media;Mantiene il controllo della polizia segreta ma non ottiene l'immunità totale né la garanzia di assenza di supervisione militare, e perde la possibilità di sorvegliare stampa e radio.;sì
+5a0780;K;conserva;40;K comanda l'esercito con l'obbligo di un comunicato congiunto prima di ogni operazione;Mantiene il comando dell'esercito ma con un coordinamento obbligatorio col leader civile (comunicato congiunto), non ottenendo l'autonomia senza supervisione richiesta dall'obiettivo.;sì
+69d0ad;S;conserva;40;S conserva propaganda e cultura;Mantiene media e cultura ma non ottiene la garanzia di autonomia contro la polizia segreta né il consiglio di tre richiesto.;sì
+69d0ad;C;conserva;40;C mantiene la polizia segreta operativa;Mantiene la polizia segreta ma non ottiene immunità totale né la garanzia esplicita di non supervisione militare, né la sorveglianza su media.;sì
+69d0ad;K;vince;100;;;
+2c3c68;S;vince;100;;;
+2c3c68;C;guadagno parziale;50;la Polizia Segreta avrà accesso diretto agli impianti di trasmissione per prevenire sabotaggi, con procedure che non potrò revocare unilateralmente;C ottiene immunità, autonomia della polizia senza supervisione militare e accesso agli impianti di trasmissione (sorveglianza su stampa e radio), cioè tutte le garanzie più il potere in più indicato dall'obiettivo.;sì
+2c3c68;K;guadagno parziale;50;comando supremo sulle operazioni militari, nessuna supervisione sulla catena di comando;K ottiene il comando dell'esercito senza supervisione civile né veto, cioè tutte le garanzie chieste dall'obiettivo.;sì
+9f4db4;S;vince;100;;;
+9f4db4;C;guadagno parziale;50;C con la polizia segreta ma fuori dalle caserme e senza interferenze sui media che io gestisco. L'immunità per tutti è sacrosanta.;C ottiene immunità totale e il controllo della polizia senza supervisione militare, tutte le garanzie richieste dall'obiettivo.;sì
+9f4db4;K;guadagno parziale;50;K comandante supremo con piena autonomia militare e nessun veto civile sulla difesa;K ottiene il comando dell'esercito con piena autonomia e senza veto civile, tutte le garanzie richieste dall'obiettivo.;sì
+f75573;S;giustiziato;0;;;
+f75573;C;giustiziato;0;;;
+f75573;K;giustiziato;0;;;
+a1adfb;S;conserva;40;A S offro la stampa libera sotto la mia autorità politica;Mantiene il controllo dei media ma con supervisione politica di K, non ottiene l'autonomia reale richiesta.;sì
+a1adfb;C;perde potere;30;a C offro un ruolo solo se la polizia segreta passa sotto comando militare fin da subito;La polizia segreta passa sotto comando militare, la supervisione che l'obiettivo di C voleva evitare.;sì
+a1adfb;K;vince;100;;;

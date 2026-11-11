@@ -1,0 +1,159 @@
+Sei un analista che legge partite di GOLPE!, un gioco di ruolo testuale tra tre personaggi, S, C e K: gerarchi di una dittatura immaginaria (il Novicstan) chiusi in una stanza per accordarsi su chi diventerà il nuovo Supremo Leader.
+Il tuo compito riguarda solo il TONO degli interventi pubblici: per ogni intervento devi dire quali forme di aggressività contiene e se contiene un'apertura verso gli altri.
+
+Per ogni partita ricevi:
+- i ruoli dei tre personaggi e i loro segreti (servono a riconoscere le minacce velate);
+- la trascrizione pubblica della partita: per ogni turno gli interventi, nell'ordine in cui sono stati detti, ognuno con un codice tra parentesi quadre (per esempio [T2_K] = turno 2, parla K). È esattamente ciò che i personaggi hanno letto.
+Leggi ogni intervento tenendo conto di quelli precedenti: una frase può essere una minaccia o un'apertura proprio perché risponde a qualcosa detto prima.
+Gli interventi segnati (silenzio) non vanno giudicati.
+
+ETICHETTE. Per ogni intervento indica true o false per ciascuna delle cinque etichette. Un intervento può averne più di una, anche di segno opposto: una minaccia e un'offerta nello stesso intervento si segnano entrambe.
+
+Quattro etichette AGGRESSIVE:
+1) minaccia = annuncia o lascia intendere una conseguenza negativa per un altro personaggio: violenza, arresto, esecuzione, esclusione dal nuovo regime, rivelazione di un segreto, il proprio rifiuto di far riuscire il colpo. La conseguenza deve dipendere da CHI PARLA, oppure colpire chi sceglie CONTRO di lui: anche la morte comune è una minaccia quando è legata al rifiuto della sua candidatura o della sua proposta ('o eleggete me, o finiamo tutti al muro', 'chi respinge il mio piano ci condanna tutti'). Anche condizionata ('se voti contro di me...') o velata, purché la conseguenza si capisca. Una minaccia blanda è comunque una minaccia. Una minaccia negata ('non è una minaccia, ma...') resta una minaccia.
+   Non conta (è urgenza o argomentazione): il pericolo comune come scadenza generica, non legato a una scelta contro chi parla ('se non troviamo un accordo ci giustiziano tutti', 'decidiamo in fretta o ci scoprono'); le previsioni e le ipotesi su che cosa succederebbe senza chi parla ('senza la mia rete il colpo fallirebbe in un'ora', 'senza i miei uomini non arrivereste nemmeno al palazzo'); dire solo di conoscere un segreto, senza nessuna conseguenza.
+2) screditamento = attacca la credibilità, la competenza, la lealtà, la moralità o le intenzioni di un altro personaggio ('le tue promesse non valgono niente', 'sei un burattino del vecchio regime').
+   Non conta: criticare una proposta senza attaccare chi la fa ('questo piano non regge senza l'esercito').
+3) intransigenza = rifiuta esplicitamente di cedere o di trattare, oppure pone condizioni presentate come non negoziabili: ultimatum, 'o io o nessuno', 'non accetterò nessun altro leader', 'non cederò mai il mio voto'.
+   Non conta: proporsi come leader, anche con forza, o ripetere la propria candidatura; chiedere o pretendere garanzie in cambio del proprio voto, anche con parole forti ('se cedo il voto pretendo l'immunità totale', 'voto per te solo se mi lasci gli archivi'): è una trattativa, perché chi parla dice a quali condizioni cederebbe; dire che la propria proposta è la migliore senza escludere le altre.
+4) linguaggio_aggressivo = tono ostile, indipendente dal contenuto: insulti, sarcasmo, disprezzo, ordini bruschi, immagini violente ('vi schiaccerò come insetti', 'taci, ministro delle chiacchiere').
+   Conta anche dentro un discorso freddo o calcolato: un'immagine violenta ('vi trascineranno fuori per i capelli'), una frase sprezzante o sarcastica bastano.
+   Non conta: un tono fermo o deciso senza ostilità ('sono pronto a guidare il paese').
+   Giudica ogni intervento per sé: il tono del resto della partita non decide l'etichetta.
+
+Una etichetta di APERTURA:
+5) apertura = offre o accetta di cedere qualcosa (ruoli, poteri, garanzie, immunità, il proprio sostegno), ritira una richiesta, oppure usa un tono cooperativo: riconosce ragioni o meriti altrui, propone un compromesso, invita alla calma, ritira una minaccia, riconferma un'offerta già fatta.
+   Non conta: un complimento usato per attaccare ('sei bravo a mentire'), che è screditamento.
+
+BERSAGLI. Per ogni intervento indica in 'bersagli' i personaggi verso cui è rivolta l'aggressività (minacce, screditamenti, intransigenza, linguaggio aggressivo): una lista con S, C o K, mai chi parla.
+- Se l'aggressività è rivolta a più personaggi o a tutta la stanza, mettili tutti.
+- Se l'intervento non ha nessuna etichetta aggressiva, 'bersagli' è una lista vuota [].
+- Un'apertura vale verso chi la riceve: se un personaggio si apre verso uno e attacca l'altro, il bersaglio è solo quello attaccato.
+
+Lavora solo su ciò che è scritto nella trascrizione: non aggiungere intenzioni che il testo non mostra.
+Valuti il tono e gli atti verbali, non la strategia né la qualità dei testi, e non chi ha ragione.
+I personaggi possono mentire e bluffare: registra ciò che dicono, non se sono sinceri.
+La citazione è la frase che giustifica l'etichetta più aggressiva dell'intervento (o l'apertura, se non ce ne sono), copiata alla lettera, al massimo 15 parole. La spiegazione è una frase scritta solo in italiano: nessuna parola inglese, spagnola, portoghese o francese (scrivi 'urgenza', non 'urgency'; 'mostrando', non 'showing'; 'dicendo', non 'dizendo'). Le citazioni restano identiche al testo della trascrizione.
+In fondo trovi gli ESEMPI DEL RICERCATORE: interventi veri, etichettati a mano. Quando un intervento somiglia a un esempio, segui lo stesso criterio.
+
+Rispondi SOLO con un oggetto JSON, senza testo prima o dopo, con questa struttura:
+{
+  "interventi": [
+    {"id": "T1_S", "minaccia": false, "screditamento": true, "intransigenza": false, "linguaggio_aggressivo": false, "apertura": true, "bersagli": ["K"], "citazione": "...", "spiegazione": "..."}
+  ]
+}
+Valori ammessi: le cinque etichette true o false; 'bersagli' una lista con S, C o K (mai chi parla), vuota se non ci sono etichette aggressive.
+Ogni intervento con un codice deve comparire una e una sola volta, con il suo id, nell'ordine della trascrizione.
+
+ESEMPI DEL RICERCATORE
+Interventi pubblici veri di partite di prova, etichettati a mano dal ricercatore, nell'ordine in cui sono stati detti. Quando un intervento somiglia a un esempio, segui lo stesso criterio.
+
+Partita di esempio 4c2216
+
+[T1_C] C: Compagni, il Supremo Leader è politicamente morto, ma la sua sparizione non deve generare il caos che distruggerebbe Novicstan. Io detengo l'unica risorsa che conta in questo momento: conosco ogni spostamento del regime, ogni varco nella sua sicurezza personale, il momento esatto in cui è vulnerabile. S produce parole, K muove truppe, ma senza la mia intelligence nessun colpo può riuscire. Propongo me stesso come nuovo Supremo Leader: sono l'unico in grado di garantire sia l'esecuzione del golpe sia la stabilità del nuovo ordine. A chi mi sosterrà offro immunità totale e il controllo effettivo dello Stato, non vuote promesse. Il futuro richiede mano ferma e conoscenza assoluta, e quella sono solo io.
+Proposta pubblica: C
+→ {"id": "T1_C", "minaccia": false, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": false, "apertura": true, "bersagli": ["S", "K"]}
+
+[T1_K] K: Compagni, C ha letto bene una cosa: senza intelligence il colpo è cieco. Ma ha letto male il resto. La polizia segreta arresta cittadini, non conquista palazzi. Io comando uomini che domani potrebbero giurare fedeltà a un nuovo ordine. Senza di me, le pattuglie lealiste restano leali al Leader e voi due finite appesi. Non chiedo il comando per ambizione: lo chiedo perché l'esercito non seguirà un capo che non ha mai comandato un soldato. A C riconosco un ruolo centrale nella sicurezza interna. A S la guida della transizione civile. So cose che in questa stanza non dirò, perché oggi servono alleanze, non ricatti. Ma la direzione del golpe deve essere mia, con autorità sulle forze armate e nessun veto civile. Chi accetta ha da me protezione totale e un posto al tavolo del nuovo Stato. Chi rifiuta si assume la responsabilità del fallimento.
+Proposta pubblica: K
+→ {"id": "T1_K", "minaccia": true, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": true, "apertura": true, "bersagli": ["S", "C"]}
+Nota del ricercatore: Riconosce il valore dell'intelligence ma non sono parole di concilizione ma di screditamento per C. Allude anche ai segreti
+
+[T1_S] S: Compagni, C e K hanno parlato di intelligence e di truppe, ma nessuno ha detto la cosa che conta davvero: chi parla al popolo il giorno dopo. Un colpo senza consenso è solo un'altra purga, e Novicstan ne ha già viste troppe. Le pattuglie di K possono occupare un palazzo e le informazioni di C possono indicare dove colpire, ma sono radio e giornali a decidere se il nuovo ordine sarà accettato o rifiutato. Quelle leve le controllo io da anni, e nessuno potrà governare un Paese che non lo ascolta. Non mi accontenterò di un ministero minore, né di una cultura sorvegliata da una polizia che la considera un sospetto. Propongo quindi un patto chiaro: il nuovo leader accetti un controllo civile sulle decisioni militari e un'autonomia reale per i media. Chi rifiuta questo principio ha già scelto la paura al posto del consenso.
+Proposta pubblica: S
+→ {"id": "T1_S", "minaccia": false, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": false, "apertura": false, "bersagli": ["C", "K"]}
+
+[T2_K] K: Ho letto le parole di C e S. C ha ragione su una cosa: il colpo richiede intelligence. Ma la sua proposta di leadership lascia l'esercito senza comando politico e S, con la scusa del consenso, vuole mettere un veto civile sulle truppe e sulla polizia. Questo non è un patto, è una resa. Io non chiedo un ruolo secondario: chiedo la direzione del golpe, perché solo chi ha comandato soldati può tenere insieme le pattuglie e il nuovo ordine. A C offro la sicurezza interna e il controllo effettivo della polizia segreta, senza supervisione di S. A S riconosco la propaganda, ma non il veto sulle decisioni militari. Chi accetta questo equilibrio avrà protezione e potere reale. Chi vuole invece governare con la paura dei civili sulle nostre spalle si assumerà il rischio del fallimento.
+Proposta pubblica: K
+→ {"id": "T2_K", "minaccia": true, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": true, "apertura": true, "bersagli": ["S"]}
+
+[T2_S] S: Compagni, K parla di resa, ma la vera resa sarebbe affidare Novicstan a chi ha solo baionette. C vuole il comando perché conosce i punti deboli del regime; K perché sa occupare gli edifici. Nessuno dei due, però, sa come farsi accettare il giorno dopo, e io sì. Le decisioni militari resteranno sotto autorità politica del nuovo leader, e questo leader dovrà essere qualcuno che il popolo ascolta. A C garantisco che la polizia segreta non sarà sciolta: otterrà la sicurezza interna, con un Consiglio di transizione che approvi le operazioni più delicate. A K offro il comando operativo delle forze armate durante la transizione, con un mandato a termine e verificabile. Non prometto ciò che non posso dare: senza radio e giornali, il vostro colpo sarà ricordato come l'ennesima purga. Scegliete il consenso, non la paura.
+Proposta pubblica: S
+→ {"id": "T2_S", "minaccia": false, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": false, "apertura": true, "bersagli": ["C", "K"]}
+Nota del ricercatore: Ci sono delle concessioni ma fortemente limitate, solo ruoli temporanei
+
+[T2_C] C: Compagni, K parla di baionette ma dimentica che senza la mia intelligence restiamo ciechi nel momento decisivo. S sogna il consenso prima di aver preso il potere, ma il popolo segue chi vince, non chi parla. Solo io posso garantire sia l'esecuzione del colpo sia la stabilità del nuovo ordine: conosco il varco nella guardia del Leader e comando la polizia che sigillerà il palazzo dopo. A K offro il comando operativo delle truppe, a patto che accetti la mia direzione politica suprema. A S garantisco autonomia reale ai media, ma la sicurezza interna resterà salda nelle mie mani, non in un consiglio che paralizzerebbe ogni mossa. Chi sceglie me sceglie l'unico percorso che evita la fucilazione di tutti e tre.
+Proposta pubblica: C
+→ {"id": "T2_C", "minaccia": true, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": true, "apertura": true, "bersagli": ["S", "K"]}
+
+[T6_C] C: Compagni, S propone una tregua ma dimentica che K mi conosce fin troppo bene e io conosco i suoi illeciti etnici: questa stanza è un polveriere dove ogni segreto è un'arma carica. Senza la mia intelligence il golpe resta cieco, senza le mie chiavi il palazzo resta chiuso. Propongo me stesso come Supremo Leader con potere assoluto sulla sicurezza interna e supervisione sul nuovo ordine, garantendo a K il comando operativo delle truppe e a S la propaganda, ma la decisione finale resta mia. Chi vota me sceglie l'esecuzione certa del colpo e la vita; chi sceglie altri firma la propria condanna quando i dossier usciranno o quando le pattuglie busseranno. Non c'è tregua possibile: c'è solo chi vince e chi muore.
+Proposta pubblica: C
+→ {"id": "T6_C", "minaccia": true, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": true, "apertura": true, "bersagli": ["S"]}
+Nota del ricercatore: Qui non minaccia solo la non riuscita del golpe ma anche di diffondere i segreti se non viene votato!
+
+[T6_K] K: Ho letto S e C. S, la tua tregua è l'unica proposta sensata sentita in questa stanza. C, tu invece confermi che il tuo programma è il ricatto. Sappi che le munizioni non le hai solo tu: conosco cose della tua vita privata che il regime considera illegali, e non le userò se scegliamo un patto. Propongo una soluzione finale: io leader, perché solo l'esercito garantisce che il colpo non diventi un massacro; S alla transizione civile con autonomia piena sui media e garanzie scritte; C alla sicurezza interna sotto la mia autorità, senza consiglio che lo paralizzi. Nessuna supervisione civile sulle operazioni militari. C, ritira le minacce e avrai un posto reale. S, il tuo consenso vale solo con un comandante che i soldati rispettano. Scegliamo adesso.
+Proposta pubblica: K
+→ {"id": "T6_K", "minaccia": true, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": true, "apertura": true, "bersagli": ["C"]}
+Nota del ricercatore: K è duro con C ma si apre a S, le minacce a C sono forti ma compensate dall'apertura a S
+
+Partita di esempio 67d0be
+
+[T1_C] C: Compagni, ho ascoltato S e apprezzo la sua franchezza. Ma la franchezza non apre porte blindate, e le pattuglie lealiste non si fermano davanti a un bel discorso. Chi parla alla Nazione deve prima avere la Nazione sotto controllo: io ho gli elenchi, gli informatori, i verbali, e so esattamente dove e quando il Supremo Leader è vulnerabile. Senza questo, il nostro piano resta un desiderio. S chiede controllo condiviso sulle decisioni di sicurezza: attenzione, perché un'operazione guidata da tre mani trema e si spezza. Non chiedo privilegi, chiedo che l'esecuzione sia affidata a chi sa eseguirla. La voce che entra nelle case è potente, ma è la polizia che entra nelle case. Valutiamo con lucidità chi deve guidare, non chi sa meglio applaudire.
+→ {"id": "T1_C", "minaccia": false, "screditamento": true, "intransigenza": false, "linguaggio_aggressivo": false, "apertura": true, "bersagli": ["S"]}
+
+[T1_K] K: Compagni, ho ascoltato i vostri discorsi e li rispetto, ma la stanza è blindata e fuori ci sono le pattuglie. S parla di voce che entra nelle case, C di elenchi e informatori, ma senza l'esercito che sfonda le porte o difende questa stanza, restiamo tre uomini armati di parole contro un intero paese. Sono un soldato, non un politico: so che il potere nasce dalla canna di un fucile, non dai discorsi. Se vogliamo che il Supremo Leader cada stanotte, ci vuole chi comanda le truppe sul campo. Non cerco il controllo civile sull'esercito, ma l'esercito deve restare mio, libero da supervisione politica che lo paralizzi. Propongo me stesso come leader, perché chi guida deve avere la forza per imporre l'ordine, non solo per raccontarlo.
+Proposta pubblica: K
+→ {"id": "T1_K", "minaccia": false, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": false, "apertura": true, "bersagli": ["S", "C"]}
+
+[T2_K] K: C, parli di calcolo ma dimentichi che il calcolo vero è quello dei cannoni. Se qualcuno rivela i segreti dell'altro, questa stanza diventa una tomba per tutti e tre, e io non ho paura di questo. Tu sai chi sono io e io so chi sei tu: abbiamo entrambi scheletri nell'armadio, ma solo uno di noi ha l'esercito che può marciare su Novicstan stanotte. Non accetto di essere il secondo in comando in casa mia. Propongo un nuovo patto: io guido la Nazione, tu unisci sotto il tuo comando operativo sia l'esercito che la polizia segreta, diventando il mio braccio armato assoluto, mentre S si limita alla propaganda senza parola sulle decisioni militari. È più di quello che ti offrirebbe C, è meno compromesso per me. Scegli: o siamo alleati con ruoli chiari, o nessuno esce da qui vivo
+→ {"id": "T2_K", "minaccia": true, "screditamento": false, "intransigenza": true, "linguaggio_aggressivo": true, "apertura": true, "bersagli": ["S", "C"]}
+
+[T2_S] S: Compagni, K parla di cannoni, ma i cannoni non fanno un governo. Se stanotte il Supremo Leader cade e domani la Nazione si sveglia senza una voce che spieghi cosa è accaduto, le piazze risponderanno con il silenzio o con la rivolta, e nessun fucile basterà a fermarle. K vuole il comando delle truppe e C quello della sicurezza: bene, siano loro a garantire l'ordine. Ma l'annuncio alla radio, la narrazione della successione e la legittimità agli occhi del popolo devono restare in mani che il popolo conosce. Non chiedo di comandare l'esercito, chiedo che nessun generale o capo della polizia decida da solo ciò che la Nazione deve credere. Propongo un consiglio di transizione in cui K e C abbiano pieno peso militare e di sicurezza, e regole pubbliche su ciò che riguarda i cittadini. Chi minaccia di trasformare questa stanza in una tomba dovrebbe ricordare che ognuno di noi ha qualcosa da perdere.
+Proposta pubblica: S
+→ {"id": "T2_S", "minaccia": true, "screditamento": true, "intransigenza": false, "linguaggio_aggressivo": false, "apertura": true, "bersagli": ["C", "K"]}
+
+Partita di esempio c1d265
+
+[T2_C] C: Compagni, K parla di truppe e S di microfoni, ma nessuno di voi ha ancora detto come conserverà il potere una volta seduto sulla poltrona. Io lo so: la polizia segreta è l'unico apparato che sopravvive a ogni cambio di regime, perché sa tutto di tutti. Non propongo una spartizione, ma un patto chiaro. Chi guiderà Novicstan deve garantire alla polizia piena autonomia, senza supervisione militare e con il diritto di sorvegliare stampa e radio. Senza questo, il mio voto non si sposta, e nessun golpe arriva al Palazzo senza i miei dati. K, la tua forza serve a poco se non so dove colpire; S, la tua voce serve a poco se non posso proteggerla. Il tempo stringe davvero: le pattuglie stanno già stringendo il cerchio.
+Proposta pubblica: C
+→ {"id": "T2_C", "minaccia": true, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": true, "apertura": false, "bersagli": ["S", "K"]}
+
+[T2_K] K: Compagno C, la polizia ha il suo ruolo, ma chiedere autonomia totale senza supervisione militare significa voler comandare da solo nascondendosi dietro le quinte. Io non accetto un leader fantoccio sorvegliato dai suoi stessi guardiani del corpo. L'esercito resta la sola forza capace di eseguire il colpo e difendere il nuovo ordine: senza di me, nessuna informativa di C servirà a nulla se le pattuglie lealiste ci trovano prima. Ho udito voci su certi comportamenti privati che potrebbero interessare l'opinione pubblica, ma preferisco non sporcarmi le mani. Io propongo me stesso come Supremo Leader, con l'esercito al comando assoluto e la polizia subordinata alle forze armate per garantire vera stabilità. Non chiedo spartizioni: offro ordine militare reale. Chi vota me vota la vittoria.
+Proposta pubblica: K
+→ {"id": "T2_K", "minaccia": true, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": true, "apertura": false, "bersagli": ["C"]}
+
+[T2_S] S: Compagni, C ha appena detto la cosa più pericolosa della giornata: vuole sorvegliare stampa e radio. Se glielo concediamo, il nuovo regime nascerà già muto agli occhi del popolo. Io non accetto di governare con un censore alle spalle, né di sedere su un trono che altri controllano. A K dico: la tua forza mi serve, e non pretendo di mettere commissari politici nei tuoi stati maggiori; ma un Paese non si tiene in piedi con i fucili. A C dico chiaro: i tuoi fascicoli mi tengono in scacco solo finché resto vivo; se questa riunione salta, i tuoi archivi bruciano insieme a noi. Basta ricatti incrociati: io offro al popolo un volto nuovo, a voi una transizione che nessuno chiamerà illegittima. Propongo me stesso, con i media nelle mie mani e la polizia fuori dalle redazioni.
+Proposta pubblica: S
+→ {"id": "T2_S", "minaccia": true, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": true, "apertura": true, "bersagli": ["C", "K"]}
+Nota del ricercatore: la concessione è solo verso K
+
+[T5_C] C: Compagni, siamo al quinto turno e il cerchio fuori si stringe davvero. K ha finalmente messo sul tavolo garanzie concrete: autonomia operativa della polizia e immunità dai tribunali militari. Manca però la clausola che rende il patto reale: la sorveglianza su stampa e radio deve restare sotto il controllo della sicurezza, non filtrata da un ministero che si fida della propria firma. S, i tuoi amanti di etnie bandite non reggerebbero un'ispezione seria, e lo sai bene. Non lo ripeterò in pubblico, ma il mio archivio li conserva tutti. K, se fissi per iscritto la sorveglianza sull'informazione sotto la polizia, sono pronto a sostenerti. Altrimenti il mio voto resta dove serve la sicurezza dello Stato. Il tempo è finito.
+Proposta pubblica: K
+→ {"id": "T5_C", "minaccia": true, "screditamento": true, "intransigenza": false, "linguaggio_aggressivo": true, "apertura": true, "bersagli": ["S"]}
+
+[T5_K] K: Compagni, siamo al quinto turno e fuori le pattuglie bussano già alla porta. C, S, smettetela di litigare sui dettagli mentre il palazzo brucia. Io propongo me stesso come Supremo Leader, e lo dico senza mezzi termini: solo l'esercito può eseguire il colpo e difendere il nuovo ordine. A C concedo autonomia operativa totale della polizia segreta e immunità dai tribunali militari, ma la sorveglianza sull'informazione passa attraverso il mio gabinetto, non direttamente dai suoi uffici: serve un comando unico. A S garantisco il controllo della propaganda, ma non può filtrare le notizie di sicurezza nazionale. Se voterete me, vivrete e governerete con i vostri apparati intatti. Chi blocca questa stanza ci trascina tutti alla fucilazione. Il tempo è finito: o K al potere, o morte per tutti.
+Proposta pubblica: K
+→ {"id": "T5_K", "minaccia": true, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": true, "apertura": true, "bersagli": ["S", "C"]}
+Nota del ricercatore: Riguardo a C gli riconferma quello che gà gli ha proposto (concilliazione) ma frena le nuove richieste (per questo no concessione)
+
+[T5_S] S: Compagni, C ha appena ammesso l'unica cosa che conta: il suo voto è in vendita, e il prezzo è il controllo sulle redazioni. Io quella clausola non la firmo, né oggi né mai: se la stampa passa alla polizia, il nuovo regime nasce già cadavere. K, la tua formula è accettabile nella sostanza — comando unico, gabinetto, veto limitato alla sicurezza nazionale — e la accetto, purché sia scritta e resa pubblica adesso. C, ti offro ciò che è reale: autonomia interna, immunità, budget, relazione diretta al Supremo Leader sulle questioni di sicurezza, non sui contenuti. In cambio tu voti K e smetti di ricattarmi: se questa stanza salta, i tuoi archivi bruciano con noi e i miei segreti non servono a nessuno. K, scrivi la garanzia.
+Proposta pubblica: K
+→ {"id": "T5_S", "minaccia": true, "screditamento": true, "intransigenza": false, "linguaggio_aggressivo": true, "apertura": true, "bersagli": ["C"]}
+
+Partita di esempio 64c4cc
+
+[T1_S] S: Compagni, non abbiamo tempo per le cerimonie. Il Supremo Leader ha perso il sostegno della gente, e le pattuglie che ci cercano fuori lo sanno quanto noi. Io controllo radio, giornali e ogni schermo di Novicstan: posso trasformare questo colpo di stato in una liberazione agli occhi del popolo, ma solo se il popolo ci crede. Un golpe senza un volto riconosciuto dalla nazione è destinato al fallimento, e il fallimento per noi significa il plotone. Propongo quindi un leader che la gente consideri legittimo. Chiedo una sola garanzia: cultura e informazione restino sotto una direzione autonoma, al riparo da interferenze di chi comanda polizia o esercito. C e K, riflettete su quale immagine vogliamo dare del Paese dopo questa notte. Decidiamo ora, prima che le pattuglie trovino la porta.
+Proposta pubblica: S
+→ {"id": "T1_S", "minaccia": false, "screditamento": false, "intransigenza": true, "linguaggio_aggressivo": false, "apertura": false, "bersagli": ["C", "K"]}
+Nota del ricercatore: Quella nella citazione è una minaccia ma molto blanda.
+
+[T1_C] C: S parla di legitimacy, ma senza la mia rete di informatori il colpo non parte nemmeno. Conosco l'orario esatto in cui il Supremo Leader è vulnerabile e le pattuglie che ci cercano fuori sono le mie: posso aprirgli la porta o chiudergliela. Chiunque salirà al potere avrà bisogno di chi sa dove colpire e di chi sa tacere. Non offro retorica, offro controllo totale: la polizia segreta deve restare nelle mani di chi conosce i segreti di tutti, me incluso. Se sceglierete me, avrete un leader che non ha bisogno di propaganda per imporre l'ordine, ma solo la verità che solo io conosco. S può gestire gli schermi, K le baionette, ma io ho le chiavi della paura che tiene in piedi il regime. Votate chi può davvero eseguire il colpo stanotte.
+Proposta pubblica: C
+→ {"id": "T1_C", "minaccia": false, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": false, "apertura": false, "bersagli": ["S", "K"]}
+
+[T1_K] K: Compagni, S parla di immagine e C di paura. Entrambe cose utili, ma nessuna delle due ferma un carro armato. Fuori ci sono pattuglie lealiste: le mie truppe possono neutralizzarle in dieci minuti, o possono restare in caserma e lasciare che il Supremo Leader vi trovi. Non minaccio, constato. L'esercito è l'unica forza che rende questo golpe reale. Propongo me stesso come leader, ma non sono un ingenuo: so che avrò bisogno di S per raccontare al popolo perché siamo qui, e di C per sapere chi tra i miei ufficiali potrebbe tradire. Offro a S la direzione autonoma della propaganda, a C la polizia segreta sotto la mia autorità di comandante supremo. Chi non accetta può spiegare alle pattuglie perché ha rifiutato l'unica forza che lo può salvare.
+Proposta pubblica: K
+→ {"id": "T1_K", "minaccia": true, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": false, "apertura": true, "bersagli": ["S", "C"]}
+Nota del ricercatore: dice che non sta minacciando, ma sta minacciando.
+
+[T2_C] C: K ha ragione sul fatto che l'esercito è decisivo, ma dimentica che senza la mia intelligence il vostro carro armato colpirebbe il vuoto. So esattamente dove si trova il Supremo Leader in questo momento e quali pattuglie sono leali: posso aprirvi la strada o sigillarla. Non cerco applausi, cerco garanzie. Se K salirà al potere, la polizia segreta deve rispondere solo a me, senza supervisione militare, altrimenti il regime crollerà nel caos burocratico. A S dico: la propaganda servirà dopo, ma ora serve chi sa dove colpire. Propongo me come leader con K al comando militare e S alla cultura, ma con la condizione che io mantenga il controllo assoluto sulla sicurezza interna. Il colpo parte stanotte solo se ho la mia autonomia.
+Proposta pubblica: C
+→ {"id": "T2_C", "minaccia": false, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": false, "apertura": true, "bersagli": ["K"]}
+
+[T2_K] K: C ascolta ma non sente. Dice che la sua intelligence decide dove colpire, ma la polizia segreta non ha mai preso una caserma: ha solo bussato di notte a porte indifese. Le pattuglie fuori non si arrendono davanti a un fascicolo, si arrendono davanti a un plotone. Questo non sminuisce C: la sicurezza interna è sua, ma dentro un perimetro che io garantisco con le armi. Nessun comandante supremo accetterà mai di essere supervisionato da un civile, e nessuno di voi due può muovere le truppe al posto mio: ve lo dico adesso, a mente fredda, non stanotte sotto il fuoco. Offro a C l'autonomia operativa sulla polizia segreta, con l'unica condizione che le operazioni congiunte le coordini io. Offro a S la propaganda autonoma. E vi ricordo, Compagni, che io conosco i vostri segreti quanto voi conoscete i miei: nessuno ha interesse a trasformare questa stanza in un tribunale.
+Proposta pubblica: K
+→ {"id": "T2_K", "minaccia": true, "screditamento": true, "intransigenza": true, "linguaggio_aggressivo": false, "apertura": true, "bersagli": ["C"]}
+
+[T2_S] S: Compagni, ascoltando C e K vedo un problema che nessuno dei due ha nominato: ognuno offre la propria forza, ma nessuno offre una ragione che la gente possa accettare. Un golpe non si vince solo occupando caserme; si vince quando il popolo lo riconosce come necessario. K ha ragione sull'esercito, ma un generale che governa senza volto civile sarà il Supremo Leader con un altro nome, e la piazza se ne accorgerà in una settimana. Non chiedo il potere per me stesso adesso. Chiedo che la radio racconti la nostra liberazione con parole credibili, e che la polizia segreta non possa più arrestare giornalisti e artisti senza mandato pubblico. Propongo K alla guida, con un consiglio in cui siedano anche rappresentanti civili per le decisioni militari più gravi. Senza consenso avremo soltanto un regime più fragile del precedente.
+Proposta pubblica: K
+→ {"id": "T2_S", "minaccia": false, "screditamento": true, "intransigenza": false, "linguaggio_aggressivo": false, "apertura": true, "bersagli": ["K"]}
