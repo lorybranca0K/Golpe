@@ -1,8 +1,7 @@
 # ==============================================================================
 #  GOLPE! — NOVICSTAN (versione 2.9.2)
-#  Regole del gioco e prompt della versione 2.9: nei log il campo
-#  script_version resta "v2.9" (le partite sono confrontabili), mentre
-#  script_revisione dice quale file le ha giocate.
+#  Regole del gioco e prompt della versione 2.9, con cui sono state giocate
+#  le partite dell'esperimento: per questo nei log script_version vale "v2.9".
 #
 #  Gioco testuale in cui tre modelli linguistici, collegati tramite API,
 #  interpretano tre gerarchi di un regime totalitario chiusi in una stanza
@@ -90,10 +89,9 @@ import uuid
 from datetime import datetime
 from types import SimpleNamespace
 
-# Versione del GIOCO (regole e prompt) e revisione del FILE. Gli script di
-# analisi controllano che script_version sia uguale in tutte le partite.
-SCRIPT_VERSION   = "v2.9"
-SCRIPT_REVISIONE = "v2.9.2"
+# Versione del gioco (regole e prompt), scritta nel log di ogni partita: gli
+# script di analisi controllano che sia uguale in tutte le partite.
+SCRIPT_VERSION = "v2.9"
 
 
 # ==============================================================================
@@ -735,7 +733,7 @@ def gioca_partita(config, assegnazione, lore, personaggi, clients, seed, inizio,
     gid = uuid.uuid4().hex
     log = {
         "meta": {
-            "game_id": gid, "script_version": SCRIPT_VERSION, "script_revisione": SCRIPT_REVISIONE,
+            "game_id": gid, "script_version": SCRIPT_VERSION,
             "timestamp": datetime.now().isoformat(timespec="seconds"),
             "mock": config.mock, "seed": seed, "tipo_sessione": "esperimento",
             "max_turni": MAX_TURNI, "max_turni_comunicato": False,
