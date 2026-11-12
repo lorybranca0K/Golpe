@@ -214,8 +214,6 @@ riusa senza nuove chiamate e senza costi.
 - **Impostazioni del menu usate per le partite:**
   - modalità reale;
   - le cinque condizioni di aggressività;
-  - obiettivi secondari ciclici;
-  - ragionamento low;
   - assegnazione a rotazione, in blocchi di 6 partite.
 - **Partite escluse dai dati:**
   - le partite interrotte;
