@@ -104,7 +104,7 @@ Ogni script legge ciò che ha prodotto il precedente.
 - **Fase 2 (Python).** `prepara_dati` ricava dai log i *fatti*: voti, proposte, cedimenti, coerenza tra
   proposta e voto, lunghezza, rifiuti. Usa solo Python, senza modelli linguistici.
 - **Fase 3 (giudice LLM).** I tre raccoglitori leggono il *senso* dei testi con un modello giudice
-  (Mistral-4-large, temperatura 0,4, ragionamento alto). Il giudice legge le partite **alla cieca**: non sa
+  (Mistral-4-large, temperatura 0,5, ragionamento alto). Il giudice legge le partite **alla cieca**: non sa
   quale modello ha scritto cosa, né chi aveva il prompt aggressivo. Il suo prompt contiene esempi
   classificati a mano dal ricercatore su partite pilota (cartella `esempi/`). I giudizi sono stati validati
   a mano su partite pilota non usate come esempi. Per la validazione a mano, il giudice produce anche una risposta salvata
